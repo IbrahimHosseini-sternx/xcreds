@@ -2207,7 +2207,7 @@
 				HEADER_SEARCH_PATHS = headers;
 				INFOPLIST_FILE = XCreds/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2022 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2022 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2255,7 +2255,7 @@
 				HEADER_SEARCH_PATHS = headers;
 				INFOPLIST_FILE = XCreds/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2022 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2022 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -35,7 +35,7 @@ class XCredsUserSetup: XCredsBaseMechanism{
                     TCSLogInfoWithMark("sudo defaults delete /Library/Preferences/so.trio.xcreds showDebug")
 
                 }
-                TCSLogInfoWithMark("To see all logging options, go to https://twocanoes.com/knowledge-base/capturing-xcreds-logs/")
+                TCSLogInfoWithMark("To see all logging options, go to https://triosoftinc.com/knowledge-base/capturing-xcreds-logs/")
 
 
                 TCSLogInfoWithMark("------------------------------------------------------------------")

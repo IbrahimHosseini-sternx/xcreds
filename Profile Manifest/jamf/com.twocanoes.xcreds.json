@@ -9,7 +9,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 5
@@ -21,7 +21,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 10
@@ -34,7 +34,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 15
@@ -46,7 +46,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 20
@@ -58,7 +58,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 25
@@ -71,7 +71,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 30
@@ -84,7 +84,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 35
@@ -97,7 +97,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 40
@@ -108,7 +108,7 @@
                 "type": "string"
             },
             "title": "Allowed Users",
-            "description": "List of users that are allowed to log in. An empty array or undefined array means any user can log in as long their cloud credentials are valid. The preference allowUsersClaim must be defined to a claim in the idToken that identifies the users. For example, if the allowUsersClaim is set to upn and the allowedUsersArray is set to an array that contains fred@twocanoes.com and the upn of a logging in user is fred@twocanoes.com, they would be allowed to log in. barney@twocanoes.com would not.",
+            "description": "List of users that are allowed to log in. An empty array or undefined array means any user can log in as long their cloud credentials are valid. The preference allowUsersClaim must be defined to a claim in the idToken that identifies the users. For example, if the allowUsersClaim is set to upn and the allowedUsersArray is set to an array that contains fred@triosoftinc.com and the upn of a logging in user is fred@triosoftinc.com, they would be allowed to log in. barney@triosoftinc.com would not.",
             "property_order": 45
         },
         "allowLoginIfMemberOfGroup": {
@@ -155,7 +155,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 70
@@ -168,7 +168,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 75
@@ -181,7 +181,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 80
@@ -194,7 +194,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 85
@@ -207,7 +207,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 90
@@ -220,7 +220,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 95
@@ -232,7 +232,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 100
@@ -245,7 +245,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 105
@@ -257,7 +257,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 110
@@ -269,7 +269,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 115
@@ -282,7 +282,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 120
@@ -295,7 +295,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 125
@@ -308,7 +308,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 130
@@ -321,7 +321,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 135
@@ -335,7 +335,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 140
@@ -348,7 +348,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 145
@@ -362,7 +362,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 150
@@ -375,7 +375,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 155
@@ -388,7 +388,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 160
@@ -401,7 +401,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 165
@@ -414,7 +414,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 170
@@ -427,7 +427,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 175
@@ -440,7 +440,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 180
@@ -453,7 +453,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 185
@@ -466,7 +466,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 190
@@ -479,7 +479,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 195
@@ -492,7 +492,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 200
@@ -505,7 +505,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 205
@@ -518,7 +518,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 210
@@ -531,7 +531,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 215
@@ -544,7 +544,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 220
@@ -557,7 +557,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 225
@@ -570,7 +570,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 230
@@ -583,7 +583,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 235
@@ -596,7 +596,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 240
@@ -609,7 +609,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 245
@@ -622,7 +622,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 250
@@ -634,7 +634,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 255
@@ -646,7 +646,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 260
@@ -659,7 +659,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 265
@@ -672,7 +672,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 270
@@ -685,7 +685,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 275
@@ -697,7 +697,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 280
@@ -710,7 +710,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 285
@@ -722,7 +722,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 290
@@ -730,11 +730,11 @@
         "aliasName": {
             "type": "string",
             "title": "Alias Name",
-            "description": "Name of OIDC claim that contains an alias to add to a user account. Usually this is the \"upn\" (eg syd@twocanoes.com) so the user can log in at the standard login window the same as the IdP login window. Adds the value to record name of the user account as an alias.",
+            "description": "Name of OIDC claim that contains an alias to add to a user account. Usually this is the \"upn\" (eg syd@triosoftinc.com) so the user can log in at the standard login window the same as the IdP login window. Adds the value to record name of the user account as an alias.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 295
@@ -747,7 +747,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 300
@@ -760,7 +760,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 305
@@ -773,7 +773,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 310
@@ -786,7 +786,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 315
@@ -799,7 +799,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 320
@@ -812,7 +812,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 325
@@ -825,7 +825,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 330
@@ -838,7 +838,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 335
@@ -851,7 +851,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 340
@@ -864,7 +864,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 345
@@ -877,7 +877,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 350
@@ -890,7 +890,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 355
@@ -903,7 +903,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 360
@@ -915,7 +915,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 365
@@ -928,7 +928,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 370
@@ -941,7 +941,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 375
@@ -953,7 +953,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 380
@@ -965,7 +965,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 385
@@ -978,7 +978,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 390
@@ -991,7 +991,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 395
@@ -1004,7 +1004,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 400
@@ -1017,7 +1017,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 405
@@ -1029,7 +1029,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 410
@@ -1042,7 +1042,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 415
@@ -1055,7 +1055,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 420
@@ -1068,7 +1068,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 425
@@ -1080,7 +1080,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 430
@@ -1092,7 +1092,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 435
@@ -1105,7 +1105,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 440
@@ -1118,7 +1118,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 445
@@ -1131,7 +1131,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 450
@@ -1144,7 +1144,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 455
@@ -1157,7 +1157,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 460
@@ -1170,7 +1170,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 465
@@ -1182,7 +1182,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 470
@@ -1212,7 +1212,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 485
@@ -1225,7 +1225,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 490
@@ -1246,7 +1246,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 500
@@ -1259,7 +1259,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 505
@@ -1272,7 +1272,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 510
@@ -1285,7 +1285,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 515
@@ -1298,7 +1298,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 520
@@ -1307,11 +1307,11 @@
             "type": "string",
             "title": "Full Username OIDC Mapping/AD Attribute",
             "default": "name",
-            "description": "Local DS to OIDC Mapping for Full Username (for example, freddy@twocanoes.com) Default value: “unique_name”. map_username should be set to an OIDC claim for full username.",
+            "description": "Local DS to OIDC Mapping for Full Username (for example, freddy@triosoftinc.com) Default value: “unique_name”. map_username should be set to an OIDC claim for full username.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 525
@@ -1323,7 +1323,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 530
@@ -1336,7 +1336,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 535
@@ -1349,7 +1349,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 540
@@ -1362,7 +1362,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 545
@@ -1478,7 +1478,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://twocanoes.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
                 }
             ],
             "property_order": 575

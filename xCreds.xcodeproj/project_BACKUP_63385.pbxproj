@@ -1992,7 +1992,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = headers;
 				INFOPLIST_FILE = XCreds/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2022 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2022 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2038,7 +2038,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = headers;
 				INFOPLIST_FILE = XCreds/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2022 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2022 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2149,7 +2149,7 @@
 		};
 		76477E022C626B5D00F01D56 /* XCRemoteSwiftPackageReference "OIDCLite" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twocanoes/OIDCLite.git";
+			repositoryURL = "https://github.com/triosoftinc/OIDCLite.git";
 			requirement = {
 				branch = main;
 				kind = branch;

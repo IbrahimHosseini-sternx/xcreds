@@ -22,7 +22,7 @@
 			<key>clientID</key>
 			<string>0oae3u4ktuUuqSAcJ5d7</string>
 			<key>discoveryURL</key>
-			<string>https://twocanoes.okta.com/.well-known/openid-configuration</string>
+			<string>https://triosoftinc.okta.com/.well-known/openid-configuration</string>
 			<key>redirectURI</key>
 			<string>https://127.0.0.1/xcreds</string>
 			<key>aliasName</key>
@@ -50,7 +50,7 @@
 	<key>PayloadIdentifier</key>
 	<string>com.github.erikberglund.ProfileCreatorAF7B74FE-BF9D-4789-9E78-519C49324120</string>
 	<key>PayloadOrganization</key>
-	<string>twocanoes</string>
+	<string>triosoftinc</string>
 	<key>PayloadScope</key>
 	<string>System</string>
 	<key>PayloadType</key>

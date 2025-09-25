@@ -8,7 +8,7 @@
 			<key>hideExpiration</key>
 			<true/>
 			<key>ADDomain</key>
-			<string>twocanoes.com</string>
+			<string>triosoftinc.com</string>
 			<key>CreateAdminIfGroupMember</key>
 			<array>
 				<string>93392af1-8e10-4691-9702-a4d5e7f7c781</string>
@@ -59,7 +59,7 @@
 	<key>PayloadIdentifier</key>
 	<string>com.github.erikberglund.ProfileCreat0C865A8B-0494-42F7-9108-1AAFC2C85B72</string>
 	<key>PayloadOrganization</key>
-	<string>twocanoes</string>
+	<string>triosoftinc</string>
 	<key>PayloadScope</key>
 	<string>System</string>
 	<key>PayloadType</key>

@@ -312,7 +312,7 @@ public class SecretKeeper {
     private var tag = Data()
     private var secretsFolderURL:URL
     private var secretsFileURL:URL
-    public init(label: String = "SecretKeeper", tag: String = "SecretKeeper", secretsFolderURL: URL = URL(fileURLWithPath: "/usr/local/var/twocanoes")) throws {
+    public init(label: String = "SecretKeeper", tag: String = "SecretKeeper", secretsFolderURL: URL = URL(fileURLWithPath: "/usr/local/var/triosoftinc")) throws {
         self.label = label
         self.secretsFolderURL = secretsFolderURL
         self.secretsFileURL = secretsFolderURL.appending(path: "secrets.bin")

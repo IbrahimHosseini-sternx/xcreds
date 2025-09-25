@@ -26,7 +26,7 @@
 			<key>redirectURI</key>
 			<string>https://127.0.0.1/xcreds</string>
 			<key>ADDomain</key>
-			<string>twocanoes.com</string>
+			<string>triosoftinc.com</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
@@ -36,7 +36,7 @@
 	<key>PayloadIdentifier</key>
 	<string>com.github.erikberglund.ProfileCreatorAF7B74FE-BF9D-4789-9E78-519C49324120</string>
 	<key>PayloadOrganization</key>
-	<string>twocanoes</string>
+	<string>triosoftinc</string>
 	<key>PayloadScope</key>
 	<string>System</string>
 	<key>PayloadType</key>

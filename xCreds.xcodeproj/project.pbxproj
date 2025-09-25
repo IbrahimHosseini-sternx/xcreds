@@ -1805,7 +1805,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -1842,7 +1842,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "AUTOFILL_TARGET=1";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSBackgroundOnly = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -1880,7 +1880,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "XCreds AutoFill Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "XCreds AutoFill Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1914,7 +1914,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "XCreds AutoFill Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "XCreds AutoFill Extension";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1979,7 +1979,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = headers;
 				INFOPLIST_FILE = XCredsLoginPlugin/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -2016,7 +2016,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = headers;
 				INFOPLIST_FILE = XCredsLoginPlugin/Info.plist;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
@@ -2079,7 +2079,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = xcredstap;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2113,7 +2113,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = xcredstap;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2148,7 +2148,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "XCreds-Login-Overlay-Info.plist";
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -2185,7 +2185,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "XCreds-Login-Overlay-Info.plist";
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -2257,7 +2257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 5.4;
@@ -2317,7 +2317,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 5.4;
@@ -2350,7 +2350,7 @@
 				HEADER_SEARCH_PATHS = headers;
 				INFOPLIST_FILE = XCreds/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -2394,7 +2394,7 @@
 				HEADER_SEARCH_PATHS = headers;
 				INFOPLIST_FILE = XCreds/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 Twocanoes Software, Inc";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -2515,7 +2515,7 @@
 		};
 		76477E022C626B5D00F01D56 /* XCRemoteSwiftPackageReference "OIDCLite" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twocanoes/OIDCLite.git";
+			repositoryURL = "https://github.com/triosoftinc/OIDCLite.git";
 			requirement = {
 				branch = develop;
 				kind = branch;

@@ -8,10 +8,10 @@
 			<key>hideExpiration</key>
 			<true/>
 			<key>ADDomain</key>
-			<string>twocanoes.com</string>
+			<string>triosoftinc.com</string>
 			<key>AdditionalADDomains</key>
 			<array>
-				<string>paddle.twocanoes.com</string>
+				<string>paddle.triosoftinc.com</string>
 			</array>
 			<key>PayloadDescription</key>
 			<string>Configures XCreds configuration preferences</string>
@@ -42,7 +42,7 @@
 	<key>PayloadIdentifier</key>
 	<string>com.github.erikberglund.ProfileCreat0C865A8B-0494-42F7-9108-1AAFC2C85B72</string>
 	<key>PayloadOrganization</key>
-	<string>twocanoes</string>
+	<string>triosoftinc</string>
 	<key>PayloadScope</key>
 	<string>System</string>
 	<key>PayloadType</key>

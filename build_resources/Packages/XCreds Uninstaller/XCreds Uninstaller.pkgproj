@@ -1028,7 +1028,7 @@
 							<key>LANGUAGE</key>
 							<string>English</string>
 							<key>VALUE</key>
-							<string>Winclone 6 Requires OS X 10.11 or greater.  Please send an email to support@twocanoes.com for help.</string>
+							<string>Winclone 6 Requires OS X 10.11 or greater.  Please send an email to support@triosoftinc.com for help.</string>
 						</dict>
 					</array>
 					<key>NAME</key>
@@ -1056,7 +1056,7 @@
 			<key>CERTIFICATE</key>
 			<dict>
 				<key>NAME</key>
-				<string>Developer ID Installer: Twocanoes Software, Inc. (UXP6YEHSPW)</string>
+				<string>Developer ID Installer: triosoftinc Software, Inc. (UXP6YEHSPW)</string>
 				<key>PATH</key>
 				<string>/Users/tperfitt/Library/Keychains/login.keychain</string>
 			</dict>

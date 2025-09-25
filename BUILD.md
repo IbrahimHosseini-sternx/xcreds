@@ -1,6 +1,6 @@
 # Building XCreds
 
-git clone https://github.com/twocanoes/xcreds.git
+git clone https://github.com/triosoftinc/xcreds.git
 cd xcreds
 carthage update
 xcodebuild

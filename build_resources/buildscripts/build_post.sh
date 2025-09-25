@@ -19,8 +19,8 @@ source ${this_dir}/../../../build/github_creds.sh
 #echo "Uploading ${prebeta_filename}"
 if [ -f "${prebeta_filename}" ] &&  [ -n "${upload}" ]; then
 
-#	curl --progress-bar -X POST "https://${bitbucket_username}:${bitbucket_password}@api.bitbucket.org/2.0/repositories/twocanoes/xcreds/downloads" --form files=@"${prebeta_filename}" > /tmp/curl.log
-	owner="twocanoes"
+#	curl --progress-bar -X POST "https://${bitbucket_username}:${bitbucket_password}@api.bitbucket.org/2.0/repositories/triosoftinc/xcreds/downloads" --form files=@"${prebeta_filename}" > /tmp/curl.log
+	owner="triosoftinc"
 	GH_API="https://api.github.com"
 	repo="xcreds"
 	tag="prebeta"

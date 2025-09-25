@@ -25,7 +25,7 @@ class MainLoginWindowController: NSWindowController,NSWindowDelegate {
         window?.alphaValue=0.95
 
         timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { timer in
-            //added this because https://github.com/twocanoes/xcreds/issues/272
+            //added this because https://github.com/triosoftinc/xcreds/issues/272
 
             if let path = DefaultsOverride.standardOverride.string(forKey: PrefKeys.hideIfPathExists.rawValue), FileManager.default.fileExists(atPath:path ) {
 
