@@ -13,7 +13,7 @@ struct Creds {
     public var refreshToken: String?
     public var jsonDict: [String:Any]?
 
-    init(password:String?, tokens:OIDCLite.TokenResponse) {
+    init(password:String?, tokens:OIDCLiteTokenResponse) {
 
         self.accessToken=tokens.accessToken
         self.idToken=tokens.idToken

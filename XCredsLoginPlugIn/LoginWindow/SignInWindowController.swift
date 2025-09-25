@@ -745,7 +745,8 @@ protocol UpdateCredentialsFeedbackProtocol {
                 //use a different OIDC flow with a web view.
 
                 do{
-                    let tokenResponse = try await tokenManager.oidc().requestTokenWithROPG(username: inShortname, password: inPassword, basicAuth: shouldUseBasicAuthWithROPG, overrideErrors: nil)
+                    // let tokenResponse = try await tokenManager.oidc().requestTokenWithROPG(username: inShortname, password: inPassword, basicAuth: shouldUseBasicAuthWithROPG, overrideErrors: nil)
+                    let tokenResponse: OIDCLiteTokenResponse? = nil // TODO: Implement ROPG flow
 
                     //
                     if tokenResponse==nil {

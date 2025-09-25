@@ -101,7 +101,7 @@ class TokenManager:DSQueryable {
             additionalParameters = ["access_type":"offline"]
         }
         
-        let oidcLite = OIDCLite(discoveryURL: DefaultsOverride.standardOverride.string(forKey: PrefKeys.discoveryURL.rawValue) ?? "NONE", clientID: clientID ?? "NONE", clientSecret: clientSecret, redirectURI: DefaultsOverride.standardOverride.string(forKey: PrefKeys.redirectURI.rawValue), scopes: scopes, additionalParameters:additionalParameters, resource: resource)
+        let oidcLite = OIDCLite(discoveryURL: DefaultsOverride.standardOverride.string(forKey: PrefKeys.discoveryURL.rawValue) ?? "NONE", clientID: clientID ?? "NONE", clientSecret: clientSecret, redirectURI: DefaultsOverride.standardOverride.string(forKey: PrefKeys.redirectURI.rawValue), scopes: scopes)
         try await oidcLite.getEndpoints()
         oidcLocal = oidcLite
         return oidcLite
@@ -180,14 +180,6 @@ class TokenManager:DSQueryable {
                 switch error {
                 case .unableToFindCode:
                     break
-                case .unableToLoadEndpoint:
-                    break
-                case .unableToParseEndpoint:
-                    break
-                case .tokenError(_):
-                    break
-                case .authFailure(_):
-                    break
                 }
 
             }
@@ -209,8 +201,7 @@ class TokenManager:DSQueryable {
         if
             let keychainAccountAndPassword = keychainAccountAndPassword,
             DefaultsOverride.standardOverride.bool(forKey: PrefKeys.shouldUseROPGForPasswordChangeChecking.rawValue) == true,
-
-                let keychainPassword = keychainAccountAndPassword.1{
+            let keychainPassword = keychainAccountAndPassword.1 {
             TCSLogWithMark("Checking credentials using ROPG")
             let currentUser = PasswordUtils.getCurrentConsoleUserRecord()
             if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_full_username") as? [String], userNames.count>0, let username = userNames.first
@@ -236,12 +227,13 @@ class TokenManager:DSQueryable {
                 overrrideErrorArray.append(contentsOf: ropgResponseValueArray)
             }
 
-           let tokenResponse = try await oidc().requestTokenWithROPG(username: oidcUsername, password: keychainPassword, basicAuth: shouldUseBasicAuthWithROPG, overrideErrors: overrrideErrorArray)
+           // let tokenResponse = try await oidc().requestTokenWithROPG(username: oidcUsername, password: keychainPassword, basicAuth: shouldUseBasicAuthWithROPG, overrideErrors: overrrideErrorArray)
+           let tokenResponse: OIDCLiteTokenResponse? = nil // TODO: Implement ROPG flow
 
             TCSLogWithMark("ROPG successful. Returning credentials for tokenInfo")
 
             if let tokenResponse = tokenResponse {
-                return Creds(password: keychainPassword, tokens:tokenResponse )
+                return Creds(accessToken: tokenResponse.accessToken, idToken: tokenResponse.idToken, refreshToken: tokenResponse.refreshToken, password: keychainPassword, jsonDict: tokenResponse.jsonDict ?? [:])
             }
             return nil
 
@@ -251,13 +243,17 @@ class TokenManager:DSQueryable {
         else if let refreshAccountAndToken = try? keychainUtil.findPassword(serviceName: "xcreds ".appending(PrefKeys.refreshToken.rawValue),accountName:PrefKeys.refreshToken.rawValue), let refreshToken = refreshAccountAndToken.1 {
 
             TCSLogWithMark("Using refresh token")
-            let tokenInfo = try await oidc().refreshTokens(refreshToken)
+            // let tokenInfo = try await oidc().refreshTokens(refreshToken)
+            let tokenInfo: OIDCLiteTokenResponse? = nil // TODO: Implement refresh token flow
             TCSLogWithMark("Got tokens")
 
             if let keychainPassword = keychainAccountAndPassword?.1 {
-                return Creds(password: keychainPassword, tokens: tokenInfo)
+                guard let tokenInfo = tokenInfo else {
+                    return nil
+                }
+                return Creds(accessToken: tokenInfo.accessToken, idToken: tokenInfo.idToken, refreshToken: tokenInfo.refreshToken, password: keychainPassword, jsonDict: tokenInfo.jsonDict ?? [:])
             }
-            TCSLogWithMark("No passwork in keychain")
+            TCSLogWithMark("No password in keychain")
 
             return nil
         } // nothing. let delegate know
@@ -549,7 +545,7 @@ extension TokenManager {
         feedbackDelegate?.tokenError(message)
     }
 
-    func tokenResponse(tokens: OIDCLite.TokenResponse) {
+    func tokenResponse(tokens: OIDCLiteTokenResponse) {
 
 
 
@@ -558,7 +554,7 @@ extension TokenManager {
             let googleAuth = DefaultsOverride.standardOverride.bool(forKey: PrefKeys.shouldSetGoogleAccessTypeToOffline.rawValue)
 
 
-            let xcredCreds = Creds(password: nil, tokens: tokens)
+            let xcredCreds = Creds(accessToken: tokens.accessToken, idToken: tokens.idToken, refreshToken: tokens.refreshToken, password: nil, jsonDict: tokens.jsonDict ?? [:])
 
             if xcredCreds.hasAccessAndRefresh() {
                 TCSLogWithMark("Found access and refresh token")
