@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		089B22F12AFAED280006B6BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B22F02AFAED280006B6BC /* NetworkMonitor.swift */; };
 		089B22F22AFAED810006B6BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B22F02AFAED280006B6BC /* NetworkMonitor.swift */; };
+		1FB9F5112E85237800EE7745 /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9F5102E85237800EE7745 /* icon_64x64.png */; };
+		1FB9F5122E85237800EE7745 /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9F5102E85237800EE7745 /* icon_64x64.png */; };
 		54848E8F2B47336D000DF420 /* KerbUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C4BABA2B353B4B007B2C57 /* KerbUtil.m */; };
 		54848E902B47336D000DF420 /* KerbUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C4BABA2B353B4B007B2C57 /* KerbUtil.m */; };
 		760148A92B23639D00E119A2 /* NSBundle+FindBundlePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760148A82B23639D00E119A2 /* NSBundle+FindBundlePath.swift */; };
@@ -82,7 +84,6 @@
 		76342E5A2B282653007D4F29 /* DesktopLoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76342E592B282653007D4F29 /* DesktopLoginWindowController.swift */; };
 		7639B9BA2C2281F30073F05A /* CCIDCardReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7639B9B92C2281F30073F05A /* CCIDCardReader.swift */; };
 		763AEFDF2C156E1E0059A83D /* WhitePopoverBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763AEFDE2C156E1E0059A83D /* WhitePopoverBackgroundView.swift */; };
-		763C039A2D965607000C061F /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 76833EF12D95D4B500375CA4 /* icon_64x64.png */; };
 		763DDF1A2B4F1DD4000D48CC /* GSS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763DDF192B4F1DD4000D48CC /* GSS.framework */; };
 		764297AB2D015AB800678928 /* SetupCardWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764297AA2D015AB800678928 /* SetupCardWindowController.xib */; };
 		764297AD2D015AB800678928 /* SetupCardWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764297A92D015AB800678928 /* SetupCardWindowController.swift */; };
@@ -182,7 +183,6 @@
 		7681FEC52A4C8B9000F91CD1 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7681FEC42A4C8B9000F91CD1 /* AboutWindowController.swift */; };
 		7681FEC72A4C8BC800F91CD1 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7681FEC62A4C8BC800F91CD1 /* AboutWindow.xib */; };
 		7681FEC92A4CFEA200F91CD1 /* com.twocanoes.xcreds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7681FEC82A4CFEA200F91CD1 /* com.twocanoes.xcreds.plist */; };
-		76833EF22D95D4B500375CA4 /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 76833EF12D95D4B500375CA4 /* icon_64x64.png */; };
 		7683973129A854EC003D9B9F /* NSImage+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683973029A854EC003D9B9F /* NSImage+String.swift */; };
 		7683973229A854EC003D9B9F /* NSImage+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683973029A854EC003D9B9F /* NSImage+String.swift */; };
 		768633D92AFC4908004065E5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677908428908E40004E7085 /* NetworkManager.swift */; };
@@ -443,6 +443,7 @@
 
 /* Begin PBXFileReference section */
 		089B22F02AFAED280006B6BC /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = XCredsLoginPlugIn/LoginWindow/NetworkMonitor.swift; sourceTree = SOURCE_ROOT; };
+		1FB9F5102E85237800EE7745 /* icon_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_64x64.png; sourceTree = "<group>"; };
 		760148A82B23639D00E119A2 /* NSBundle+FindBundlePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBundle+FindBundlePath.swift"; sourceTree = "<group>"; };
 		760291CB2C1166870075FBD8 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		760291E02C116E450075FBD8 /* XCreds Login Autofill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XCreds Login Autofill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -554,7 +555,6 @@
 		7681FEC42A4C8B9000F91CD1 /* AboutWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
 		7681FEC62A4C8BC800F91CD1 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
 		7681FEC82A4CFEA200F91CD1 /* com.twocanoes.xcreds.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.info; fileEncoding = 4; name = com.twocanoes.xcreds.plist; path = "Profile Manifest/com.twocanoes.xcreds.plist"; sourceTree = "<group>"; };
-		76833EF12D95D4B500375CA4 /* icon_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_64x64.png; sourceTree = "<group>"; };
 		7683973029A854EC003D9B9F /* NSImage+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+String.swift"; sourceTree = "<group>"; };
 		76873E2E2A107736001418A9 /* DefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefaultsHelper.swift; path = XCreds/DefaultsHelper.swift; sourceTree = "<group>"; };
 		76A247532C22747400859E0A /* xcredstap.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = xcredstap.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -993,7 +993,7 @@
 				760148A82B23639D00E119A2 /* NSBundle+FindBundlePath.swift */,
 				76C4BAB92B353B3F007B2C57 /* NoMAD */,
 				7614D03B2B181A5D006EAF36 /* icon_128x128.png */,
-				76833EF12D95D4B500375CA4 /* icon_64x64.png */,
+				1FB9F5102E85237800EE7745 /* icon_64x64.png */,
 				7681FEC82A4CFEA200F91CD1 /* com.twocanoes.xcreds.plist */,
 				76C63A312A22872700810C53 /* History.md */,
 				760418CC2A1331710051411B /* NomadLogin */,
@@ -1295,7 +1295,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 76EE069527FD1D00009E0F3A /* Build configuration list for PBXProject "XCreds" */;
+			buildConfigurationList = 76EE069527FD1D00009E0F3A /* Build configuration list for PBXProject "xCreds" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1353,9 +1353,9 @@
 				7659CA07298E1BB6005D1AA3 /* DefaultBackground.png in Resources */,
 				76CCF5452B12E478003F85E9 /* SelectLocalAccountWindowController.xib in Resources */,
 				7651EDED2A1451590075980B /* LocalUsersViewController.xib in Resources */,
+				1FB9F5122E85237800EE7745 /* icon_64x64.png in Resources */,
 				766184B92DCE5DB5009D5A8C /* colorline.png in Resources */,
 				766CC43829D3AED2009BC526 /* errorpage.html in Resources */,
-				76833EF22D95D4B500375CA4 /* icon_64x64.png in Resources */,
 				7614D03C2B181A5D006EAF36 /* icon_128x128.png in Resources */,
 				76BEF7E4287202090013E2A1 /* RestartX.png in Resources */,
 				76D925D32894ADB4005C3245 /* Assets.xcassets in Resources */,
@@ -1416,7 +1416,6 @@
 				76C8408A2D03BFF400E41802 /* PinSetWindowController.xib in Resources */,
 				764D812F284C06AB00B3EE54 /* defaults.plist in Resources */,
 				764297AB2D015AB800678928 /* SetupCardWindowController.xib in Resources */,
-				763C039A2D965607000C061F /* icon_64x64.png in Resources */,
 				764D8133284D14A500B3EE54 /* Credits.txt in Resources */,
 				7681FEC72A4C8BC800F91CD1 /* AboutWindow.xib in Resources */,
 				76673CD229D3CFF900452848 /* errorpage.html in Resources */,
@@ -1428,6 +1427,7 @@
 				7649056F2B6CADA9008B552F /* xcredsmenuItemWindowBackgroundImage.png in Resources */,
 				76EE06A327FD1D01009E0F3A /* MainMenu.xib in Resources */,
 				76D1756A2B23C28700E64A62 /* MainLoginWindowController.xib in Resources */,
+				1FB9F5112E85237800EE7745 /* icon_64x64.png in Resources */,
 				76EE06B227FD1E24009E0F3A /* DesktopLoginWindowController.xib in Resources */,
 				7681FEC92A4CFEA200F91CD1 /* com.twocanoes.xcreds.plist in Resources */,
 				76F0B6E02B421FC8008F7D71 /* loadpage.html in Resources */,
@@ -2458,7 +2458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76EE069527FD1D00009E0F3A /* Build configuration list for PBXProject "XCreds" */ = {
+		76EE069527FD1D00009E0F3A /* Build configuration list for PBXProject "xCreds" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76EE06A527FD1D01009E0F3A /* Debug */,
