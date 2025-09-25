@@ -2,7 +2,6 @@
 //  NetworkMonitor.swift
 //  XCredsLoginPlugin
 //
-//  Created by Carlos Hernandez on 2023-10-22.
 //
 
 import Foundation

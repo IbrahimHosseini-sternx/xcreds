@@ -2,7 +2,6 @@
 //  SecretKeeper.swift
 //  encryptor
 //
-//  Created by Timothy Perfitt on 11/19/24.
 //
 
 import Foundation

@@ -2,8 +2,6 @@
 //  ShareMounterMenu.swift
 //  NoMAD
 //
-//  Created by Joel Rennich on 8/12/17.
-//  Copyright © 2017 Orchard & Grove Inc. All rights reserved.
 //
 
 import Foundation

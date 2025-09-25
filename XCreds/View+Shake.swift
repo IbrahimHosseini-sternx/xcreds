@@ -2,7 +2,6 @@
 //  NSView+Shake.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 6/4/22.
 //
 //https://onmyway133.com/posts/how-to-shake-nsview-in-macos/
 

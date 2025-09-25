@@ -2,7 +2,6 @@
 //  UserSecretManager.swift
 //  encryptor
 //
-//  Created by Timothy Perfitt on 11/20/24.
 //
 
 import Foundation

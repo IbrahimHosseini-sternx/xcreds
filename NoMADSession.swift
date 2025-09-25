@@ -2,8 +2,6 @@
 //  ADUser.swift
 //  nomad-ad
 //
-//  Created by Joel Rennich on 9/9/17.
-//  Copyright © 2018 Orchard & Grove Inc. All rights reserved.
 //
 
 import Foundation

@@ -2,7 +2,6 @@
 //  UsernamePassword.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 1/29/25.
 //
 
 class LocalAdminCredentials:NSObject, NSSecureCoding{

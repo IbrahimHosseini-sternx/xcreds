@@ -2,8 +2,6 @@
 //  LocalCheckAndMigrate.swift
 //  JamfConnectLogin
 //
-//  Created by Joel Rennich on 2/19/19.
-//  Copyright © 2019 Jamf Inc. All rights reserved.
 //
 
 import Foundation

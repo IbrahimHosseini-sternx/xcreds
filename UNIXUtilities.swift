@@ -1,8 +1,6 @@
 //
 //  NSTaskWrapper.swift
 //
-//  Created by Joel Rennich on 3/29/16.
-//  Copyright © 2018 Orchard & Grove Inc. All rights reserved.
 //
 
 // v. 1.4.1

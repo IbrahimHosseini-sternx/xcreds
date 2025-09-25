@@ -2,7 +2,6 @@
 //  SetupCardWindowController.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 12/4/24.
 //
 
 import Cocoa

@@ -2,8 +2,6 @@
 //  NSError+EasyError.h
 //  Winclone
 //
-//  Created by Timothy Perfitt on 8/14/19.
-//  Copyright © 2019 Twocanoes Software, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

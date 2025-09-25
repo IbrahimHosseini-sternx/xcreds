@@ -2,7 +2,6 @@
 //  MainController.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 6/3/22.
 //
 
 import Cocoa

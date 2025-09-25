@@ -2,7 +2,6 @@
 //  LogShim.swift
 //  XCredsLoginPlugin
 //
-//  Created by Timothy Perfitt on 7/4/22.
 //
 
 import Foundation

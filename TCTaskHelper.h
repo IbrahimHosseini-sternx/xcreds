@@ -1,8 +1,6 @@
 //
 //  TCTaskHelper.h
 //
-//  Created by Tim Perfitt on 2/20/17.
-//  Copyright © 2017 Twocanoes Software, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -2,7 +2,6 @@
 //  DesktopLoginWindow.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 12/11/23.
 //
 
 import Cocoa

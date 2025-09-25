@@ -2,7 +2,6 @@
 //  CredentialProviderViewController.swift
 //  XCreds AutoFill Extension
 //
-//  Created by Timothy Perfitt on 6/5/24.
 //
 
 import AuthenticationServices

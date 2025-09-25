@@ -1,7 +1,6 @@
 //
 //  TCSReturnWindow.m
 //
-//  Created by Tim Perfitt on 9/6/17.
 //
 //
 

@@ -2,7 +2,6 @@
 //  Logger.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 7/5/22.
 //
 
 

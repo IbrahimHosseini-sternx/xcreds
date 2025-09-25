@@ -2,8 +2,6 @@
 //  PowerControl.swift
 //  NoMADLoginAD
 //
-//  Created by Josh Wisenbaker on 2/9/18.
-//  Copyright © 2018 NoMAD. All rights reserved.
 //
 
 import IOKit

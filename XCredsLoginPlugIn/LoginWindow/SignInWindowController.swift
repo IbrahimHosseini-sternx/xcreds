@@ -2,8 +2,6 @@
 //  SignIn.swift
 //  NoMADLogin
 //
-//  Created by Joel Rennich on 9/20/17.
-//  Copyright © 2017 Joel Rennich. All rights reserved.
 //
 
 import Cocoa

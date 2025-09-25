@@ -2,7 +2,6 @@
 //  VerifyLocalCredentialsWindowController.swift
 //  XCredsLoginPlugin
 //
-//  Created by Timothy Perfitt on 11/25/23.
 //
 
 import Cocoa

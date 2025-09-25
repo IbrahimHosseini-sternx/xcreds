@@ -1,6 +1,5 @@
 //
 //
-//  Copyright (c) 2014 Twocanoes. All rights reserved.
 //
 
 #import "TCSKeychain.h"

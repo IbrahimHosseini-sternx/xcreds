@@ -2,8 +2,6 @@
 //  DSQueryable.swift
 //  NoMADLogin-AD
 //
-//  Created by Josh Wisenbaker on 8/20/18.
-//  Copyright © 2018 Orchard & Grove. All rights reserved.
 //
 
 import OpenDirectory

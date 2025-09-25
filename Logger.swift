@@ -2,8 +2,6 @@
 //  Logger.swift
 //  NoMAD
 //
-//  Created by Joel Rennich on 9/6/16.
-//  Copyright © 2016 Orchard & Grove Inc. All rights reserved.
 //
 
 /// A singleton `Logger` instance for the app to use.

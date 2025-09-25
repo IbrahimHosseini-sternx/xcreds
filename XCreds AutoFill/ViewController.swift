@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  XCreds AutoFill
 //
-//  Created by Timothy Perfitt on 6/5/24.
 //
 
 import Cocoa

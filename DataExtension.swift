@@ -2,8 +2,6 @@
 //  DataExtension.swift
 //  NoMADLoginAD
 //
-//  Created by Josh Wisenbaker on 4/10/18.
-//  Copyright © 2018 Orchard & Grove. All rights reserved.
 //
 
 import Foundation

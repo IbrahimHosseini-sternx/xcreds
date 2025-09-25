@@ -2,7 +2,6 @@
 //  NSAlert+showAlert.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 4/15/25.
 //
 
 import Cocoa

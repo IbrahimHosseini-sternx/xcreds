@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  XCreds Login Overlay
 //
-//  Created by Timothy Perfitt on 7/16/22.
 //
 
 import Cocoa

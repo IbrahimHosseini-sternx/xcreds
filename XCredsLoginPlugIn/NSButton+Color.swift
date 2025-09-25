@@ -2,7 +2,6 @@
 //  NSButton+Color.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 1/10/25.
 //
 
 

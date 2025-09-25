@@ -2,7 +2,6 @@
 //  UIImage+String.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 2/23/23.
 //
 
 

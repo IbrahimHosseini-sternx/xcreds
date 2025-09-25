@@ -1,7 +1,6 @@
 //
 //  TokenDriver.swift
 //
-//  Created by Timothy Perfitt on 6/18/24.
 //
 
 import CryptoTokenKit

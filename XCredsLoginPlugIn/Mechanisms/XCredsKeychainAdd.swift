@@ -2,8 +2,6 @@
 //  KeychainAdd.swift
 //  NoMADLoginAD
 //
-//  Created by Joel Rennich on 1/30/18.
-//  Copyright © 2018 Orchard & Grove Inc. All rights reserved.
 //
 
 import Cocoa

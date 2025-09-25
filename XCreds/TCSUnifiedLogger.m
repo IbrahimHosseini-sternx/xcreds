@@ -1,8 +1,6 @@
 //
 //  TCSUnifiedLogger.m
 //
-//  Created by Timothy Perfitt on 8/15/19.
-//  Copyright © 2019 Twocanoes Software, Inc. All rights reserved.
 //
 
 #import "TCSUnifiedLogger.h"

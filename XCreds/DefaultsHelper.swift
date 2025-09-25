@@ -2,7 +2,6 @@
 //  DefaultsHelper.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 5/13/23.
 //
 
 import Cocoa

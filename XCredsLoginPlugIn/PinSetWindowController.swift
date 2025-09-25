@@ -2,7 +2,6 @@
 //  PinPromptWindowController.swift
 //  XCredsLoginPlugin
 //
-//  Created by Timothy Perfitt on 12/6/24.
 //
 
 import Cocoa

@@ -2,8 +2,6 @@
 //  CreateUser.swift
 //  NoMADLogin
 //
-//  Created by Joel Rennich on 9/21/17.
-//  Copyright © 2017 Joel Rennich. All rights reserved.
 //
 
 import OpenDirectory

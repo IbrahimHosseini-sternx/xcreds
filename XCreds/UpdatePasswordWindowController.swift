@@ -2,7 +2,6 @@
 //  UpdatePasswordWindowController.swift
 //  XCredsLoginPlugin
 //
-//  Created by Timothy Perfitt on 12/1/23.
 //
 
 import Cocoa

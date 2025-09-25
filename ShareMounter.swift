@@ -2,8 +2,6 @@
 //  ShareMounter.swift
 //  NoMAD
 //
-//  Created by Joel  on 8/29/16.
-//  Copyright © 2016 Orchard & Grove Inc. All rights reserved.
 //
 
 // mad props to Kyle Crawshaw
@@ -12,8 +10,6 @@
 //  ShareMounter.swift
 //  ShareMounterCLI
 //
-//  Created by Joel Rennich on 7/10/19.
-//  Copyright © 2019 Joel Rennich. All rights reserved.
 //
 
 import Foundation

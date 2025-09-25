@@ -2,8 +2,6 @@
 //  DNSResolver.h
 //  NoMAD
 //
-//  Created by Boushy, Phillip on 9/28/16.
-//  Copyright © 2016 Orchard & Grove Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

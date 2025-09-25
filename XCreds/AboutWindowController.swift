@@ -2,7 +2,6 @@
 //  AboutWindowController.swift
 //  xCreds
 //
-//  Created by Timothy Perfitt on 4/5/22.
 //
 
 import Foundation

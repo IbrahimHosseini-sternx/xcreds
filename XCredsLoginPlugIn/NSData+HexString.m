@@ -2,8 +2,6 @@
 //  NSData+HexString.m
 //  Identity Manager
 //
-//  Created by Timothy Perfitt on 12/29/19.
-//  Copyright © 2019 Twocanoes Software, Inc. All rights reserved.
 //
 
 #import "NSData+HexString.h"

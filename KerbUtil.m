@@ -2,8 +2,6 @@
 //  KerbUtil.m
 //  NoMAD
 //
-//  Created by Joel Rennich on 4/26/16.
-//  Copyright © 2016 Orchard & Grove Inc. All rights reserved.
 //
 
 #import "KerbUtil.h"

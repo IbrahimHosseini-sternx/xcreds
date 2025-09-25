@@ -2,8 +2,6 @@
 //  NoLoMechanism.swift
 //  NoLo
 //
-//  Created by Joel Rennich on 9/18/17.
-//  Copyright © 2017 Joel Rennich. All rights reserved.
 //
 
 import Security

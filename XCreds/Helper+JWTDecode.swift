@@ -2,7 +2,6 @@
 //  Helper+JWTDecode.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 10/6/22.
 //
 
 import Foundation

@@ -2,8 +2,6 @@
 //  BuiltInPIVCardReader.swift
 //  Smart Card Utility iOS
 //
-//  Created by timothy perfitt on 8/7/22.
-//  Copyright © 2022 Twocanoes Software. All rights reserved.
 //
 
 import Foundation

@@ -2,8 +2,6 @@
 //  NSData+SHA1.m
 //  TCSToken
 //
-//  Created by Timothy Perfitt on 12/29/19.
-//  Copyright © 2019 Twocanoes Software, Inc. All rights reserved.
 //
 
 #import "NSData+SHA1.h"

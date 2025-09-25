@@ -2,8 +2,6 @@
 //  KeychainUtil.swift
 //  NoMAD
 //
-//  Created by Joel Rennich on 8/7/16.
-//  Copyright © 2016 Trusource Labs. All rights reserved.
 //
 
 // class to manage all keychain interaction

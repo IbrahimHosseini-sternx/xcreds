@@ -2,7 +2,6 @@
 //  main.swift
 //  auth_mech_fixup
 //
-//  Created by Timothy Perfitt on 5/31/23.
 //
 
 import Foundation

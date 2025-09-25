@@ -2,7 +2,6 @@
 //  DefaultsOverride.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 5/21/23.
 //
 
 import Cocoa

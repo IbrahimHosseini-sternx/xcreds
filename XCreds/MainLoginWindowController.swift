@@ -2,7 +2,6 @@
 //  MainLoginWindowController.swift
 //  XCredsLoginPlugin
 //
-//  Created by Timothy Perfitt on 12/7/23.
 //
 
 import Cocoa

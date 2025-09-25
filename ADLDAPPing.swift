@@ -2,8 +2,6 @@
 //  ADLDAPPing.swift
 //  NoMAD
 //
-//  Created by Michael Lynn, Phillip Boushy on 10/8/16.
-//  Copyright © 2016 Orchard & Grove Inc. All rights reserved.
 //
 
 import Foundation

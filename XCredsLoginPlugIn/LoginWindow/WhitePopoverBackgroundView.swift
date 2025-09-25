@@ -2,7 +2,6 @@
 //  WhitePopoverBackgroundView.swift
 //  XCredsLoginPlugin
 //
-//  Created by Timothy Perfitt on 6/8/24.
 //
 
 import Cocoa

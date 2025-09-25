@@ -2,8 +2,6 @@
 //  EnableFDE.swift
 //  NoMADLoginAD
 //
-//  Created by Admin on 2/5/18.
-//  Copyright © 2018 NoMAD. All rights reserved.
 //
 
 import Cocoa

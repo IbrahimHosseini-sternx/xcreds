@@ -2,8 +2,6 @@
 //  ContextAndHintHandling.swift
 //  NoMADLoginAD
 //
-//  Created by Josh Wisenbaker on 12/18/17.
-//  Copyright © 2017 NoMAD. All rights reserved.
 //
 
 enum HintType: String,CaseIterable {

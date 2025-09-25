@@ -2,7 +2,6 @@
 //  main.swift
 //  authrights
 //
-//  Created by Timothy Perfitt on 7/11/22.
 //
 
 import ArgumentParser

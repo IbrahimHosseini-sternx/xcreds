@@ -2,7 +2,6 @@
 //  RunFileHelper.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 11/27/24.
 //
 
 import Foundation

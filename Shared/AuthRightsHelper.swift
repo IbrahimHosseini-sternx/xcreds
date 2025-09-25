@@ -2,7 +2,6 @@
 //  AuthRIghtsHelper.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 5/31/23.
 //
 
 import Foundation

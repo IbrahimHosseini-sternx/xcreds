@@ -2,7 +2,6 @@
 //  XCredsMechanismProtocol.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 12/24/23.
 //
 
 enum ErrorResult {

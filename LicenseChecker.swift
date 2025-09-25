@@ -2,7 +2,6 @@
 //  LicenseChecker.swift
 //  XCreds
 //
-//  Created by Timothy Perfitt on 3/28/23.
 //
 
 import Cocoa

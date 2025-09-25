@@ -2,7 +2,6 @@
 //  TCSLoginWindowUtilities.m
 //  XCreds
 //
-//  Created by Timothy Perfitt on 5/11/23.
 //
 #import <Foundation/Foundation.h>
 

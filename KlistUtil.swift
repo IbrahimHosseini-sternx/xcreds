@@ -2,8 +2,6 @@
 //  KlistUtil.swift
 //  NoMAD
 //
-//  Created by Joel Rennich on 7/18/16.
-//  Copyright © 2016 Orchard & Grove Inc. All rights reserved.
 //
 
 import Foundation
