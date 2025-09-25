@@ -189,7 +189,7 @@
 											<key>GID</key>
 											<integer>0</integer>
 											<key>PATH</key>
-											<string>agent/com.twocanoes.xcreds-launchagent.plist</string>
+											<string>agent/so.trio.xcreds-launchagent.plist</string>
 											<key>PATH_TYPE</key>
 											<integer>1</integer>
 											<key>PERMISSIONS</key>
@@ -472,7 +472,7 @@
 				<key>FOLLOW_SYMBOLIC_LINKS</key>
 				<false/>
 				<key>IDENTIFIER</key>
-				<string>com.twocanoes.pkg.XCredsLaunchAgent</string>
+				<string>so.trio.pkg.XCredsLaunchAgent</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>

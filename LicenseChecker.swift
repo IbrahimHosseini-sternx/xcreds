@@ -38,7 +38,7 @@ class LicenseChecker: NSObject {
             TCSLogErrorWithMark("did not get first launch date")
         }
         let check = TCSLicenseCheck()
-        let status = check.checkLicenseStatus("com.twocanoes.xcreds", withExtension: "")
+        let status = check.checkLicenseStatus("so.trio.xcreds", withExtension: "")
         let dateFormatter = ISO8601DateFormatter()
         dateFormatter.formatOptions = [.withFractionalSeconds, .withFullDate]
 

@@ -10,7 +10,7 @@ import AppKit
 @main
 class App {
     static func main() {
-        if let ud = UserDefaults(suiteName: "com.twocanoes.xcreds") {
+        if let ud = UserDefaults(suiteName: "so.trio.xcreds") {
             var delay = ud.integer(forKey: "overlayDelaySecs")
             if delay<10 {
                 delay = 10
@@ -121,7 +121,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.hidesOnDeactivate=false
         window.isOpaque=false
         window.level = .modalPanel
-        if let ud = UserDefaults(suiteName: "com.twocanoes.xcreds"),  let customTextString = ud.value(forKey: "cloudLoginText") {
+        if let ud = UserDefaults(suiteName: "so.trio.xcreds"),  let customTextString = ud.value(forKey: "cloudLoginText") {
             cloudLoginTextField.stringValue = customTextString as! String
             cloudLoginTextField.sizeToFit()
 
@@ -130,7 +130,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
         TCSLogWithMark("starting overlay")
-        UserDefaults.standard.addSuite(named: "com.twocanoes.xcreds")
+        UserDefaults.standard.addSuite(named: "so.trio.xcreds")
 
         do {
 
@@ -165,7 +165,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return
         }
 
-        if let ud = UserDefaults(suiteName: "com.twocanoes.xcreds"){
+        if let ud = UserDefaults(suiteName: "so.trio.xcreds"){
 
             if ud.bool(forKey: "shouldShowCloudLoginByDefault") == true,
                returnFileExistedOnStart == false,
