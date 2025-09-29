@@ -1,7 +1,7 @@
 #!/bin/sh 
 set -e
 #export SKIP_NOTARY=1
-PRODUCT_NAME="XCreds"
+PRODUCT_NAME="trioX"
 SCRIPT_FOLDER="$(dirname $0)"
 PROJECT_FOLDER="../../"
 SRC_PATH="../../"

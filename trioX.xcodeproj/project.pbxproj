@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		089B22F12AFAED280006B6BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B22F02AFAED280006B6BC /* NetworkMonitor.swift */; };
 		089B22F22AFAED810006B6BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B22F02AFAED280006B6BC /* NetworkMonitor.swift */; };
+		0F4EBA542E8A87E900A4ECF6 /* LoginProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4EBA532E8A87E900A4ECF6 /* LoginProgressWindowController.xib */; };
+		0F4EBA552E8A87E900A4ECF6 /* LoginProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4EBA532E8A87E900A4ECF6 /* LoginProgressWindowController.xib */; };
 		1FB9F5112E85237800EE7745 /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9F5102E85237800EE7745 /* icon_64x64.png */; };
 		1FB9F5122E85237800EE7745 /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9F5102E85237800EE7745 /* icon_64x64.png */; };
 		54848E8F2B47336D000DF420 /* KerbUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C4BABA2B353B4B007B2C57 /* KerbUtil.m */; };
@@ -196,8 +198,8 @@
 		76A8A4E32A0DF7C700AA6054 /* NSTaskWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F528724FA80013E2A1 /* NSTaskWrapper.swift */; };
 		76AB89E12A12FAF900529D90 /* OIDCLite in Frameworks */ = {isa = PBXBuildFile; productRef = 76AB89E02A12FAF900529D90 /* OIDCLite */; };
 		76AB89E32A12FB4900529D90 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 76AB89E22A12FB4900529D90 /* ArgumentParser */; };
-		76B040A428EFC788002A289B /* Helper+JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B040A328EFC788002A289B /* Helper+JWTDecode.swift */; };
-		76B040A528EFC788002A289B /* Helper+JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B040A328EFC788002A289B /* Helper+JWTDecode.swift */; };
+		76B040A428EFC788002A289B /* Helper+URLDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B040A328EFC788002A289B /* Helper+URLDecode.swift */; };
+		76B040A528EFC788002A289B /* Helper+URLDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B040A328EFC788002A289B /* Helper+URLDecode.swift */; };
 		76B631E72D31CF7900111FCB /* NSButton+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B631E62D31CF7900111FCB /* NSButton+Color.swift */; };
 		76B631E82D31CF7900111FCB /* NSButton+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B631E62D31CF7900111FCB /* NSButton+Color.swift */; };
 		76B83A662C75711E00709C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EE069F27FD1D01009E0F3A /* Assets.xcassets */; };
@@ -433,7 +435,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		089B22F02AFAED280006B6BC /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = XCredsLoginPlugIn/LoginWindow/NetworkMonitor.swift; sourceTree = SOURCE_ROOT; };
+		089B22F02AFAED280006B6BC /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = trioXLoginPlugIn/LoginWindow/NetworkMonitor.swift; sourceTree = SOURCE_ROOT; };
+		0F4EBA532E8A87E900A4ECF6 /* LoginProgressWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginProgressWindowController.xib; sourceTree = "<group>"; };
 		1FB9F5102E85237800EE7745 /* icon_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_64x64.png; sourceTree = "<group>"; };
 		760148A82B23639D00E119A2 /* NSBundle+FindBundlePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBundle+FindBundlePath.swift"; sourceTree = "<group>"; };
 		760291CB2C1166870075FBD8 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
@@ -460,8 +463,7 @@
 		7611CEBF288B75140063A644 /* XCredsCreateUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsCreateUser.swift; sourceTree = "<group>"; };
 		7611CEC1288B96760063A644 /* XCredsEnableFDE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsEnableFDE.swift; sourceTree = "<group>"; };
 		7613FDF6289E114F00340CCD /* loadpage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = loadpage.html; sourceTree = "<group>"; };
-		7614D03B2B181A5D006EAF36 /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_128x128.png; path = XCreds/Assets.xcassets/AppIcon.appiconset/icon_128x128.png; sourceTree = "<group>"; };
-		761B486728A34CC900C6A02B /* LoginProgressWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginProgressWindowController.xib; path = XCredsLoginPlugIn/LoginProgressWindowController.xib; sourceTree = SOURCE_ROOT; };
+		7614D03B2B181A5D006EAF36 /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_128x128.png; path = trioX/Assets.xcassets/AppIcon.appiconset/icon_128x128.png; sourceTree = "<group>"; };
 		761B486B28A3575000C6A02B /* XCredsLoginDone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsLoginDone.swift; sourceTree = "<group>"; };
 		7631935D287D22C700D36BF7 /* authrights */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = authrights; sourceTree = BUILT_PRODUCTS_DIR; };
 		7631935F287D22C700D36BF7 /* authrights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authrights.swift; sourceTree = "<group>"; };
@@ -481,7 +483,7 @@
 		76456CDF2DC99BFA00AEA261 /* NSError+EasyError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+EasyError.h"; sourceTree = "<group>"; };
 		76456CE02DC99BFA00AEA261 /* NSError+EasyError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+EasyError.m"; sourceTree = "<group>"; };
 		7649056E2B6CADA9008B552F /* xcredsmenuItemWindowBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xcredsmenuItemWindowBackgroundImage.png; sourceTree = "<group>"; };
-		7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsernamePassword.swift; path = XCreds/UsernamePassword.swift; sourceTree = "<group>"; };
+		7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsernamePassword.swift; path = trioX/UsernamePassword.swift; sourceTree = "<group>"; };
 		764D8124284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyLocalPasswordWindowController.swift; sourceTree = "<group>"; };
 		764D8125284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyLocalPasswordWindowController.xib; sourceTree = "<group>"; };
 		764D8128284BCAB100B3EE54 /* Window+Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Window+Shake.swift"; sourceTree = "<group>"; };
@@ -509,10 +511,10 @@
 		766184B72DCE5DB5009D5A8C /* colorline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorline.png; sourceTree = "<group>"; };
 		76634F362D05FFA3000A63E8 /* LogOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnly.swift; sourceTree = "<group>"; };
 		766355BD2870CA6A002E3867 /* XCredsLoginPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCredsLoginPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		766355C12870CB6F002E3867 /* XCredsLoginPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XCredsLoginPlugin.h; path = XCredsLoginPlugIn/XCredsLoginPlugin.h; sourceTree = SOURCE_ROOT; };
-		766355C22870CB6F002E3867 /* XCredsLoginPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XCredsLoginPlugin.m; path = XCredsLoginPlugIn/XCredsLoginPlugin.m; sourceTree = SOURCE_ROOT; };
+		766355C12870CB6F002E3867 /* XCredsLoginPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XCredsLoginPlugin.h; path = trioXLoginPlugIn/XCredsLoginPlugin.h; sourceTree = SOURCE_ROOT; };
+		766355C22870CB6F002E3867 /* XCredsLoginPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XCredsLoginPlugin.m; path = trioXLoginPlugIn/XCredsLoginPlugin.m; sourceTree = SOURCE_ROOT; };
 		766355C42870CCC3002E3867 /* XCredsLoginPlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCredsLoginPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
-		766355DA287132E9002E3867 /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWebViewController.swift; path = XCredsLoginPlugIn/LoginWindow/LoginWebViewController.swift; sourceTree = SOURCE_ROOT; };
+		766355DA287132E9002E3867 /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWebViewController.swift; path = trioXLoginPlugIn/LoginWindow/LoginWebViewController.swift; sourceTree = SOURCE_ROOT; };
 		766355E128713C47002E3867 /* LoginWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWindow.swift; sourceTree = "<group>"; };
 		766355E4287148C1002E3867 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tokens.swift; path = Shared/Tokens.swift; sourceTree = SOURCE_ROOT; };
 		76673CD429D3D5F500452848 /* LicenseChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseChecker.swift; sourceTree = "<group>"; };
@@ -530,7 +532,7 @@
 		767116AE284AB5D900CCD6FF /* XCreds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCreds-Bridging-Header.h"; sourceTree = "<group>"; };
 		767116B0284B021500CCD6FF /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		767116B2284B045800CCD6FF /* KeychainUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainUtil.swift; sourceTree = "<group>"; };
-		7675444428918CD100613840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = XCredsLoginPlugin/Info.plist; sourceTree = "<group>"; };
+		7675444428918CD100613840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = trioXLoginPlugIn/Info.plist; sourceTree = "<group>"; };
 		7677908328908E40004E7085 /* WifiWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiWindowController.swift; sourceTree = "<group>"; };
 		7677908428908E40004E7085 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		7677908528908E40004E7085 /* WifiWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WifiWindowController.xib; sourceTree = "<group>"; };
@@ -547,7 +549,7 @@
 		7681FEC62A4C8BC800F91CD1 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
 		7681FEC82A4CFEA200F91CD1 /* so.trio.xcreds.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.info; fileEncoding = 4; name = so.trio.xcreds.plist; path = "Profile Manifest/so.trio.xcreds.plist"; sourceTree = "<group>"; };
 		7683973029A854EC003D9B9F /* NSImage+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+String.swift"; sourceTree = "<group>"; };
-		76873E2E2A107736001418A9 /* DefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefaultsHelper.swift; path = XCreds/DefaultsHelper.swift; sourceTree = "<group>"; };
+		76873E2E2A107736001418A9 /* DefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefaultsHelper.swift; path = trioX/DefaultsHelper.swift; sourceTree = "<group>"; };
 		76A247532C22747400859E0A /* xcredstap.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = xcredstap.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A247542C22747400859E0A /* CryptoTokenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoTokenKit.framework; path = System/Library/Frameworks/CryptoTokenKit.framework; sourceTree = SDKROOT; };
 		76A247572C22747400859E0A /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
@@ -555,7 +557,7 @@
 		76A2475B2C22747400859E0A /* TokenSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenSession.swift; sourceTree = "<group>"; };
 		76A2475D2C22747400859E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76A2475E2C22747400859E0A /* tap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tap.entitlements; sourceTree = "<group>"; };
-		76B040A328EFC788002A289B /* Helper+JWTDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Helper+JWTDecode.swift"; path = "XCreds/Helper+JWTDecode.swift"; sourceTree = "<group>"; };
+		76B040A328EFC788002A289B /* Helper+URLDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+URLDecode.swift"; sourceTree = "<group>"; };
 		76B631E62D31CF7900111FCB /* NSButton+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+Color.swift"; sourceTree = "<group>"; };
 		76B882A829CCFD7900BB8186 /* TCSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSKeychain.m; sourceTree = "<group>"; };
 		76B882A929CCFD7A00BB8186 /* TCSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSKeychain.h; sourceTree = "<group>"; };
@@ -576,7 +578,7 @@
 		76BEF7F228724F120013E2A1 /* XCredsPowerControlMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsPowerControlMechanism.swift; sourceTree = "<group>"; };
 		76BEF7F528724FA80013E2A1 /* NSTaskWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTaskWrapper.swift; sourceTree = "<group>"; };
 		76BEF7F72872504C0013E2A1 /* ContextAndHintHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextAndHintHandling.swift; sourceTree = "<group>"; };
-		76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizationDBManager.swift; path = XCredsLoginPlugIn/LoginWindow/AuthorizationDBManager.swift; sourceTree = SOURCE_ROOT; };
+		76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizationDBManager.swift; path = trioXLoginPlugIn/LoginWindow/AuthorizationDBManager.swift; sourceTree = SOURCE_ROOT; };
 		76BEF7FE2872A3030013E2A1 /* loginwindow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginwindow@2x.png"; sourceTree = "<group>"; };
 		76BEF7FF2872A3030013E2A1 /* loginwindow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginwindow.png; sourceTree = "<group>"; };
 		76C084092A9A2635008039FA /* ControlsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlsViewController.xib; sourceTree = "<group>"; };
@@ -609,13 +611,13 @@
 		76DC0A7628837028007C42B2 /* returnArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = returnArrow.png; sourceTree = "<group>"; };
 		76DC0A78288370BA007C42B2 /* so.trio.xcreds-overlay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "so.trio.xcreds-overlay.plist"; sourceTree = "<group>"; };
 		76DC0A7D288376BC007C42B2 /* TCSXCredsLoginOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCSXCredsLoginOverlayWindow.swift; sourceTree = "<group>"; };
-		76DC0A7F2883785A007C42B2 /* XCreds-Login-Overlay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "XCreds-Login-Overlay-Info.plist"; sourceTree = SOURCE_ROOT; };
+		76DC0A7F2883785A007C42B2 /* trioX-Login-Overlay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trioX-Login-Overlay-Info.plist"; sourceTree = SOURCE_ROOT; };
 		76DD6D122859978F00A700ED /* OIDCLite */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OIDCLite; path = ../OIDCLite; sourceTree = "<group>"; };
 		76E466642B1A4C16006529B6 /* UpdatePasswordWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordWindowController.swift; sourceTree = "<group>"; };
 		76E466652B1A4C16006529B6 /* UpdatePasswordWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdatePasswordWindowController.xib; sourceTree = "<group>"; };
 		76E74DCE2B3902F0004C6429 /* XCredsMechanismProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCredsMechanismProtocol.swift; sourceTree = "<group>"; };
-		76E9CE6E2A0DC6E30060220C /* TCSLoginWindowUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TCSLoginWindowUtilities.h; path = XCreds/TCSLoginWindowUtilities.h; sourceTree = "<group>"; };
-		76E9CE6F2A0DC6E30060220C /* TCSLoginWindowUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TCSLoginWindowUtilities.m; path = XCreds/TCSLoginWindowUtilities.m; sourceTree = "<group>"; };
+		76E9CE6E2A0DC6E30060220C /* TCSLoginWindowUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TCSLoginWindowUtilities.h; path = trioX/TCSLoginWindowUtilities.h; sourceTree = "<group>"; };
+		76E9CE6F2A0DC6E30060220C /* TCSLoginWindowUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TCSLoginWindowUtilities.m; path = trioX/TCSLoginWindowUtilities.m; sourceTree = "<group>"; };
 		76EAAFD62CEFE22000A5FEE3 /* XCredsUserSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCredsUserSetup.swift; sourceTree = "<group>"; };
 		76EAAFD82CEFED3800A5FEE3 /* SecretKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeeper.swift; sourceTree = "<group>"; };
 		76EAAFD92CEFED3800A5FEE3 /* UserSecretManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSecretManager.swift; sourceTree = "<group>"; };
@@ -635,8 +637,8 @@
 		76EE06C127FD1F50009E0F3A /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		76EECCFF2875135900483C66 /* LoggerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerHelper.swift; sourceTree = "<group>"; };
 		76EECD0328753C7F00483C66 /* String+Base64URLEncoded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Base64URLEncoded.swift"; sourceTree = "<group>"; };
-		76FDC5D42B22D47A0035D61E /* MainLoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainLoginWindowController.swift; path = XCreds/MainLoginWindowController.swift; sourceTree = SOURCE_ROOT; };
-		76FDC5D52B22D47A0035D61E /* MainLoginWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainLoginWindowController.xib; path = XCredsLoginPlugIn/LoginWindow/MainLoginWindowController.xib; sourceTree = SOURCE_ROOT; };
+		76FDC5D42B22D47A0035D61E /* MainLoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainLoginWindowController.swift; path = trioX/MainLoginWindowController.swift; sourceTree = SOURCE_ROOT; };
+		76FDC5D52B22D47A0035D61E /* MainLoginWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainLoginWindowController.xib; path = trioXLoginPlugIn/LoginWindow/MainLoginWindowController.xib; sourceTree = SOURCE_ROOT; };
 		76FDC5D82B235A4F0035D61E /* StatusMenuWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuWindowController.swift; sourceTree = SOURCE_ROOT; };
 		76FDC5D92B235A4F0035D61E /* StatusMenuWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusMenuWindowController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -780,38 +782,38 @@
 			path = headers;
 			sourceTree = "<group>";
 		};
-		766355C72870D1B5002E3867 /* trioXLogin */ = {
+		766355C72870D1B5002E3867 /* trioXLoginPlugIn */ = {
 			isa = PBXGroup;
 			children = (
-				764297A92D015AB800678928 /* SetupCardWindowController.swift */,
-				764297AA2D015AB800678928 /* SetupCardWindowController.xib */,
+				76BEF7F72872504C0013E2A1 /* ContextAndHintHandling.swift */,
+				766CC43729D3AED2009BC526 /* errorpage.html */,
+				7613FDF6289E114F00340CCD /* loadpage.html */,
+				76BEF7F028724E520013E2A1 /* LoginWindow */,
+				7632E3A02873497C00E37923 /* LogShim.swift */,
+				76BEF7EF28724E280013E2A1 /* Mechanisms */,
+				7677908428908E40004E7085 /* NetworkManager.swift */,
+				76B631E62D31CF7900111FCB /* NSButton+Color.swift */,
 				76B882B129CCFDBA00BB8186 /* NSData+HexString.h */,
 				76B882B029CCFDBA00BB8186 /* NSData+HexString.m */,
 				76B882AD29CCFDAE00BB8186 /* NSData+SHA1.h */,
 				76B882AC29CCFDAE00BB8186 /* NSData+SHA1.m */,
-				76B882A929CCFD7A00BB8186 /* TCSKeychain.h */,
-				76B882A829CCFD7900BB8186 /* TCSKeychain.m */,
-				7613FDF6289E114F00340CCD /* loadpage.html */,
-				766CC43729D3AED2009BC526 /* errorpage.html */,
-				7677908428908E40004E7085 /* NetworkManager.swift */,
-				7677908328908E40004E7085 /* WifiWindowController.swift */,
-				7677908528908E40004E7085 /* WifiWindowController.xib */,
-				76EECD0328753C7F00483C66 /* String+Base64URLEncoded.swift */,
-				7632E3A02873497C00E37923 /* LogShim.swift */,
-				76BEF7F72872504C0013E2A1 /* ContextAndHintHandling.swift */,
-				76B631E62D31CF7900111FCB /* NSButton+Color.swift */,
 				76BEF7F528724FA80013E2A1 /* NSTaskWrapper.swift */,
-				766355C12870CB6F002E3867 /* XCredsLoginPlugin.h */,
-				764446FC2CF80CD800E6289E /* StateFileHelper.swift */,
-				766355C22870CB6F002E3867 /* XCredsLoginPlugin.m */,
-				76BEF7F028724E520013E2A1 /* LoginWindow */,
-				76BEF7EF28724E280013E2A1 /* Mechanisms */,
-				76C840862D03BFF400E41802 /* PinSetWindowController.swift */,
-				76C840872D03BFF400E41802 /* PinSetWindowController.xib */,
 				76C661D62D3974910005F2CD /* PinPromptWindowController.swift */,
 				76C661D72D3974910005F2CD /* PinPromptWindowController.xib */,
+				76C840862D03BFF400E41802 /* PinSetWindowController.swift */,
+				76C840872D03BFF400E41802 /* PinSetWindowController.xib */,
+				764297A92D015AB800678928 /* SetupCardWindowController.swift */,
+				764297AA2D015AB800678928 /* SetupCardWindowController.xib */,
+				764446FC2CF80CD800E6289E /* StateFileHelper.swift */,
+				76EECD0328753C7F00483C66 /* String+Base64URLEncoded.swift */,
+				76B882A929CCFD7A00BB8186 /* TCSKeychain.h */,
+				76B882A829CCFD7900BB8186 /* TCSKeychain.m */,
+				7677908328908E40004E7085 /* WifiWindowController.swift */,
+				7677908528908E40004E7085 /* WifiWindowController.xib */,
+				766355C12870CB6F002E3867 /* XCredsLoginPlugin.h */,
+				766355C22870CB6F002E3867 /* XCredsLoginPlugin.m */,
 			);
-			path = trioXLogin;
+			path = trioXLoginPlugIn;
 			sourceTree = "<group>";
 		};
 		76786F542A27C36A00AA8DB9 /* auth_mech_fixup */ = {
@@ -865,7 +867,7 @@
 				766355DA287132E9002E3867 /* LoginWebViewController.swift */,
 				760418CF2A1332210051411B /* SignInWindowController.swift */,
 				089B22F02AFAED280006B6BC /* NetworkMonitor.swift */,
-				761B486728A34CC900C6A02B /* LoginProgressWindowController.xib */,
+				0F4EBA532E8A87E900A4ECF6 /* LoginProgressWindowController.xib */,
 				76FDC5D52B22D47A0035D61E /* MainLoginWindowController.xib */,
 				76CB907C288112AF00C70D0C /* xcreds_login.sh */,
 				76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */,
@@ -920,7 +922,7 @@
 			isa = PBXGroup;
 			children = (
 				766F4C4A2883AFD90021F548 /* pleaseWaitGraphic.png */,
-				76DC0A7F2883785A007C42B2 /* XCreds-Login-Overlay-Info.plist */,
+				76DC0A7F2883785A007C42B2 /* trioX-Login-Overlay-Info.plist */,
 				76DC0A7D288376BC007C42B2 /* TCSXCredsLoginOverlayWindow.swift */,
 				76DC0A78288370BA007C42B2 /* so.trio.xcreds-overlay.plist */,
 				76DC0A7628837028007C42B2 /* returnArrow.png */,
@@ -998,10 +1000,10 @@
 				76A247562C22747400859E0A /* tap */,
 				76DD6D15285997F300A700ED /* Frameworks */,
 				76CB9076287FBEEA00C70D0C /* Helper+URLDecode.swift */,
-				76B040A328EFC788002A289B /* Helper+JWTDecode.swift */,
+				76B040A328EFC788002A289B /* Helper+URLDecode.swift */,
 				7632909B2876673500CF8857 /* DataExtension.swift */,
 				76DD6D112859978F00A700ED /* Packages */,
-				766355C72870D1B5002E3867 /* trioXLogin */,
+				766355C72870D1B5002E3867 /* trioXLoginPlugIn */,
 				76EE069C27FD1D00009E0F3A /* trioX */,
 				76BEF7D32871F36C0013E2A1 /* FakeTrue */,
 				7631935E287D22C700D36BF7 /* authrights */,
@@ -1345,6 +1347,7 @@
 				766CC43829D3AED2009BC526 /* errorpage.html in Resources */,
 				7614D03C2B181A5D006EAF36 /* icon_128x128.png in Resources */,
 				76BEF7E4287202090013E2A1 /* RestartX.png in Resources */,
+				0F4EBA552E8A87E900A4ECF6 /* LoginProgressWindowController.xib in Resources */,
 				76D925D32894ADB4005C3245 /* Assets.xcassets in Resources */,
 				76BEF8012872A3030013E2A1 /* loginwindow.png in Resources */,
 				766355D12870EBAD002E3867 /* VerifyOIDCPassword.xib in Resources */,
@@ -1407,6 +1410,7 @@
 				7681FEC72A4C8BC800F91CD1 /* AboutWindow.xib in Resources */,
 				76673CD229D3CFF900452848 /* errorpage.html in Resources */,
 				764D812D284BCC7400B3EE54 /* VerifyOIDCPassword.xib in Resources */,
+				0F4EBA542E8A87E900A4ECF6 /* LoginProgressWindowController.xib in Resources */,
 				76FDC5DB2B235A4F0035D61E /* StatusMenuWindowController.xib in Resources */,
 				76C63A322A22872700810C53 /* History.md in Resources */,
 				764D8127284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.xib in Resources */,
@@ -1507,7 +1511,7 @@
 				764297AD2D015AB800678928 /* SetupCardWindowController.swift in Sources */,
 				76BEF7F328724F120013E2A1 /* XCredsPowerControlMechanism.swift in Sources */,
 				76873E302A107736001418A9 /* DefaultsHelper.swift in Sources */,
-				76B040A528EFC788002A289B /* Helper+JWTDecode.swift in Sources */,
+				76B040A528EFC788002A289B /* Helper+URLDecode.swift in Sources */,
 				7632909D2876674100CF8857 /* DataExtension.swift in Sources */,
 				7683973229A854EC003D9B9F /* NSImage+String.swift in Sources */,
 				766C602E2D3F409D0033E274 /* XCredsAudit.swift in Sources */,
@@ -1674,7 +1678,7 @@
 				76D4726D2B43B8FB0064380C /* TCTaskWrapperWithBlocks.m in Sources */,
 				767116B1284B021500CCD6FF /* MainController.swift in Sources */,
 				7657DECC2B35061E003A23DB /* SiteManager.swift in Sources */,
-				76B040A428EFC788002A289B /* Helper+JWTDecode.swift in Sources */,
+				76B040A428EFC788002A289B /* Helper+URLDecode.swift in Sources */,
 				767116A9284AAE2B00CCD6FF /* ScheduleManager.swift in Sources */,
 				766FD60D2A1B06AC00C8F244 /* DefaultsOverride.swift in Sources */,
 				767116AC284AB4C000CCD6FF /* PasswordUtils.swift in Sources */,
