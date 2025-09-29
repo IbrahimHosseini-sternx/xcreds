@@ -32,7 +32,7 @@ class TrioXLoginDone: TrioXBaseMechanism {
 
     }
     @objc func tearDown() {
-        TCSLogWithMark("Got teardown request in XCredsLoginDone")
+        TCSLogWithMark("Got teardown request in TrioXLoginDone")
 
     }
 

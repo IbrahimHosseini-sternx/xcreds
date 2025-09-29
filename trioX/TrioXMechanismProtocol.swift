@@ -1,6 +1,6 @@
 //
-//  XCredsMechanismProtocol.swift
-//  XCreds
+// TrioXMechanismProtocol.swift
+// trioX
 //
 //
 

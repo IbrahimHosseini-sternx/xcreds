@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24128" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24128"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,7 +13,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="XCreds_Login_Overlay" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TrioX_Login_Overlay" customModuleProvider="target">
             <connections>
                 <outlet property="cloudLoginTextField" destination="MrL-Zn-3BA" id="bWY-at-65J"/>
                 <outlet property="waitWindow" destination="Ayg-7T-0us" id="GCI-xI-9sJ"/>
@@ -23,11 +23,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="XCreds Login Overlay" id="1Xt-HY-uBw">
+                <menuItem title="TrioX Login Overlay" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="XCreds Login Overlay" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="TrioX Login Overlay" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About XCreds Login Overlay" id="5kV-Vb-QxS">
+                            <menuItem title="About TrioX Login Overlay" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -41,7 +41,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide XCreds Login Overlay" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide TrioX Login Overlay" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -59,7 +59,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit XCreds Login Overlay" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit TrioX Login Overlay" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -672,7 +672,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="XCreds Login Overlay Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="TrioX Login Overlay Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -683,11 +683,11 @@
             </items>
             <point key="canvasLocation" x="200" y="121"/>
         </menu>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="ewK-Yh-gWi" customClass="TCSXCredsLoginOverlayWindow" customModule="XCreds_Login_Overlay" customModuleProvider="target">
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="ewK-Yh-gWi" customClass="TCSXTrioXLoginOverlayWindow">
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="25" y="25" width="872" height="109"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3440" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1512" height="948"/>
             <view key="contentView" id="1nr-Jh-HO9">
                 <rect key="frame" x="0.0" y="0.0" width="872" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -696,7 +696,7 @@
                         <rect key="frame" x="0.0" y="39" width="395" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MrL-Zn-3BA">
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MrL-Zn-3BA">
                                 <rect key="frame" x="43" y="6" width="88" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Cloud Login" drawsBackground="YES" id="UqT-fq-knF">
@@ -725,11 +725,11 @@
             </connections>
             <point key="canvasLocation" x="-479" y="714.5"/>
         </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Ayg-7T-0us" customClass="TCSXCredsLoginOverlayWindow" customModule="XCreds_Login_Overlay" customModuleProvider="target">
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Ayg-7T-0us" customClass="TCSTrioXLoginOverlayWindow" customModule="TrioX_Login_Overlay" customModuleProvider="target">
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="144" y="174" width="362" height="190"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3440" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1512" height="948"/>
             <view key="contentView" id="MiV-8U-Ioy">
                 <rect key="frame" x="0.0" y="0.0" width="362" height="190"/>
                 <autoresizingMask key="autoresizingMask"/>

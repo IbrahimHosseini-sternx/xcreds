@@ -1,6 +1,6 @@
 //
 //  WebView.swift
-//  xCreds
+// trioX
 //
 //
 
@@ -13,8 +13,8 @@ import OpenDirectory
 class LoginWebViewController: WebViewController, DSQueryable {
 
     let uiLog = "uiLog"
-//    var internalDelegate:XCredsMechanismProtocol?
-    var mechanismDelegate:XCredsMechanismProtocol?
+//    var internalDelegate:TrioXMechanismProtocol?
+    var mechanismDelegate:TrioXMechanismProtocol?
 //    }
     @IBOutlet weak var backgroundImageView: NSImageView!
 
@@ -108,7 +108,7 @@ class LoginWebViewController: WebViewController, DSQueryable {
 
                 alert.window.canBecomeVisibleWithoutLogin=true
 
-                let bundle = Bundle.findBundleWithName(name: "XCreds")
+                let bundle = Bundle.findBundleWithName(name: "trioX")
 
                 if let bundle = bundle {
                     TCSLogWithMark("Found bundle")

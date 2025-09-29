@@ -1,6 +1,6 @@
 //
 //  NSView+Shake.swift
-//  XCreds
+// trioX
 //
 //
 //https://onmyway133.com/posts/how-to-shake-nsview-in-macos/

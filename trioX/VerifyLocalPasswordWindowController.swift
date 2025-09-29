@@ -1,6 +1,6 @@
 //
 //  LoginPasswordWindowController.swift
-//  XCreds
+// trioX
 //
 //
 

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  XCreds Login Overlay
+// trioX Login Overlay
 //
 //
 
@@ -10,7 +10,7 @@ import AppKit
 @main
 class App {
     static func main() {
-        if let ud = UserDefaults(suiteName: "so.trio.xcreds") {
+        if let ud = UserDefaults(suiteName: "so.trio.trioX") {
             var delay = ud.integer(forKey: "overlayDelaySecs")
             if delay<10 {
                 delay = 10
@@ -69,12 +69,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             
-            TCSLogWithMark("creating return file so XCreds does not return to mac login if it is set to go to mac login window by default.")
+            TCSLogWithMark("creating return file so TrioX does not return to mac login if it is set to go to mac login window by default.")
             do {
                 try StateFileHelper().createFile(.returnType)
             }
             catch {
-                TCSLogWithMark("not create xcreds_return file:\(error)")
+                TCSLogWithMark("not create trioX_return file:\(error)")
             }
             if UserDefaults.standard.bool(forKey: "slowReboot")==true {
                sleep(30)
@@ -121,7 +121,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.hidesOnDeactivate=false
         window.isOpaque=false
         window.level = .modalPanel
-        if let ud = UserDefaults(suiteName: "so.trio.xcreds"),  let customTextString = ud.value(forKey: "cloudLoginText") {
+        if let ud = UserDefaults(suiteName: "so.trio.trioX"),  let customTextString = ud.value(forKey: "cloudLoginText") {
             cloudLoginTextField.stringValue = customTextString as! String
             cloudLoginTextField.sizeToFit()
 
@@ -130,7 +130,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         
         TCSLogWithMark("starting overlay")
-        UserDefaults.standard.addSuite(named: "so.trio.xcreds")
+        UserDefaults.standard.addSuite(named: "so.trio.trioX")
 
         do {
 
@@ -165,16 +165,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             return
         }
 
-        if let ud = UserDefaults(suiteName: "so.trio.xcreds"){
+        if let ud = UserDefaults(suiteName: "so.trio.trioX"){
 
             if ud.bool(forKey: "shouldShowCloudLoginByDefault") == true,
                returnFileExistedOnStart == false,
                AuthorizationDBManager.shared.rightExists(right: "loginwindow:login")==true
             {
-                TCSLogWithMark("we should be at XCreds window but we are at mac login window. Resetting and rebooting")
+                TCSLogWithMark("we should be at TrioX window but we are at mac login window. Resetting and rebooting")
 
                 let _ = AuthRightsHelper.addRights()
-                TCSLogWithMark("XCreds rights added. Rebooting")
+                TCSLogWithMark("TrioX rights added. Rebooting")
                 if UserDefaults.standard.bool(forKey: "slowReboot")==true {
                    sleep(30)
                 }
@@ -196,7 +196,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self.window.orderFrontRegardless()
         }
 //        else {
-//            TCSLogWithMark("loginwindow:login does not exist so we are at xcreds login")
+//            TCSLogWithMark("loginwindow:login does not exist so we are at TrioX login")
 //        }
 
 

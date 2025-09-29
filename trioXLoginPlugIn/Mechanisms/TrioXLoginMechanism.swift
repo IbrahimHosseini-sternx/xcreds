@@ -65,11 +65,11 @@ import Network
 
         TCSLogWithMark("Checking for autologin.")
         if FileManager.default.fileExists(atPath: "/tmp/trioXrun") {
-            os_log("XCreds has run once already. Load regular window as this isn't a reboot", log: checkADLog, type: .debug)
+            os_log("TrioX has run once already. Load regular window as this isn't a reboot", log: checkADLog, type: .debug)
             return false
         }
 
-        os_log("XCreds, trying autologin", log: checkADLog, type: .debug)
+        os_log("TrioX, trying autologin", log: checkADLog, type: .debug)
 
         updateRunDict(dict: Dictionary())
         if let username = getContextString(type: "fvusername") {
@@ -93,7 +93,7 @@ import Network
             return true
         } else {
             if let uuid = getEFIUUID() {
-                if let name = XCredsBaseMechanism.getShortname(uuid: uuid) {
+                if let name = TrioXBaseMechanism.getShortname(uuid: uuid) {
                     os_log("Found username in EFI, doing autologin", log: checkADLog, type: .debug)
 
                     setContextString(type: kAuthorizationEnvironmentUsername, value: name)
@@ -191,7 +191,7 @@ import Network
         }
     }
     @objc override func run() {
-        TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ XCredsLoginMechanism mech starting ~~~~~~~~~~~~~~~~~~~")
+        TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ TrioXLoginMechanism mech starting ~~~~~~~~~~~~~~~~~~~")
 
 
         loginWebViewController=nil
@@ -222,10 +222,10 @@ import Network
         TCSLogWithMark("Verifying if we should show cloud login.")
         
         if (StateFileHelper().fileExists(.returnType)==true){
-            TCSLogWithMark("xcreds_return exists")
+            TCSLogWithMark("trioX_return exists")
         }
         else {
-            TCSLogWithMark("xcreds_return does NOT exist")
+            TCSLogWithMark("trioX_return does NOT exist")
         }
         if StateFileHelper().fileExists(.returnType) == false,
             DefaultsOverride.standardOverride.bool(forKey: PrefKeys.shouldShowCloudLoginByDefault.rawValue) == false {
@@ -244,20 +244,20 @@ import Network
         }
 
         if StateFileHelper().fileExists(.returnType)==true{
-            TCSLogWithMark("xcreds_return exists, removing")
+            TCSLogWithMark("trioX_return exists, removing")
             do {
 
                 try StateFileHelper().removeFile(.returnType)
             }
             catch {
 
-                TCSLogWithMark("Could not remove /usr/local/var/xcreds_return")
+                TCSLogWithMark("Could not remove /usr/local/var/trioX_return")
 
             }
 
         }
 
-        TCSLogWithMark("Showing XCreds Login Window")
+        TCSLogWithMark("Showing TrioX Login Window")
 
         //for some reason, software update activates and gets in the way. so we delay for 3 seconds before coming back to front
         timer = Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
@@ -279,7 +279,7 @@ import Network
 
             alert.window.canBecomeVisibleWithoutLogin=true
 
-            let bundle = Bundle.findBundleWithName(name: "XCreds")
+            let bundle = Bundle.findBundleWithName(name: "trioX")
 
             if let bundle = bundle {
                 TCSLogWithMark("Found bundle")
@@ -324,7 +324,7 @@ import Network
             self.mainLoginWindowController?.controlsViewController?.refreshGridColumn?.isHidden=false
 
             if loginWebViewController==nil{
-                let bundle = Bundle.findBundleWithName(name: "XCreds")
+                let bundle = Bundle.findBundleWithName(name: "trioX")
                 if let bundle = bundle{
 
                     loginWebViewController = LoginWebViewController(nibName:  "LoginWebViewController", bundle: bundle)
@@ -352,7 +352,7 @@ import Network
 
 
             if signInViewController == nil {
-                let bundle = Bundle.findBundleWithName(name: "XCreds")
+                let bundle = Bundle.findBundleWithName(name: "trioX")
                 if let bundle = bundle{
                     TCSLogWithMark("Creating signInViewController")
                     signInViewController = SignInViewController(nibName: "LocalUsersViewController", bundle:bundle)

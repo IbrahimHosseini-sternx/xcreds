@@ -1,6 +1,6 @@
 //
 //  NSButton+Color.swift
-//  XCreds
+// trioX
 //
 //
 

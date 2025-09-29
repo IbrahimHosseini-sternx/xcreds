@@ -1,6 +1,6 @@
 //
 //  DesktopLoginWindow.swift
-//  XCreds
+// trioX
 //
 //
 

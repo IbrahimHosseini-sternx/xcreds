@@ -1,6 +1,6 @@
 //
 //  VerifyLocalCredentialsWindowController.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

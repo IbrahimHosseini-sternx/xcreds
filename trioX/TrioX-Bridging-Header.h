@@ -1,13 +1,13 @@
 //
-//  XCreds-Bridging-Header.h
-//  XCreds
+// trioX-Bridging-Header.h
+// trioX
 //
 //
 
-#ifndef XCreds_Bridging_Header_h
-#define XCreds_Bridging_Header_h
+#ifndef TrioX_Bridging_Header_h
+#define TrioX_Bridging_Header_h
 #import "SecurityPrivateAPI.h"
-#import "XCredsLoginPlugin.h"
+#import "TrioXLoginPlugin.h"
 #import "TCSKeychain.h"
 #import "TCSUnifiedLogger.h"
 #import "TCTaskHelper.h"
@@ -25,4 +25,4 @@
 
 #include <membership.h>
 
-#endif /* XCreds_Bridging_Header_h */
+#endif /* TrioX_Bridging_Header_h */

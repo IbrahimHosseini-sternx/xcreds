@@ -1,6 +1,6 @@
 //
 //  PreferencesWindowController.swift
-//  xCreds
+// trioX
 //
 //
 
@@ -17,9 +17,9 @@ class PreferencesWindowController: NSWindowController {
     @available(macOS, deprecated: 11)
     @IBAction func clearTokensClicked(_ sender: Any) {
         let keychainUtil = KeychainUtil()
-        let _ = keychainUtil.findAndDelete(serviceName:"xcreds",accountName:PrefKeys.accessToken.rawValue)
-        let _ = keychainUtil.findAndDelete(serviceName:"xcreds",accountName:PrefKeys.idToken.rawValue)
-        let _ = keychainUtil.findAndDelete(serviceName:"xcreds",accountName:PrefKeys.refreshToken.rawValue)
+        let _ = keychainUtil.findAndDelete(serviceName:"trioX",accountName:PrefKeys.accessToken.rawValue)
+        let _ = keychainUtil.findAndDelete(serviceName:"trioX",accountName:PrefKeys.idToken.rawValue)
+        let _ = keychainUtil.findAndDelete(serviceName:"trioX",accountName:PrefKeys.refreshToken.rawValue)
 
 
 //        sharedMainMenu.signedIn=false

@@ -1,6 +1,6 @@
 //
 //  VerifyOIDCPassword.swift
-//  XCreds
+// trioX
 //
 //
 

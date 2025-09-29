@@ -1,6 +1,6 @@
 //
 //  MainMenu.swift
-//  xCreds
+// trioX
 //
 //
 
@@ -54,15 +54,15 @@ class StatusMenuController: NSObject, NSMenuItemValidation {
     override func awakeFromNib() {
 
         let currentUser = PasswordUtils.getCurrentConsoleUserRecord()
-        if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_username") as? [String], userNames.count>0, let username = userNames.first {
+        if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_trioX_oidc_username") as? [String], userNames.count>0, let username = userNames.first {
             oidcUsername = username
 
         }
-        else if let oidcUsernamePrefs = UserDefaults.standard.string(forKey:"_xcreds_oidc_username" )
+        else if let oidcUsernamePrefs = UserDefaults.standard.string(forKey:"_trioX_oidc_username" )
         {
             oidcUsername = oidcUsernamePrefs
         }
-        if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal") as? [String], userNames.count>0, let username = userNames.first {
+        if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal") as? [String], userNames.count>0, let username = userNames.first {
             kerberosPrincipalName = username
 
         }
@@ -162,7 +162,7 @@ class StatusMenuController: NSObject, NSMenuItemValidation {
             let infoPlist = Bundle.main.infoDictionary
             
             if let infoPlist = infoPlist, let build = infoPlist["CFBundleVersion"], let appVersion =  infoPlist["CFBundleShortVersionString"]{
-                menuItem.title="About XCreds \(appVersion) (\(build))"
+                menuItem.title="About TrioX \(appVersion) (\(build))"
                 
             }
             

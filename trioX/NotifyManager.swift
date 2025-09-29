@@ -1,6 +1,6 @@
 //
 //  NotifyManager.swift
-//  XCreds
+// trioX
 //
 //
 

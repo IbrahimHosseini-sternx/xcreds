@@ -1,6 +1,6 @@
 //
 //  NSBundle+FindBundlePath.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

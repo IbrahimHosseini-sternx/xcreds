@@ -1,6 +1,6 @@
 //
 //  StatusMenuWindowController.swift
-//  XCreds
+// trioX
 //
 //
 

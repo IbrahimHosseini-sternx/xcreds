@@ -1,6 +1,6 @@
 //
 //  ScheduleManager.swift
-//  XCreds
+// trioX
 //
 //
 
@@ -22,7 +22,7 @@ class ScheduleManager:NoMADUserSessionDelegate {
     func tokenError(_ err: String) {
         TCSLogErrorWithMark("authFailure: \(err)")
         feedbackDelegate?.credentialsCheckFailed()
-        XCredsAudit().auditError(err)
+        TrioXAudit().auditError(err)
 //        //        NotificationCenter.default.post(name: Notification.Name("TCSTokensUpdated"), object: self, userInfo:[:])
 //        if DefaultsOverride.standardOverride.bool(forKey: PrefKeys.showDebug.rawValue) == true {
 //
@@ -97,7 +97,7 @@ class ScheduleManager:NoMADUserSessionDelegate {
         }
 
         guard let user = try? PasswordUtils.getLocalRecord(getConsoleUser()),
-              let kerbPrincArray = user.value(forKey: "dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal") as? Array <String>,
+              let kerbPrincArray = user.value(forKey: "dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal") as? Array <String>,
               var kerbPrinc = kerbPrincArray.first else
         {
             return
@@ -205,7 +205,7 @@ class ScheduleManager:NoMADUserSessionDelegate {
 
             let keychainUtil = KeychainUtil()
 
-            let refreshAccountAndToken = try? keychainUtil.findPassword(serviceName: "xcreds ".appending(PrefKeys.refreshToken.rawValue),accountName:PrefKeys.refreshToken.rawValue)
+            let refreshAccountAndToken = try? keychainUtil.findPassword(serviceName: "trioX ".appending(PrefKeys.refreshToken.rawValue),accountName:PrefKeys.refreshToken.rawValue)
             var hasValidRefreshToken = false
 
             if  let _ = DefaultsOverride.standardOverride.string(forKey: PrefKeys.discoveryURL.rawValue),
@@ -239,7 +239,7 @@ class ScheduleManager:NoMADUserSessionDelegate {
 
                         //last login failed. We can proceed only if there was a successful login at the login window.
                         if let user = try? PasswordUtils.getLocalRecord(getConsoleUser()),
-                           let oidcLastLoginTimestampStringFromDSArray = user.value(forKey: "dsAttrTypeNative:_xcreds_oidc_lastLoginTimestamp") as? [String],
+                           let oidcLastLoginTimestampStringFromDSArray = user.value(forKey: "dsAttrTypeNative:_trioX_oidc_lastLoginTimestamp") as? [String],
                            let oidcLastLoginTimestampStringFromDS = oidcLastLoginTimestampStringFromDSArray.first,
                            let oidcLastLoginTimestameDateFromLoginWindow = try? Date.ISO8601FormatStyle().parseStrategy.parse(oidcLastLoginTimestampStringFromDS),
                            oidcLastLoginTimestameDateFromLoginWindow > lastOIDCLoginFailTimestampDate {
@@ -266,7 +266,7 @@ class ScheduleManager:NoMADUserSessionDelegate {
                         TCSLogWithMark("success. Setting new token.")
                         ud.removeObject(forKey: PrefKeys.lastOIDCLoginFailTimestamp.rawValue)
 
-                        let creds = try? keychainUtil.findPassword(serviceName: "xcreds local password",accountName:PrefKeys.password.rawValue)
+                        let creds = try? keychainUtil.findPassword(serviceName: "trioX local password",accountName:PrefKeys.password.rawValue)
                         if let localPassword = creds?.1 {
                             feedbackDelegate?.credentialsUpdated(Creds(accessToken: tokenResponse?.accessToken, idToken: tokenResponse?.idToken, refreshToken: tokenResponse?.refreshToken, password:localPassword, jsonDict: [:]))
                         }

@@ -22,20 +22,20 @@
 void TCSLog(NSString *string)
 {
 
-    os_log(OS_LOG_DEFAULT, "XCREDS_LOG:%{public}s",[string stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"].UTF8String);
+    os_log(OS_LOG_DEFAULT, "TRIOX_LOG:%{public}s",[string stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"].UTF8String);
     [[TCSUnifiedLogger sharedLogger] logString:string level:LOGLEVELDEBUG];
 }
 
 void TCSLogInfo(NSString *string)
 {
-    os_log(OS_LOG_DEFAULT, "XCREDS_LOG:%{public}s",[string stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"].UTF8String);
+    os_log(OS_LOG_DEFAULT, "TRIOX_LOG:%{public}s",[string stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"].UTF8String);
 
     [[TCSUnifiedLogger sharedLogger] logString:string level:LOGLEVELINFO];
     
 }
 void TCSLogError(NSString *string)
 {
-    os_log(OS_LOG_DEFAULT, "XCREDS_LOG:%{public}s",[string stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"].UTF8String);
+    os_log(OS_LOG_DEFAULT, "TRIOX_LOG:%{public}s",[string stringByReplacingOccurrencesOfString:@"\n" withString:@"\\n"].UTF8String);
 
     [[TCSUnifiedLogger sharedLogger] logString:string level:LOGLEVELERROR];
 }
@@ -73,7 +73,7 @@ void TCSLogError(NSString *string)
         //root
         if (getuid() == 0 || getuid() == 92) { //root or security agent
 
-            logFolderURL = [NSURL fileURLWithPath:@"/tmp/xcreds"];
+            logFolderURL = [NSURL fileURLWithPath:@"/tmp/trioX"];
 
 
             //not root
@@ -81,7 +81,7 @@ void TCSLogError(NSString *string)
             NSString *homePath = [[NSFileManager defaultManager] realHomeFolder];
             logFolderURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/Library/Logs", homePath]];
             if (![fm fileExistsAtPath:logFolderURL.path]) {
-                char template[]="/tmp/xcreds-XXXXXX";
+                char template[]="/tmp/trioX-XXXXXX";
 
                 char *dirPath=mkdtemp(template);
                 if (dirPath) {

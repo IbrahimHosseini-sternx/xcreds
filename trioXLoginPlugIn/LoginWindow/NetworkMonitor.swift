@@ -1,6 +1,6 @@
 //
 //  NetworkMonitor.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

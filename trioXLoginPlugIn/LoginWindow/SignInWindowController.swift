@@ -80,7 +80,7 @@ protocol UpdateCredentialsFeedbackProtocol {
 //    var setupCardWindowController:SetupCardWindowController?
 
     @IBOutlet weak var logoImageView: NSImageView!
-    var mechanismDelegate:XCredsMechanismProtocol?
+    var mechanismDelegate:TrioXMechanismProtocol?
 
     override var nibName: NSNib.Name{
 
@@ -89,7 +89,7 @@ protocol UpdateCredentialsFeedbackProtocol {
     func invalidCredentials() {
         updateCredentialsFeedbackDelegate?.invalidCredentials()
         TCSLogWithMark("Token error: Invalid credentials")
-        XCredsAudit().auditError("Token error: Invalid credentials")
+        TrioXAudit().auditError("Token error: Invalid credentials")
         shakeWindowAndShowError()
 
     }
@@ -97,7 +97,7 @@ protocol UpdateCredentialsFeedbackProtocol {
     func tokenError(_ err:String){
         updateCredentialsFeedbackDelegate?.credentialsCheckFailed()
         TCSLogWithMark("Token error: \(err)")
-        XCredsAudit().auditError(err)
+        TrioXAudit().auditError(err)
         shakeWindowAndShowError()
     }
 
@@ -118,7 +118,7 @@ protocol UpdateCredentialsFeedbackProtocol {
                 
                 alert.window.canBecomeVisibleWithoutLogin=true
                 
-                let bundle = Bundle.findBundleWithName(name: "XCreds")
+                let bundle = Bundle.findBundleWithName(name: "trioX")
                 
                 if let bundle = bundle {
                     TCSLogWithMark("Found bundle")
@@ -138,7 +138,7 @@ protocol UpdateCredentialsFeedbackProtocol {
 
 
 
-//    var mechanism:XCredsMechanismProtocol? {
+//    var mechanism:TrioXMechanismProtocol? {
 //        set {
 //            TCSLogWithMark()
 //            mechanismDelegate=newValue
@@ -242,7 +242,7 @@ protocol UpdateCredentialsFeedbackProtocol {
                     var pin:String?
                     let hex=returnData[0...returnData.count-3].hexEncodedString()
                     do {
-                        let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+                        let secretKeeper = try SecretKeeper(label: "trioX Encryptor", tag: "trioX Encryptor")
                         let userManager = UserSecretManager(secretKeeper: secretKeeper)
                         if let uidData = Data(fromHexEncodedString: hex) {
                             TCSLogWithMark("got UID Data")
@@ -292,7 +292,7 @@ protocol UpdateCredentialsFeedbackProtocol {
                 unprovisionedRfidUid=uid
             }
             else {
-                TCSLogWithMark("No RFID Users defined. run /Applications/XCreds.app/Contents/MacOS/XCreds -h for help on adding users.")
+                TCSLogWithMark("No RFID Users defined. run /Applications/trioX.app/Contents/MacOS/trioX -h for help on adding users.")
 
                 passwordTextField.shake(self)
 
@@ -513,7 +513,7 @@ protocol UpdateCredentialsFeedbackProtocol {
     }
 
     fileprivate func shakeWindowAndShowError(_ message: String?=nil) {
-        XCredsAudit().auditError(message ?? "Empty")
+        TrioXAudit().auditError(message ?? "Empty")
         TCSLogWithMark(message ?? "")
         nomadSession = nil
         passwordTextField.stringValue = ""
@@ -775,7 +775,7 @@ protocol UpdateCredentialsFeedbackProtocol {
 
         if shortName.isEmpty {
             if let user = try? PasswordUtils.getLocalRecord(getConsoleUser()),
-                  let kerbPrincArray = user.value(forKey: "dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal") as? Array <String>,
+                  let kerbPrincArray = user.value(forKey: "dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal") as? Array <String>,
                let kerbPrinc = kerbPrincArray.first
             {
                 shortName=kerbPrinc
@@ -912,7 +912,7 @@ protocol UpdateCredentialsFeedbackProtocol {
         switch authResult {
         case .allow:
             TCSLogWithMark("Complete login process with allow")
-            XCredsAudit().loginWindowLogin(user:shortName)
+            TrioXAudit().loginWindowLogin(user:shortName)
             mechanismDelegate?.allowLogin()
 
         case .deny:
@@ -1148,7 +1148,7 @@ protocol UpdateCredentialsFeedbackProtocol {
 //    }
 //    func verify() {
 //
-//            if XCredsBaseMechanism.checkForLocalUser(name: shortName) {
+//            if TrioXBaseMechanism.checkForLocalUser(name: shortName) {
 //                TCSLogWithMark()
 //                os_log("Verify local user login for %{public}@", log: uiLog, type: .default, shortName)
 //
@@ -1214,7 +1214,7 @@ extension SignInViewController: NoMADUserSessionDelegate {
 
                 alert.window.canBecomeVisibleWithoutLogin=true
 
-                let bundle = Bundle.findBundleWithName(name: "XCreds")
+                let bundle = Bundle.findBundleWithName(name: "trioX")
 
                 if let bundle = bundle {
                     TCSLogWithMark("Found bundle")
@@ -1332,7 +1332,7 @@ extension SignInViewController: NoMADUserSessionDelegate {
 
                 alert.window.canBecomeVisibleWithoutLogin=true
 
-                let bundle = Bundle.findBundleWithName(name: "XCreds")
+                let bundle = Bundle.findBundleWithName(name: "trioX")
 
                 if let bundle = bundle {
                     TCSLogWithMark("Found bundle")
@@ -1369,7 +1369,7 @@ extension SignInViewController: NoMADUserSessionDelegate {
 
             alert.window.canBecomeVisibleWithoutLogin=true
 
-            let bundle = Bundle.findBundleWithName(name: "XCreds")
+            let bundle = Bundle.findBundleWithName(name: "trioX")
 
             if let bundle = bundle {
                 TCSLogWithMark("Found bundle")
@@ -1399,7 +1399,7 @@ extension SignInViewController: NoMADUserSessionDelegate {
         //change entry in keychain to match new password
         TCSLogWithMark("change entry in keychain to match new password")
 
-        if KeychainUtil().updatePassword(serviceName: "xcreds local password",accountName:PasswordUtils.currentConsoleUserName, pass:updatedPassword, shouldUpdateACL: true, keychainPassword: updatedPassword) == false {
+        if KeychainUtil().updatePassword(serviceName: "trioX local password",accountName:PasswordUtils.currentConsoleUserName, pass:updatedPassword, shouldUpdateACL: true, keychainPassword: updatedPassword) == false {
             throw PasswordError.invalidResult("Error updating password in keychain")
 
         }

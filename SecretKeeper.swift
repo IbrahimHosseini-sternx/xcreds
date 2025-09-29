@@ -382,9 +382,9 @@ public class SecretKeeper {
         var secApps = [ SecTrustedApplication ]()
 
         var trust : SecTrustedApplication? = nil
-        if FileManager.default.fileExists(atPath: "/Applications/XCreds.app", isDirectory: nil) {
+        if FileManager.default.fileExists(atPath: "/Applications/trioX.app", isDirectory: nil) {
             @available(macOS, deprecated: 10.10)
-            let err = SecTrustedApplicationCreateFromPath("/Applications/XCreds.app", &trust)
+            let err = SecTrustedApplicationCreateFromPath("/Applications/trioX.app", &trust)
 
             if err == 0 {
                 secApps.append(trust!)
@@ -406,7 +406,7 @@ public class SecretKeeper {
         }
 
         var secAccess:SecAccess?
-        let _ = SecAccessCreate("XCreds Encryptor" as CFString, secApps as CFArray, &secAccess)
+        let _ = SecAccessCreate("TrioX Encryptor" as CFString, secApps as CFArray, &secAccess)
         let attributes: [String: Any] =
         [kSecAttrKeyType as String:
             kSecAttrKeyTypeECSECPrimeRandom,

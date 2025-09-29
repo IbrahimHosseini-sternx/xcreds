@@ -1,6 +1,6 @@
 //
 //  UIImage+String.swift
-//  XCreds
+// trioX
 //
 //
 
@@ -34,7 +34,7 @@ extension NSImage {
 
             let imageName = pathURL.lastPathComponent
 
-            let cacheFolder  = cacheDir.appendingPathComponent("so.trio.xcreds") as NSString
+            let cacheFolder  = cacheDir.appendingPathComponent("so.trio.trioX") as NSString
 
             let imageFullPath = cacheFolder.appendingPathComponent(imageName) as NSString
             TCSLogWithMark("imageFullPath: \(imageFullPath)")

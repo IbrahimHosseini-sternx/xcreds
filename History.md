@@ -1,6 +1,6 @@
-# What's New In XCreds #
+# What's New In TrioX #
 
-## XCreds 5.0 ##
+## TrioX 1.0 ##
 
 
 fixed HideExpiration in manifest
@@ -12,7 +12,7 @@ allowLoginIfMemberOfGroup causes screen rendering issue after blocking sign in #
 Fail on map_username for AD #244
 Issue with HomeMountEnabled #236
 Clarify manifest descriptions for AD property names #245
-XCreds Login Window Overlay Wallpaper not caching? #247
+TrioX Login Window Overlay Wallpaper not caching? #247
 Update manifest description for CreateAdminIfGroupMember #251
 Update login window when resolution changes #187
 added missing files
@@ -20,13 +20,13 @@ Enhancement request: Group Membership Zendesk Ticket 69193 #209
 more
 Local login window dims and gets stuck after failed login attempt #242
 updated history
-Expected AD field values not shown in XCreds log #237
+Expected AD field values not shown in TrioX log #237
 updated history
 keyCodeForLoginWindowChange not working as expected #231
 "Change Password" menuitem is now greyed out #239
-Allow user to use full name to sign in at XCreds username/password screen #178
+Allow user to use full name to sign in at TrioX username/password screen #178
 Feature Request: HideExpiration key #198
-XCreds 5: Unexpected behavior of IP & MAC info via XCReds login window #232
+TrioX 5: Unexpected behavior of IP & MAC info via TrioX login window #232
 Menubar sign in does not follow shouldUseROPGForMenuLogin #184
 improved login animation
 Customize menu bar app icon #189
@@ -34,36 +34,36 @@ Update description for allowLoginIfMemberOfGroup #228
 Add LocalFallback to manifest #229
 
 ---------
-Enhancement Request "Mechanism to force xCreds to reevaluate Login Window Background Image" #227 View
+Enhancement Request "Mechanism to force TrioX to reevaluate Login Window Background Image" #227 View
 Add LocalFallback to manifest #229 View
 Update description for allowLoginIfMemberOfGroup #228 View
 Customize menu bar app icon #189 View
 improved login animation View
 Menubar sign in does not follow shouldUseROPGForMenuLogin #184 View
-XCreds 5: Unexpected behavior of IP & MAC info via XCReds login window #232 View
+TrioX 5: Unexpected behavior of IP & MAC info via TrioX login window #232 View
 Feature Request: HideExpiration key #198 View
-Allow user to use full name to sign in at XCreds username/password screen #178 View
+Allow user to use full name to sign in at TrioX username/password screen #178 View
 "Change Password" menuitem is now greyed out #239 View
 keyCodeForLoginWindowChange not working as expected #231 View
 updated history View
-Expected AD field values not shown in XCreds log #237
+Expected AD field values not shown in TrioX log #237
 -------
 keyCodeForLoginWindowChange not working as expected #231
 "Change Password" menuitem is now greyed out #239
-Allow user to use full name to sign in at XCreds username/password screen #178
+Allow user to use full name to sign in at TrioX username/password screen #178
 Feature Request: HideExpiration key #198
-XCreds 5: Unexpected behavior of IP & MAC info via XCReds login window #232
+TrioX 5: Unexpected behavior of IP & MAC info via TrioX login window #232
 Menubar sign in does not follow shouldUseROPGForMenuLogin #184
 improved login animation
 Customize menu bar app icon #189
 Update description for allowLoginIfMemberOfGroup #228
 Add LocalFallback to manifest #229
-Enhancement Request "Mechanism to force xCreds to reevaluate Login Window Background Image" #227
+Enhancement Request "Mechanism to force TrioX to reevaluate Login Window Background Image" #227
 -----
 [Feature Request] Add a Password Expire date or Days for OIDC users and more #165. To test, set map_password_expiry to a claim in Azure (like street address) with a value in seconds from token issue (like 300 seconds) and verify that menu shows the correct date
 Custom Mac login window key combo #206
 Enhancement request: Group Membership Zendesk Ticket 69193 #209
-Setting HomeMountEnabled to false removes the home folder from the XCreds menuitems #213
+Setting HomeMountEnabled to false removes the home folder from the TrioX menuitems #213
 
 ----------
 Map UID #186
@@ -72,25 +72,25 @@ Fix formatting for systemInfoButtonTitle #221
 Corrections for manifest #224
 Hang at login after password reset #223
 ----------
-Customize the XCReds app's native login dialog box #179
+Customize the TrioX app's native login dialog box #179
 [Feature Request] AD User Account Creation Name Mapping #172
 [Feature Request] AD - User friendly fail prompts #193
 AD attributes #166
 systemInfoButtonTitle does not respond to plain text values #220
 Clarify key name an description for shouldShowIfLocalOnlyUser #219
-changed manifest version back one; added copying DS user attibutes to prefs. Enhancement Request: XCreds app cant update ds #212
+changed manifest version back one; added copying DS user attibutes to prefs. Enhancement Request: TrioX app cant update ds #212
 ----------
 [Feature Request] Add option to customize the Refresh Banner text #176
 Feature Request: EnforceSignIn #199
 added new preference to manage more buttons on login screen: shouldShowShutdownButton, shouldShowRestartButton, shouldShowSystemInfoButton. Feature Request - Add key to disable showing shutdown and/or restart on login overlay #203
-Allow override of killall loginwindow in xcreds postinstall script #181
+Allow override of killall loginwindow in TrioX postinstall script #181
 bumped version of manifest Update manifest pfm_last_modified and pfm_version #164
 fixed Fix manifest title for ROPG pref #183
 added option for system info button title #154
-System Info on XCreds Login Window #154
+System Info on TrioX Login Window #154
 implemented Feature Request - Change the wording of the password change pop-up #202
 
-## XCreds 4.1 ##
+## TrioX 4.1 ##
 
 Customization of Menu
 
@@ -103,7 +103,7 @@ SMB Share Mounting
 Admin Removal
 
 
-## XCreds 4.0 ##
+## TrioX 4.0 ##
 
 Select Existing User Account During Account Creation
 
@@ -127,16 +127,16 @@ Other New Features and Fixes
 
 
 
-## XCreds 3.3 ##
+## TrioX 3.3 ##
 
 ### Select Existing User Account During Account Creation ###
 Using the new preference key “shouldPromptForMigration”, when a new login is detected and there are existing standard user accounts on the system, the user will be prompted for a username and password (#98).
 
 If the username and password are successfully entered for an existing account, this local account will then be used when logging in with this cloud account. The local account has 2 new DS attributes added:
 
-dsAttrTypeNative:_xcreds_oidc_sub: Subscriber. Unique identifier for account within the current issuer. 
+dsAttrTypeNative:_trioX_oidc_sub: Subscriber. Unique identifier for account within the current issuer. 
 
-dsAttrTypeNative:_xcreds_oidc_iss: Issuer
+dsAttrTypeNative:_trioX_oidc_iss: Issuer
 In subsequent logins, the user account is selected by matching the sub and iss from the identity token to the values in the local account.
 
 Note that the user will only be prompted if there are existing standard accounts on the system and the login does not have a locally mapped account.
@@ -152,7 +152,7 @@ Command-Option-Control-Return: Switch between cloud and Mac login window.
 ### Account Alias ###
 When a new preference is set (“aliasName”) to a claim in the identity token, the value in that claim is used to set an alias to the user account, allowing them to login with it.
 
-An example: Set the preferences to have aliasName = “upn”. Log in as barney@triosoftinc.com. The identity token has a claim called “upn” whose value was “barney@triosoftinc.com“. XCreds then adds barney@triosoftinc.com that is an alias and the user can login with either barney or barney@triosoftinc.com at the local and mac login window. This gives the user a consistent way to log in at the cloud login or the standard / Mac login window.
+An example: Set the preferences to have aliasName = “upn”. Log in as barney@triosoftinc.com. The identity token has a claim called “upn” whose value was “barney@triosoftinc.com“. TrioX then adds barney@triosoftinc.com that is an alias and the user can login with either barney or barney@triosoftinc.com at the local and mac login window. This gives the user a consistent way to log in at the cloud login or the standard / Mac login window.
 
 ### New Features ###
 * Removed logging messages that had a local path from the build system.
@@ -163,7 +163,7 @@ An example: Set the preferences to have aliasName = “upn”. Log in as barney@
 * use default desktop from CoreServices. Thanks to Clkw0rk and the CPE Team at Yelp for the pull request.
 
 
-## XCreds 3.2 ##
+## TrioX 3.2 ##
 
 * Support for Okta ROPG
 * New preference key to force local login: shouldPreferLocalLoginInsteadOfCloudLogin
@@ -174,18 +174,18 @@ An example: Set the preferences to have aliasName = “upn”. Log in as barney@
 * Remove trailing and leading spaces entered in username
 
 
-## XCreds 3.1 ##
+## TrioX 3.1 ##
 
 ### Active Directory Login ###
 New username and password window allows logging in with local user or Active Directory (if ADDomain key is defined).
 
 ### New Username and Password Window ###
-We no longer use the macOS login window and use the new XCreds username/password window. This allows for faster switching and Active Directory login.
+We no longer use the macOS login window and use the new TrioX username/password window. This allows for faster switching and Active Directory login.
 
 ### Switch to Login Window at Screen Saver ###
-When the "shouldSwitchToLoginWindowWhenLocked" key is set and XCreds is running in the user session and the screen is locked, the lock screen will fast user switch to the login window.
+When the "shouldSwitchToLoginWindowWhenLocked" key is set and TrioX is running in the user session and the screen is locked, the lock screen will fast user switch to the login window.
 
-When set to true and the user locks the current session, XCreds will tell the system to switch to Login Window. The current session will stay active but the user will log in with the XCreds Login Window to resume the session.
+When set to true and the user locks the current session, TrioX will tell the system to switch to Login Window. The current session will stay active but the user will log in with the TrioX Login Window to resume the session.
 
 ### Admin Group ###
 
@@ -203,7 +203,7 @@ Most preferences can now be overwritten by specifying a script at the path defin
     dir="/System/Library/Desktop Pictures"
     desktoppicture=`/bin/ls -1 "$dir"/*.heic | sort --random-sort | head -1`
         
-    cat /usr/local/xcreds/override.plist|sed "s|DESKTOPPICTUREPATH|${desktoppicture}|g" 
+    cat /usr/local/TrioX/override.plist|sed "s|DESKTOPPICTUREPATH|${desktoppicture}|g" 
     
 The plist would be defined as:
 
@@ -218,13 +218,13 @@ The plist would be defined as:
 
 
 ### Reset Keychain ##
-In prior versions of XCreds, the ability to reset the keychain if the user forgets their local password would fail due to the lack of an admin user with a secure token. This would cause the "PasswordOverwriteSilent" to fail. 
+In prior versions of TrioX, the ability to reset the keychain if the user forgets their local password would fail due to the lack of an admin user with a secure token. This would cause the "PasswordOverwriteSilent" to fail. 
 
 The "settingsOverrideScriptPath" (see above) can return the admin username and password of an admin account that has a secure token. This admin user is then used to reset the user's keychain if they forgot their local password. This can either be done with user prompting or silently.
 
 The script can find those keys via curl, in system keychain, or in a LAPS file and return the values inside the plist that is returned. This gives flexibility in determining the security required for the local admin username and password.
 
-Note that XCreds assumes an admin user with a secure token already exists on the machine and XCreds does not create or manage this user. If you manage local admin via a LAPS system, you can return the password from the local password file.
+Note that TrioX assumes an admin user with a secure token already exists on the machine and TrioX does not create or manage this user. If you manage local admin via a LAPS system, you can return the password from the local password file.
 
 An example of an override script to return username and password are as follows:
 
@@ -238,7 +238,7 @@ Override Script:
 `    admin_username="tcadmin"`
 `    admin_password="triosoftinc"`
 `    `
-`    cat /usr/local/xcreds/override.plist | sed "s|LOCALADMINUSERNAME|${admin_username}|g" | sed "s|LOCALADMINPASSWORD|${admin_password}|g" `
+`    cat /usr/local/TrioX/override.plist | sed "s|LOCALADMINUSERNAME|${admin_username}|g" | sed "s|LOCALADMINPASSWORD|${admin_password}|g" `
 
 plist:
 
@@ -284,7 +284,7 @@ List of groups that should have its members created as local administrators. Set
 
 **shouldSwitchToLoginWindowWhenLocked**
 
-When set to true and the user locks the current session, XCreds will tell the system to switch to Login Window. The current session will stay active but the user will login with the XCreds Login Window to resume the session.
+When set to true and the user locks the current session, TrioX will tell the system to switch to Login Window. The current session will stay active but the user will login with the TrioX Login Window to resume the session.
 
 **settingsOverrideScriptPath**
 
@@ -304,7 +304,7 @@ Determine if the Mac login window or the cloud login window is shown by default
 
 **shouldShowMacLoginButton**
 
-Show the Mac Login Window button in XCreds Login
+Show the Mac Login Window button in TrioX Login
 
 **shouldShowTokenUpdateStatus**
 Show the time when the password will be checked. True by default.
@@ -330,7 +330,7 @@ Released 2023-04-19
 - Fixed focus issue
 - Fixed login window size and background image
 - Added in login window height/width min value of 100
-- Added key for customizing return to XCreds; added preference and ability to automatically refresh login window
+- Added key for customizing return to TrioX; added preference and ability to automatically refresh login window
 - Updated language on keychain option and added pref in manifest
 - Added remove keychain option
 
@@ -339,7 +339,7 @@ Released 2023-04-19
 - Removed progress screen overlay because it was hiding filevault
 - Added sub as local user account if other methods not available; added some additional logging
 - Removed test time
-- Fixed edge case when not showing xcreds login when logging out
+- Fixed edge case when not showing TrioX login when logging out
 - Fixed shouldShowCloudLoginByDefault not working
 - Fixed timer issue
 - Removed show prefs menu

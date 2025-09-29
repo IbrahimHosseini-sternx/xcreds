@@ -22,7 +22,7 @@ enum MigrationType {
 class LocalCheckAndMigrate : NSObject, DSQueryable {
     
     var mech: MechanismRecord?
-    var delegate: XCredsMechanismProtocol?
+    var delegate: TrioXMechanismProtocol?
 
     private var user = ""
     private var pass = ""

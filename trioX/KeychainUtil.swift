@@ -33,7 +33,7 @@ struct certDates {
 class KeychainUtil {
 
     var myErr: OSStatus
-//    let serviceName = "xcreds"
+//    let serviceName = "trioX"
 
     var myKeychainItem: SecKeychainItem?
 
@@ -178,14 +178,14 @@ class KeychainUtil {
         var secApps = [ SecTrustedApplication ]()
 
         var trust : SecTrustedApplication? = nil
-        if FileManager.default.fileExists(atPath: "/Applications/XCreds.app", isDirectory: nil) {
-            err = SecTrustedApplicationCreateFromPath("/Applications/XCreds.app", &trust)
+        if FileManager.default.fileExists(atPath: "/Applications/trioX.app", isDirectory: nil) {
+            err = SecTrustedApplicationCreateFromPath("/Applications/trioX.app", &trust)
             if err == 0 {
                 secApps.append(trust!)
             }
         }
-        if FileManager.default.fileExists(atPath: "/Applications/XCreds.app/Contents/Resources/XCreds Login Autofill.app/Contents/PlugIns/XCreds Login Password.appex", isDirectory: nil) {
-            err = SecTrustedApplicationCreateFromPath("/Applications/XCreds.app/Contents/Resources/XCreds Login Autofill.app/Contents/PlugIns/XCreds Login Password.appex", &trust)
+        if FileManager.default.fileExists(atPath: "/Applications/trioX.app/Contents/Resources/TrioX Login Autofill.app/Contents/PlugIns/TrioX Login Password.appex", isDirectory: nil) {
+            err = SecTrustedApplicationCreateFromPath("/Applications/trioX.app/Contents/Resources/TrioX Login Autofill.app/Contents/PlugIns/TrioX Login Password.appex", &trust)
             if err == 0 {
                 secApps.append(trust!)
             }

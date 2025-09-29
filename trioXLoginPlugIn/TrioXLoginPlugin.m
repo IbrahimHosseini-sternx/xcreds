@@ -1,17 +1,17 @@
 //
-//  XCredsLoginPlugin.m
-//  XCredsLoginPlugin
+// trioXLoginPlugin.m
+// trioXLoginPlugin
 //
 //
 
-#import "XCredsLoginPlugin.h"
-#import "XCredsLoginPlugin-Swift.h"
+#import "TrioXLoginPlugin.h"
+#import "TrioXLoginPlugin-Swift.h"
 #import <Foundation/Foundation.h>
-XCredsLoginPlugin *authorizationPlugin = nil;
+TrioXLoginPlugin *authorizationPlugin = nil;
 
 //os_log_t pluginLog = nil;
-XCredsLoginMechanism *loginWindowMechanism = nil;
-XCredsLoginDone *loginDone = nil;
+TrioXLoginMechanism *loginWindowMechanism = nil;
+TrioXLoginDone *loginDone = nil;
 
 
 
@@ -77,7 +77,7 @@ extern OSStatus AuthorizationPluginCreate(const AuthorizationCallbacks *callback
     TCSLog([NSString stringWithFormat:@"%s %s:%d",__FUNCTION__, [[[NSString stringWithCString:__FILE__ encoding:NSUTF8StringEncoding] lastPathComponent] cStringUsingEncoding:NSUTF8StringEncoding],__LINE__]);
 
     if (authorizationPlugin == nil) {
-        authorizationPlugin = [[XCredsLoginPlugin alloc] init];
+        authorizationPlugin = [[TrioXLoginPlugin alloc] init];
     }
 
     return [authorizationPlugin AuthorizationPluginCreate:callbacks
@@ -88,7 +88,7 @@ extern OSStatus AuthorizationPluginCreate(const AuthorizationCallbacks *callback
 // Implementation
 
 
-@implementation XCredsLoginPlugin
+@implementation TrioXLoginPlugin
 
 
 - (OSStatus)AuthorizationPluginCreate:(const AuthorizationCallbacks *)callbacks
@@ -139,38 +139,38 @@ extern OSStatus AuthorizationPluginCreate(const AuthorizationCallbacks *callback
 
     if (mechanism->fLoginWindow) {
         if (loginWindowMechanism==nil){
-            loginWindowMechanism = [[XCredsLoginMechanism alloc] initWithMechanism:mechanism];
+            loginWindowMechanism = [[TrioXLoginMechanism alloc] initWithMechanism:mechanism];
         }
         [loginWindowMechanism run];
 
     }
     else if (mechanism->fUserSetup){
-        XCredsUserSetup *userSetup = [[XCredsUserSetup alloc] initWithMechanism:mechanism];
+        TrioXUserSetup *userSetup = [[TrioXUserSetup alloc] initWithMechanism:mechanism];
         [userSetup run];
 
     }
     else if (mechanism->fPowerControl){
-        XCredsPowerControlMechanism *powerControl = [[XCredsPowerControlMechanism alloc] initWithMechanism:mechanism];
+        TrioXPowerControlMechanism *powerControl = [[TrioXPowerControlMechanism alloc] initWithMechanism:mechanism];
         [powerControl run];
 
     }
     else if (mechanism->fEnableFDE){
-        XCredsEnableFDE *fdeMech = [[XCredsEnableFDE alloc] initWithMechanism:mechanism];
+        TrioXEnableFDE *fdeMech = [[TrioXEnableFDE alloc] initWithMechanism:mechanism];
         [fdeMech run];
 
     }
     else if (mechanism->fKeychainAdd){
-        XCredsKeychainAdd *keychainAdd = [[XCredsKeychainAdd alloc] initWithMechanism:mechanism];
+        TrioXKeychainAdd *keychainAdd = [[TrioXKeychainAdd alloc] initWithMechanism:mechanism];
         [keychainAdd run];
 
     }
     else if (mechanism->fCreateUser){
-        XCredsCreateUser *createUser = [[XCredsCreateUser alloc] initWithMechanism:mechanism];
+        TrioXCreateUser *createUser = [[TrioXCreateUser alloc] initWithMechanism:mechanism];
         [createUser run];
 
     }
     else if (mechanism->fLoginDone){
-        loginDone = [[XCredsLoginDone alloc] initWithMechanism:mechanism];
+        loginDone = [[TrioXLoginDone alloc] initWithMechanism:mechanism];
         [loginDone run];
 
     }

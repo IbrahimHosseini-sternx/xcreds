@@ -144,10 +144,10 @@ class TrioXKeychainAdd : TrioXBaseMechanism {
 
         if let tokenArray = tokenArray, tokenArray.count>2 {
             TCSLogWithMark("We have tokens, so cloud login")
-            XCredsAudit().tokensUpdated(idToken:tokenArray[0])
-            let xcredsCreds = Creds(accessToken: tokenArray[2], idToken: tokenArray[0], refreshToken: tokenArray[1], password: userpass, jsonDict: Dictionary())
+            TrioXAudit().tokensUpdated(idToken:tokenArray[0])
+            let trioX = Creds(accessToken: tokenArray[2], idToken: tokenArray[0], refreshToken: tokenArray[1], password: userpass, jsonDict: Dictionary())
             TCSLogWithMark("saving tokens to keychain")
-            if TokenManager.saveTokensToKeychain(creds: xcredsCreds, setACL: true, password:userpass )==false {
+            if TokenManager.saveTokensToKeychain(creds: trioX, setACL: true, password:userpass )==false {
                 TCSLogErrorWithMark("Error saving tokens to keychain")
             }
 
@@ -156,7 +156,7 @@ class TrioXKeychainAdd : TrioXBaseMechanism {
         else if let domainName = domainName, domainName.count>0{
             TCSLogWithMark("AD Login with domain: \(domainName)")
 
-            if let shortName=shortName, KeychainUtil().updatePassword(serviceName: "xcreds local password",accountName:shortName+"@"+domainName, pass: userpass,shouldUpdateACL: true, keychainPassword:userpass) == false {
+            if let shortName=shortName, KeychainUtil().updatePassword(serviceName: "trioX local password",accountName:shortName+"@"+domainName, pass: userpass,shouldUpdateACL: true, keychainPassword:userpass) == false {
                 TCSLogErrorWithMark("Error Updating password in keychain")
 
             }

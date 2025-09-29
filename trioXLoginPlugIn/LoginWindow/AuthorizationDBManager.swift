@@ -1,6 +1,6 @@
 //
 //  AuthorizationDBManager.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

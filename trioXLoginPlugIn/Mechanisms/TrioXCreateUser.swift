@@ -157,7 +157,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
 
             var customAttributes = [String: String]()
             
-            let metaPrefix = "_xcreds"
+            let metaPrefix = "_trioX"
             
             customAttributes["dsAttrTypeNative:\(metaPrefix)_didCreateUser"] = "1"
             
@@ -253,7 +253,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
         if let aliasHint = getHint(type: .aliasName) as? String {
             alias=aliasHint
         }
-        // Set the xcreds attributes to stamp this account as the mapped one
+        // Set the TrioX attributes to stamp this account as the mapped one
         setTimestampFor(trioXUser ?? "")
         let _ = updateOIDCInfo(user: trioXUser ?? "", localOnly: localLogin)
 
@@ -278,9 +278,9 @@ class TrioXCreateUser: TrioXBaseMechanism {
                     }
                 }
                 else if shouldRemoveAdmin == true {
-                    TCSLogWithMark("removing admin if xcreds created")
+                    TCSLogWithMark("removing admin if TrioX created")
 
-                    if let promotedToAdminArray = try record.values(forAttribute: "dsAttrTypeNative:_xcreds_promoted_to_admin") as? [String],promotedToAdminArray.count==1, promotedToAdminArray[0]=="1"  {
+                    if let promotedToAdminArray = try record.values(forAttribute: "dsAttrTypeNative:_trioX_promoted_to_admin") as? [String],promotedToAdminArray.count==1, promotedToAdminArray[0]=="1"  {
                         TCSLogWithMark("we promoted so removing admin")
 
                         if removeAdmin(record)==false {
@@ -288,9 +288,9 @@ class TrioXCreateUser: TrioXBaseMechanism {
 
                         }
                         else { // success so remove attribute
-                            TCSLogWithMark("removing _xcreds_promoted_to_admin from record")
+                            TCSLogWithMark("removing _trioX_promoted_to_admin from record")
 
-                            try record.removeValues(forAttribute: "dsAttrTypeNative:_xcreds_promoted_to_admin")
+                            try record.removeValues(forAttribute: "dsAttrTypeNative:_trioX_promoted_to_admin")
                         }
 
                     }
@@ -309,7 +309,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
             TCSLogWithMark("got RFIDuid: \(rfidUID)")
             let rfidPIN = getHint(type: .rfidPIN) as? String
             do {
-                let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+                let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
 
                 let userManager = UserSecretManager(secretKeeper: secretKeeper)
                 guard let rfidUIDData = Data(fromHexEncodedString: rfidUID) else {
@@ -381,8 +381,8 @@ class TrioXCreateUser: TrioXBaseMechanism {
         // now to update the attribute
         TCSLogWithMark("updating info in DS")
 
-        TCSLogWithMark("removing _xcreds_oidc_updatedfromlocal from record if needed")
-        try? records.first?.removeValues(forAttribute: "dsAttrTypeNative:_xcreds_oidc_updatedfromlocal")
+        TCSLogWithMark("removing _trioX_oidc_updatedfromlocal from record if needed")
+        try? records.first?.removeValues(forAttribute: "dsAttrTypeNative:_trioX_oidc_updatedfromlocal")
 
         let claimsToDSArray = (DefaultsOverride.standardOverride.array(forKey: PrefKeys.claimsToAddToLocalUserAccount.rawValue) ?? []) as? [String]
         TCSLogWithMark("Checking if member of group")
@@ -391,7 +391,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
         if let userGroups = userGroups, userGroups.count>0 {
             TCSLogWithMark("is a member of \(userGroups.count) groups. Adding to OD record.")
             let groupsString = userGroups.joined(separator: ",")
-            try? records.first?.setValue(groupsString, forAttribute: "dsAttrTypeNative:_xcreds_groups")
+            try? records.first?.setValue(groupsString, forAttribute: "dsAttrTypeNative:_trioX_groups")
 
         }
 
@@ -400,7 +400,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
 
         if let kerberosPrincipal = kerberosPrincipal {
             TCSLogWithMark("saving kerberos principal to user DS record")
-            try? records.first?.setValue(kerberosPrincipal, forAttribute: "dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal")
+            try? records.first?.setValue(kerberosPrincipal, forAttribute: "dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal")
 
         }
 
@@ -409,13 +409,13 @@ class TrioXCreateUser: TrioXBaseMechanism {
 
         if let fullUserName = fullUserName {
             TCSLogWithMark("setting fullUserName")
-            try? records.first?.setValue(fullUserName, forAttribute: "dsAttrTypeNative:_xcreds_oidc_full_username")
+            try? records.first?.setValue(fullUserName, forAttribute: "dsAttrTypeNative:_trioX_oidc_full_username")
         }
 
         //oidcLastLoginTimestamp
 
         if let oidcLastLoginTimestampString = getHint(type: .oidcLastLoginTimestamp) as? String{
-            try? records.first?.setValue(oidcLastLoginTimestampString, forAttribute: "dsAttrTypeNative:_xcreds_oidc_lastLoginTimestamp")
+            try? records.first?.setValue(oidcLastLoginTimestampString, forAttribute: "dsAttrTypeNative:_trioX_oidc_lastLoginTimestamp")
         }
 
 
@@ -424,10 +424,10 @@ class TrioXCreateUser: TrioXBaseMechanism {
 
         if let alias = alias {
             TCSLogWithMark("saving alias to DS as a username for ropg as needed")
-            try? records.first?.setValue(alias, forAttribute: "dsAttrTypeNative:_xcreds_oidc_username")
+            try? records.first?.setValue(alias, forAttribute: "dsAttrTypeNative:_trioX_oidc_username")
         } else if localOnly==false {
             TCSLogWithMark("Fallback,saving account name to DS as username for ropg as needed")
-            try? records.first?.setValue(user, forAttribute: "dsAttrTypeNative:_xcreds_oidc_username")
+            try? records.first?.setValue(user, forAttribute: "dsAttrTypeNative:_trioX_oidc_username")
         }
 
         let adAttributes = getHint(type: .allADAttributes) as? Dictionary<String, String>
@@ -445,7 +445,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
                     let sanitizedKey = key.oidc_allowed_chars
                     if sanitizedKey.count<50 && value.count<256 {
                         TCSLogWithMark("Adding \(sanitizedKey) = \(value)")
-                        try? records.first?.setValue(value, forAttribute: "dsAttrTypeNative:_xcreds_activedirectory_\(sanitizedKey)")
+                        try? records.first?.setValue(value, forAttribute: "dsAttrTypeNative:_trioX_activedirectory_\(sanitizedKey)")
                     }
 
                 }
@@ -475,7 +475,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
                             let sanitizedKey = currClaim.oidc_allowed_chars
                             if sanitizedKey.count<50 && value.count<256 {
                                 TCSLogWithMark("Adding \(sanitizedKey) = \(value)")
-                                try? records.first?.setValue(value, forAttribute: "dsAttrTypeNative:_xcreds_oidc_\(sanitizedKey)")
+                                try? records.first?.setValue(value, forAttribute: "dsAttrTypeNative:_trioX_oidc_\(sanitizedKey)")
 
                             }
                             else {
@@ -489,7 +489,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
                             if sanitizedKey.count<256 || oneLine.count<20 {
                                 TCSLogWithMark("Adding \(sanitizedKey) = \(oneLine)")
 
-                                try? records.first?.setValue(oneLine, forAttribute: "dsAttrTypeNative:_xcreds_oidc_\(sanitizedKey)")
+                                try? records.first?.setValue(oneLine, forAttribute: "dsAttrTypeNative:_trioX_oidc_\(sanitizedKey)")
                             }
                             else {
                                 TCSLogWithMark("key or value too long to put into DS")
@@ -519,16 +519,16 @@ class TrioXCreateUser: TrioXBaseMechanism {
 //        do {
 //            os_log("updating sub",log: noLoMechlog, type: .error)
 //
-//            try records.first?.setValue(sub, forAttribute: "dsAttrTypeNative:_xcreds_oidc_sub")
+//            try records.first?.setValue(sub, forAttribute: "dsAttrTypeNative:_trioX_oidc_sub")
 //
 //
 //            os_log("updating iss",log: noLoMechlog, type: .error)
 //
-//            try records.first?.setValue(iss, forAttribute: "dsAttrTypeNative:_xcreds_oidc_iss")
+//            try records.first?.setValue(iss, forAttribute: "dsAttrTypeNative:_trioX_oidc_iss")
 //
 //
 ////            if let groups = groups?.joined(separator: ";") {
-////                try records.first?.setValue(groups, forAttribute: "dsAttrTypeNative:_xcreds_oidc_groups")
+////                try records.first?.setValue(groups, forAttribute: "dsAttrTypeNative:_trioX_oidc_groups")
 ////
 ////            }
 //        } catch {
@@ -699,13 +699,13 @@ class TrioXCreateUser: TrioXBaseMechanism {
         if getManagedPreference(key: .AliasUPN) as? Bool ?? false {
             if let upn = getHint(type: .kerberos_principal) as? String {
                 os_log("Adding UPN as an alias: %{public}@", log: createUserLog, type: .debug, upn)
-                let result = XCredsCreateUser.addAlias(name: shortName, alias: upn.lowercased())
+                let result = TrioXCreateUser.addAlias(name: shortName, alias: upn.lowercased())
                 os_log("Adding UPN result: %{public}@", log: createUserLog, type: .debug, result.description)
             }
         }
 
         if let aliasHint = getHint(type: .aliasName) as? String {
-            if XCredsCreateUser.addAlias(name: shortName, alias: aliasHint)==false {
+            if TrioXCreateUser.addAlias(name: shortName, alias: aliasHint)==false {
                 os_log("error adding alias", log: createUserLog, type: .debug)
             }
         }
@@ -715,7 +715,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
         if getManagedPreference(key: .AliasNTName) as? Bool ?? false {
             if let ntName = getHint(type: .ntName) as? String {
                 os_log("Adding NTName as an alias: %{public}@", log: createUserLog, type: .debug, ntName)
-                let result = XCredsCreateUser.addAlias(name: shortName, alias: ntName)
+                let result = TrioXCreateUser.addAlias(name: shortName, alias: ntName)
                 os_log("Adding NTName result: %{public}@", log: createUserLog, type: .debug, result.description)
             }
         }
@@ -918,7 +918,7 @@ class TrioXCreateUser: TrioXBaseMechanism {
     fileprivate func setTimestampFor(_ nomadUser: String) {
         // Add network sign in stamp
         if let signInTime = getHint(type: .networkSignIn) {
-            if XCredsCreateUser.updateSignIn(name: nomadUser, time: signInTime as AnyObject) {
+            if TrioXCreateUser.updateSignIn(name: nomadUser, time: signInTime as AnyObject) {
                 os_log("Sign in time updated", log: createUserLog, type: .default)
             } else {
                 os_log("Could not add timestamp", log: createUserLog, type: .error)

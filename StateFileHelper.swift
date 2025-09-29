@@ -1,6 +1,6 @@
 //
 //  RunFileHelper.swift
-//  XCreds
+// trioX
 //
 //
 
@@ -22,11 +22,11 @@ class StateFileHelper {
         switch fileType {
         case .returnType:
             folderPath = "/usr/local/var/"
-            filePath = "xcreds_return"
+            filePath = "trioX_return"
 
         case .delayType:
             folderPath = "/usr/local/var/"
-            filePath = "xcreds_delay"
+            filePath = "trioX_delay"
         }
         return (folderPath, filePath)
     }

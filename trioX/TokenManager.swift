@@ -1,6 +1,6 @@
 //
 //  TokenManager.swift
-//  xCreds
+// trioX
 //
 //
 import Foundation
@@ -114,7 +114,7 @@ class TokenManager:DSQueryable {
 
         if let accessToken = creds.accessToken, accessToken.count>0{
             TCSLogWithMark("Saving Access Token")
-            if  keychainUtil.updatePassword(serviceName: "xcreds ".appending(PrefKeys.accessToken.rawValue),accountName:PrefKeys.accessToken.rawValue, pass: accessToken,shouldUpdateACL: setACL, keychainPassword:password) == false {
+            if  keychainUtil.updatePassword(serviceName: "trioX ".appending(PrefKeys.accessToken.rawValue),accountName:PrefKeys.accessToken.rawValue, pass: accessToken,shouldUpdateACL: setACL, keychainPassword:password) == false {
                 TCSLogErrorWithMark("Error Updating Access Token")
 
                 return false
@@ -123,7 +123,7 @@ class TokenManager:DSQueryable {
         }
         if let idToken = creds.idToken, idToken.count>0{
             TCSLogWithMark("Saving idToken Token")
-            if  keychainUtil.updatePassword(serviceName: "xcreds ".appending(PrefKeys.idToken.rawValue),accountName:PrefKeys.idToken.rawValue, pass: idToken, shouldUpdateACL: setACL, keychainPassword:password) == false {
+            if  keychainUtil.updatePassword(serviceName: "trioX ".appending(PrefKeys.idToken.rawValue),accountName:PrefKeys.idToken.rawValue, pass: idToken, shouldUpdateACL: setACL, keychainPassword:password) == false {
                 TCSLogErrorWithMark("Error Updating idToken Token")
 
                 return false
@@ -134,7 +134,7 @@ class TokenManager:DSQueryable {
         if let refreshToken = creds.refreshToken, refreshToken.count>0 {
             TCSLogWithMark("Saving refresh Token")
 
-            if keychainUtil.updatePassword(serviceName: "xcreds ".appending(PrefKeys.refreshToken.rawValue),accountName:PrefKeys.refreshToken.rawValue, pass: refreshToken,shouldUpdateACL: setACL, keychainPassword:password) == false {
+            if keychainUtil.updatePassword(serviceName: "trioX ".appending(PrefKeys.refreshToken.rawValue),accountName:PrefKeys.refreshToken.rawValue, pass: refreshToken,shouldUpdateACL: setACL, keychainPassword:password) == false {
                 TCSLogErrorWithMark("Error Updating refreshToken Token")
 
                 return false
@@ -146,7 +146,7 @@ class TokenManager:DSQueryable {
         if let password = password, password.count>0 {
             TCSLogWithMark("Saving cloud password")
 
-            if keychainUtil.updatePassword(serviceName: "xcreds local password",accountName:PrefKeys.password.rawValue, pass: password,shouldUpdateACL: setACL, keychainPassword:password) == false {
+            if keychainUtil.updatePassword(serviceName: "trioX local password",accountName:PrefKeys.password.rawValue, pass: password,shouldUpdateACL: setACL, keychainPassword:password) == false {
                 TCSLogErrorWithMark("Error Updating password")
 
                 return false
@@ -193,7 +193,7 @@ class TokenManager:DSQueryable {
         TCSLogWithMark()
 
         let clientID = defaults.string(forKey: PrefKeys.clientID.rawValue)
-        let keychainAccountAndPassword = try? keychainUtil.findPassword(serviceName: "xcreds local password",accountName:PrefKeys.password.rawValue)
+        let keychainAccountAndPassword = try? keychainUtil.findPassword(serviceName: "trioX local password",accountName:PrefKeys.password.rawValue)
 
         TCSLogWithMark()
         //ropg
@@ -204,11 +204,11 @@ class TokenManager:DSQueryable {
             let keychainPassword = keychainAccountAndPassword.1 {
             TCSLogWithMark("Checking credentials using ROPG")
             let currentUser = PasswordUtils.getCurrentConsoleUserRecord()
-            if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_full_username") as? [String], userNames.count>0, let username = userNames.first
+            if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_trioX_oidc_full_username") as? [String], userNames.count>0, let username = userNames.first
             {
                 oidcUsername=username
             }
-            else if let oidcUsernamePrefs = UserDefaults.standard.string(forKey:"_xcreds_oidc_full_username" ), oidcUsernamePrefs.isEmpty == false {
+            else if let oidcUsernamePrefs = UserDefaults.standard.string(forKey:"_trioX_oidc_full_username" ), oidcUsernamePrefs.isEmpty == false {
                 oidcUsername=oidcUsernamePrefs
 
             }
@@ -240,7 +240,7 @@ class TokenManager:DSQueryable {
 
 
         } //use the refresh token
-        else if let refreshAccountAndToken = try? keychainUtil.findPassword(serviceName: "xcreds ".appending(PrefKeys.refreshToken.rawValue),accountName:PrefKeys.refreshToken.rawValue), let refreshToken = refreshAccountAndToken.1 {
+        else if let refreshAccountAndToken = try? keychainUtil.findPassword(serviceName: "trioX ".appending(PrefKeys.refreshToken.rawValue),accountName:PrefKeys.refreshToken.rawValue), let refreshToken = refreshAccountAndToken.1 {
 
             TCSLogWithMark("Using refresh token")
             // let tokenInfo = try await oidc().refreshTokens(refreshToken)
@@ -540,7 +540,7 @@ extension TokenManager {
 
 
     func authFailure(message: String) {
-        XCredsAudit().auditError(message)
+        TrioXAudit().auditError(message)
         TCSLogWithMark("authFailure: \(message)")
         feedbackDelegate?.tokenError(message)
     }
@@ -574,18 +574,18 @@ extension TokenManager {
             }
 
             if xcredCreds.hasAccessAndRefresh() || (googleAuth && xcredCreds.hasAccess()) {
-                XCredsAudit().refreshTokenUpdated(true)
+                TrioXAudit().refreshTokenUpdated(true)
                 self.feedbackDelegate?.credentialsUpdated(xcredCreds)
             }
 //            else if let dict = tokens.jsonDict, let error = dict["error"] as? String, error == ropgResponseValue ?? "interaction_required" {
 //                TCSLogWithMark("ropgResponseValue matched to \(error)")
-//                XCredsAudit().refreshTokenUpdated(true)
+//                TrioXAudit().refreshTokenUpdated(true)
 //
 //                self.feedbackDelegate?.credentialsUpdated(xcredCreds)
 //            }
             else if let dict = tokens.jsonDict, let error = dict["error"] as? String, error == "invalid_grant" {
                 TCSLogWithMark("invalid grant, so password wrong: \(error)")
-                XCredsAudit().auditError(error)
+                TrioXAudit().auditError(error)
 
                 self.feedbackDelegate?.invalidCredentials()
             }

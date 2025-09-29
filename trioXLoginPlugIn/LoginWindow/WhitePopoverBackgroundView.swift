@@ -1,6 +1,6 @@
 //
 //  WhitePopoverBackgroundView.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

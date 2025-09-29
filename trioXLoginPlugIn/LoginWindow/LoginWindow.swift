@@ -1,6 +1,6 @@
 //
 //  LoginWindow.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

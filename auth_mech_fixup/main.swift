@@ -6,12 +6,12 @@
 
 import Foundation
 
-if AuthorizationDBManager.shared.rightExists(right: "XCredsLoginPlugin:LoginWindow") == true {
-    TCSLogWithMark("XCreds auth rights already installed.")
+if AuthorizationDBManager.shared.rightExists(right: "TrioXLoginPlugin:LoginWindow") == true {
+    TCSLogWithMark("TrioX auth rights already installed.")
     exit(0)
 
 }
-TCSLogErrorWithMark("XCreds rights do not exist. Fixing and rebooting")
+TCSLogErrorWithMark("TrioX rights do not exist. Fixing and rebooting")
 
 if AuthRightsHelper.resetRights()==false {
     TCSLogErrorWithMark("error resetting rights")

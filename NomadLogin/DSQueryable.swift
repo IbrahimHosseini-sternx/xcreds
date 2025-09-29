@@ -171,10 +171,10 @@ public extension DSQueryable {
             os_log("filtering", type: .info)
 
             let matchingRecords = allRecords.filter { (record) -> Bool in
-                guard let issValue = try? record.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_iss") as? [String] else {
+                guard let issValue = try? record.values(forAttribute: "dsAttrTypeNative:_trioX_oidc_iss") as? [String] else {
                     return false
                 }
-                guard let subValue = try? record.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_sub") as? [String] else {
+                guard let subValue = try? record.values(forAttribute: "dsAttrTypeNative:_trioX_oidc_sub") as? [String] else {
                     return false
                 }
 
@@ -201,7 +201,7 @@ public extension DSQueryable {
             os_log("filtering", type: .info)
 
             let matchingRecords = allRecords.filter { (record) -> Bool in
-                guard let foundKerberosPrincipal = try? record.values(forAttribute: "dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal") as? [String] else {
+                guard let foundKerberosPrincipal = try? record.values(forAttribute: "dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal") as? [String] else {
                     return false
                 }
 
@@ -287,7 +287,7 @@ public extension DSQueryable {
             os_log("Adding user to administrators group", type: .debug)
             
             try adminGroup?.addMemberRecord(user)
-            try? user.setValue("1", forAttribute: "dsAttrTypeNative:_xcreds_promoted_to_admin")
+            try? user.setValue("1", forAttribute: "dsAttrTypeNative:_trioX_promoted_to_admin")
 
 
         } catch {

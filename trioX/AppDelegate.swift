@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  xCreds
+// trioX
 //
 //
 
@@ -82,7 +82,7 @@ extension trioX {
                 case homeDirectory="dsAttrTypeStandard:NFSHomeDirectory"
                 case recordName="dsAttrTypeStandard:RecordName"
                 case authenticationAuthority="dsAttrTypeStandard:AuthenticationAuthority"
-                case oidcUsername="dsAttrTypeNative:_xcreds_oidc_username"
+                case oidcUsername="dsAttrTypeNative:_trioX_oidc_username"
                 case primaryGID="dsAttrTypeStandard:PrimaryGroupID"
                 case shell="dsAttrTypeStandard:UserShell"
                 case uid="dsAttrTypeStandard:UniqueID"
@@ -94,7 +94,7 @@ extension trioX {
 
             }
 
-            var info = XCredsInfo()
+            var info = TrioXInfo()
 
             let rightsInfo =  AuthorizationDBManager().consoleRights()
             var oidcUsers = [[String:String]]()
@@ -329,7 +329,7 @@ extension trioX {
                 NSApplication.shared.terminate(self)
 
             }
-            let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+            let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
             let userManager = UserSecretManager(secretKeeper: secretKeeper)
             if let adminUser = try userManager.adminCredentials(), !adminUser.username.isEmpty {
                 print("\(adminUser.username)")
@@ -359,7 +359,7 @@ extension trioX {
 
             }
 
-            let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+            let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
             let userManager = UserSecretManager(secretKeeper: secretKeeper)
 
             do {
@@ -394,7 +394,7 @@ extension trioX {
 
             }
 
-            let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+            let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
             let userManager = UserSecretManager(secretKeeper: secretKeeper)
             try userManager.clearUIDUsers()
         }
@@ -413,7 +413,7 @@ extension trioX {
                 NSApplication.shared.terminate(self)
 
             }
-            let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+            let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
             let userManager = UserSecretManager(secretKeeper: secretKeeper)
             try userManager.updateLocalAdminCredentials(user: SecretKeeperUser(fullName: "", username: "", password: "", uid: -1, rfidUID: Data(), pin: nil))
 
@@ -438,7 +438,7 @@ extension trioX {
                 NSApplication.shared.terminate(self)
             }
 
-            let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+            let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
             let userManager = UserSecretManager(secretKeeper: secretKeeper)
             try userManager.updateLocalAdminCredentials(user: SecretKeeperUser(fullName: "", username: adminusername, password: adminpassword, uid: NSNumber(value: -1), rfidUID: Data(), pin: nil))
         }
@@ -484,7 +484,7 @@ extension trioX {
                 if !username.isEmpty && !password.isEmpty && !fullname.isEmpty && !rfiduid.isEmpty{
 
 
-                    let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+                    let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
 
                     let userManager = UserSecretManager(secretKeeper: secretKeeper)
                     guard let rfidUIDData = Data(fromHexEncodedString: rfiduid) else {
@@ -495,7 +495,7 @@ extension trioX {
 
 
                     try userManager.setUIDUser(fullName: fullname, rfidUID: rfidUIDData, username: username, password: password, uid: NSNumber(value: Int(uid) ?? -1), pin: pin)
-                    print("user set. If this Mac system is at the XCreds login window, please restart (or log in and log out) to use the new user.")
+                    print("user set. If this Mac system is at the TrioX login window, please restart (or log in and log out) to use the new user.")
                 }
             }
             catch {
@@ -520,7 +520,7 @@ extension trioX {
 
             }
             do {
-                let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+                let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
                 let userManager = UserSecretManager(secretKeeper: secretKeeper)
                 let users = try userManager.uidUsers()
 
@@ -571,7 +571,7 @@ extension trioX {
                     return
                 }
 
-                let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+                let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
                 let userManager = UserSecretManager(secretKeeper: secretKeeper)
                 guard let user = try userManager.uidUser(uid: rfidUidData) else {
                     print("user not found")
@@ -627,7 +627,7 @@ extension trioX {
                     return
                 }
 
-                let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+                let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
                 let userManager = UserSecretManager(secretKeeper: secretKeeper)
                 guard let _ = try userManager.uidUser(uid: rfidUidData) else {
                     print("user not found")
@@ -637,7 +637,7 @@ extension trioX {
                     print("user could not be removed")
                 }
                 else {
-                    print("user removed. If this Mac system is at the XCreds login window, please restart (or log in and log out) to prevent the user from logging in.")
+                    print("user removed. If this Mac system is at the TrioX login window, please restart (or log in and log out) to prevent the user from logging in.")
 
 
                 }
@@ -678,7 +678,7 @@ extension trioX {
                     _=RFIDUsers(rfidUsers: [:])
                     let lineArray = contentsOfFile.components(separatedBy:"\n")
 
-                    let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+                    let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
 
                     let userManager = UserSecretManager(secretKeeper: secretKeeper)
                     var count = 0
@@ -731,7 +731,7 @@ extension trioX {
                     }
 
 //                    try userManager.setUIDUsers(rfidUsers)
-                    print("\(count) users imported. If this Mac system is at the XCreds login window, please restart (or log in and log out) to use the new users.")
+                    print("\(count) users imported. If this Mac system is at the TrioX login window, please restart (or log in and log out) to use the new users.")
                 }
                 catch {
                     print("\(file) cannot be read. \(error)")
@@ -836,7 +836,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, DSQueryable {
 
                 }
                 else {
-                    self.statusBarItem?.button?.image=NSImage(named: "xcreds menu icon check")
+                    self.statusBarItem?.button?.image=NSImage(named: "TrioX menu icon check")
                 }
 
             }
@@ -849,7 +849,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, DSQueryable {
 
                 }
                 else {
-                    self.statusBarItem?.button?.image=NSImage(named: "xcreds menu icon")
+                    self.statusBarItem?.button?.image=NSImage(named: "TrioX menu icon")
                 }
             }
         }
@@ -869,7 +869,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, DSQueryable {
             self.statusBarItem?.button?.image=image
         }
         else {
-            self.statusBarItem?.button?.image=NSImage(named: "xcreds menu icon")
+            self.statusBarItem?.button?.image=NSImage(named: "TrioX menu icon")
         }
         let shareMounter = ShareMounter()
 
@@ -907,8 +907,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, DSQueryable {
 
         DispatchQueue.global().async{
 
-            if var autofillAppPath = Bundle.main.path(forResource: "XCreds Login Autofill", ofType: "app"){
-                autofillAppPath = autofillAppPath + "/Contents/MacOS/XCreds Login Autofill"
+            if var autofillAppPath = Bundle.main.path(forResource: "TrioX Login Autofill", ofType: "app"){
+                autofillAppPath = autofillAppPath + "/Contents/MacOS/TrioX Login Autofill"
                 if FileManager.default.fileExists(atPath: autofillAppPath){
 
                     let _ = TCTaskHelper.shared().runCommand(autofillAppPath, withOptions:["-r"] )
@@ -988,7 +988,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, DSQueryable {
             do {
                 let attributesArray = try currentUser.recordDetails(forAttributes: nil)
                 for currAttribute in attributesArray {
-                    if let key = currAttribute.key as? String, key.hasPrefix("dsAttrTypeNative:_xcreds"), let value = currAttribute.value as? Array<String>, let lastValue = value.last {
+                    if let key = currAttribute.key as? String, key.hasPrefix("dsAttrTypeNative:_trioX"), let value = currAttribute.value as? Array<String>, let lastValue = value.last {
                         let components = key.components(separatedBy: ":")
                         if let strippedKey = components.last{
                             UserDefaults.standard.set(lastValue, forKey:strippedKey)

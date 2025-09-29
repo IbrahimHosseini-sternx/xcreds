@@ -1,6 +1,6 @@
 //
 //  PasswordUtils.swift
-//  XCreds
+// trioX
 //
 //
 
@@ -324,7 +324,7 @@ class PasswordUtils: NSObject {
 
     func kerberosPrincipalFromCurrentLoggedInUser() -> String?  {
         guard let user = try? PasswordUtils.getLocalRecord(getConsoleUser()),
-              let kerbPrincArray = user.value(forKey: "dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal") as? Array <String>,
+              let kerbPrincArray = user.value(forKey: "dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal") as? Array <String>,
               let kerbPrinc = kerbPrincArray.first else
         {
             return nil

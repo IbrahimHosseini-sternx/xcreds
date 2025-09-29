@@ -1,6 +1,6 @@
 //
-//  XCredsLoginPlugin.h
-//  XCredsLoginPlugin
+// trioXLoginPlugin.h
+// trioXLoginPlugin
 //
 //
 
@@ -60,7 +60,7 @@ typedef struct MechanismRecord MechanismRecord;
 #pragma mark
 #pragma mark ObjC AuthPlugin Wrapper
 
-@interface XCredsLoginPlugin : NSObject
+@interface TrioXLoginPlugin : NSObject
 - (OSStatus)MechanismCreate:(AuthorizationPluginRef)inPlugin
                   EngineRef:(AuthorizationEngineRef)inEngine
                 MechanismId:(AuthorizationMechanismId)mechanismId

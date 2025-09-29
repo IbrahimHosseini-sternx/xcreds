@@ -1,5 +1,5 @@
 //
-//  XCredsUserSetup.swift
+// trioXUserSetup.swift
 //
 //
 
@@ -18,24 +18,24 @@ class TrioXUserSetup: TrioXBaseMechanism{
                 let build = infoPlist["CFBundleVersion"] as? String,
                 let version = infoPlist["CFBundleShortVersionString"] as? String {
                 
-                // VersionCheck.shared.reportLicenseUsage(identifier: "so.trio.xcreds", appVersion:version,buildNumber: build, event: .checkin) { isSuccess in
+                // VersionCheck.shared.reportLicenseUsage(identifier: "so.trio.trioX", appVersion:version,buildNumber: build, event: .checkin) { isSuccess in
                 //     print(isSuccess)
                 // }
 
                 
                 TCSLogInfoWithMark("------------------------------------------------------------------")
-                TCSLogInfoWithMark("XCreds Login \(version).\(build)")
+                TCSLogInfoWithMark("TrioX Login \(version).\(build)")
                 if DefaultsOverride.standardOverride.bool(forKey: "showDebug")==false {
                     TCSLogInfoWithMark("Log showing only basic info and errors.")
                     TCSLogInfoWithMark("Set debugLogging to true to show verbose logging with")
-                    TCSLogInfoWithMark("sudo defaults write /Library/Preferences/so.trio.xcreds showDebug -bool true")
+                    TCSLogInfoWithMark("sudo defaults write /Library/Preferences/so.trio.trioX showDebug -bool true")
                 }
                 else {
                     TCSLogInfoWithMark("To disable verbose logging:")
-                    TCSLogInfoWithMark("sudo defaults delete /Library/Preferences/so.trio.xcreds showDebug")
+                    TCSLogInfoWithMark("sudo defaults delete /Library/Preferences/so.trio.trioX showDebug")
 
                 }
-                TCSLogInfoWithMark("To see all logging options, go to https://triosoftinc.com/knowledge-base/capturing-xcreds-logs/")
+                TCSLogInfoWithMark("To see all logging options, go to https://triosoftinc.com/knowledge-base/capturing-trioX-logs/")
 
 
                 TCSLogInfoWithMark("------------------------------------------------------------------")
@@ -43,7 +43,7 @@ class TrioXUserSetup: TrioXBaseMechanism{
         }
         TCSLogWithMark("checking to see if launchagent should be removed...")
         let fm = FileManager.default
-        let launchAgentPath = "/Library/LaunchAgents/so.trio.xcreds-launchagent.plist"
+        let launchAgentPath = "/Library/LaunchAgents/so.trio.trioX-launchagent.plist"
         let launchAgentExists = fm.fileExists(atPath: launchAgentPath)
         if DefaultsOverride.standardOverride.bool(forKey: PrefKeys.shouldRemoveMenuItemAutoLaunch.rawValue)==true, launchAgentExists == true {
             do {
@@ -56,7 +56,7 @@ class TrioXUserSetup: TrioXBaseMechanism{
         }
 
         do {
-            let secretKeeper = try SecretKeeper(label: "XCreds Encryptor", tag: "XCreds Encryptor")
+            let secretKeeper = try SecretKeeper(label: "TrioX Encryptor", tag: "TrioX Encryptor")
             let userManager = UserSecretManager(secretKeeper: secretKeeper)
 
             let users = try userManager.uidUsers()
@@ -122,7 +122,7 @@ class TrioXUserSetup: TrioXBaseMechanism{
         for odRecord in nonSystemUsers {
             let userDetails = try? odRecord.recordDetails(forAttributes: nil)
             if let userDetails = userDetails {
-                if let _ = try? odRecord.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_full_username") as? [String]{
+                if let _ = try? odRecord.values(forAttribute: "dsAttrTypeNative:_trioX_oidc_full_username") as? [String]{
                     TCSLogWithMark("user already has oidc full username")
                     continue
                 }
@@ -130,7 +130,7 @@ class TrioXUserSetup: TrioXBaseMechanism{
                 if let homeDirArray = userDetails["dsAttrTypeStandard:NFSHomeDirectory"] as? Array<String>, homeDirArray.count>0{
                     let homeDir = homeDirArray[0]
                     TCSLogWithMark("looking in \(homeDir) for ds_info.plist")
-                    let appSupportFolder = homeDir + "/Library/Application Support/XCreds"
+                    let appSupportFolder = homeDir + "/Library/Application Support/trioX"
                     let plistPath = appSupportFolder + "/ds_info.plist"
 
                     TCSLogWithMark("looking in path \(plistPath)")
@@ -139,18 +139,18 @@ class TrioXUserSetup: TrioXBaseMechanism{
                         do {
                             TCSLogWithMark("reading plist")
                             let dict = try PropertyListDecoder().decode([String:String].self, from: Data(contentsOf: URL(fileURLWithPath: plistPath)))
-                            if let currOIDCFullUsername = dict["_xcreds_oidc_full_username"],
-                               let oidcUsername = dict["_xcreds_oidc_username"],
+                            if let currOIDCFullUsername = dict["_trioX_oidc_full_username"],
+                               let oidcUsername = dict["_trioX_oidc_username"],
                                let subValue = dict["subValue"],
                                let issuerValue = dict["issuerValue"]
                             {
                                 TCSLogWithMark("updating user account info")
-                                try odRecord.setValue("1", forAttribute: "dsAttrTypeNative:_xcreds_oidc_updatedfromlocal")
+                                try odRecord.setValue("1", forAttribute: "dsAttrTypeNative:_trioX_oidc_updatedfromlocal")
 
-                                try odRecord.setValue(currOIDCFullUsername, forAttribute: "dsAttrTypeNative:_xcreds_oidc_full_username")
-                                try odRecord.setValue(oidcUsername, forAttribute: "dsAttrTypeNative:_xcreds_oidc_username")
-                                try odRecord.setValue(subValue, forAttribute: "dsAttrTypeNative:_xcreds_oidc_sub")
-                                try odRecord.setValue(issuerValue, forAttribute: "dsAttrTypeNative:_xcreds_oidc_iss")
+                                try odRecord.setValue(currOIDCFullUsername, forAttribute: "dsAttrTypeNative:_trioX_oidc_full_username")
+                                try odRecord.setValue(oidcUsername, forAttribute: "dsAttrTypeNative:_trioX_oidc_username")
+                                try odRecord.setValue(subValue, forAttribute: "dsAttrTypeNative:_trioX_oidc_sub")
+                                try odRecord.setValue(issuerValue, forAttribute: "dsAttrTypeNative:_trioX_oidc_iss")
 
                                 TCSLogWithMark("removing file")
                                 try FileManager.default.removeItem(atPath: plistPath)

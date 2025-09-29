@@ -1,6 +1,6 @@
 //
 //  WebView.swift
-//  xCreds
+// trioX
 //
 //
 
@@ -78,7 +78,7 @@ class WebViewController: NSViewController, TokenManagerFeedbackDelegate {
             case .trial(_):
                 break
             case .invalid,.trialExpired, .expired:
-                let bundle = Bundle.findBundleWithName(name: "XCreds")
+                let bundle = Bundle.findBundleWithName(name: "trioX")
 
                 if let bundle = bundle {
                     let loadPageURL = bundle.url(forResource: "errorpage", withExtension: "html")
@@ -172,7 +172,7 @@ class WebViewController: NSViewController, TokenManagerFeedbackDelegate {
     }
     func tokenError(_ err: String) {
         TCSLogErrorWithMark("authFailure: \(err)")
-        XCredsAudit().auditError(err)
+        TrioXAudit().auditError(err)
 
         //TODO: need to post this?
         NotificationCenter.default.post(name: Notification.Name("TCSTokensUpdated"), object: self, userInfo:["error":err])
@@ -297,7 +297,7 @@ extension WebViewController: WKNavigationDelegate {
 
         TCSLogWithMark("adding listener for password")
         var pathURL:URL?
-        let bundle = Bundle.findBundleWithName(name: "XCreds")
+        let bundle = Bundle.findBundleWithName(name: "trioX")
 
         if let bundle = bundle {
             TCSLogWithMark()

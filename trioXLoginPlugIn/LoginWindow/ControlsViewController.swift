@@ -1,6 +1,6 @@
 //
 //  LoginWindowControlsWindowController.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 
@@ -10,7 +10,7 @@ import CoreGraphics
 class ControlsViewController: NSViewController, NSPopoverDelegate {
     @IBOutlet var systemInfoPopover: NSPopover!
     @IBOutlet var systemInfoPopoverViewController: NSViewController!
-    var delegate: XCredsMechanismProtocol?
+    var delegate: TrioXMechanismProtocol?
 
     @IBOutlet weak var buttonGridView: NSGridView!
     @IBOutlet weak var refreshGridColumn: NSGridColumn?
@@ -39,7 +39,7 @@ class ControlsViewController: NSViewController, NSPopoverDelegate {
 
     static func initFromPlugin() -> ControlsViewController?{
 
-        let bundle = Bundle.findBundleWithName(name: "XCreds")
+        let bundle = Bundle.findBundleWithName(name: "trioX")
 
         guard let bundle = bundle else {
             return nil
@@ -232,11 +232,11 @@ class ControlsViewController: NSViewController, NSPopoverDelegate {
             TCSLogWithMark("Trial")
             self.trialVersionStatusTextField?.isHidden = false
             if daysRemaining==1 {
-                self.trialVersionStatusTextField.stringValue = "XCreds Trial. One day remaining."
+                self.trialVersionStatusTextField.stringValue = "TrioX Trial. One day remaining."
 
             }
             else {
-                self.trialVersionStatusTextField.stringValue = "XCreds Trial. \(daysRemaining) days remaining."
+                self.trialVersionStatusTextField.stringValue = "TrioX Trial. \(daysRemaining) days remaining."
             }
 
         case .trialExpired:
@@ -429,7 +429,7 @@ class ControlsViewController: NSViewController, NSPopoverDelegate {
 
             alert.window.canBecomeVisibleWithoutLogin=true
 
-            let bundle = Bundle.findBundleWithName(name: "XCreds")
+            let bundle = Bundle.findBundleWithName(name: "trioX")
 
             if let bundle = bundle {
                 TCSLogWithMark("Found bundle")

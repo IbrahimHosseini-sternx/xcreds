@@ -1,6 +1,6 @@
 //
 //  Window+Shake.swift
-//  XCreds
+// trioX
 //
 //
 // https://stackoverflow.com/a/50267597

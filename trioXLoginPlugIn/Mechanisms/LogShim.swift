@@ -1,6 +1,6 @@
 //
 //  LogShim.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

@@ -1,6 +1,6 @@
 //
 //  MainController.swift
-//  XCreds
+// trioX
 //
 //
 
@@ -66,7 +66,7 @@ class MainController: NSObject, UpdateCredentialsFeedbackProtocol {
     
     let windowController =  DesktopLoginWindowController(windowNibName: "DesktopLoginWindowController")
     lazy var signInViewController:SignInViewController? = {
-        let bundle = Bundle.findBundleWithName(name: "XCreds")
+        let bundle = Bundle.findBundleWithName(name: "trioX")
         if let bundle = bundle{
             TCSLogWithMark("Creating signInViewController")
             let controller = SignInViewController(nibName: "LocalUsersViewController", bundle:bundle)
@@ -110,13 +110,13 @@ class MainController: NSObject, UpdateCredentialsFeedbackProtocol {
         guard let dsRecord =  try? PasswordUtils.getLocalRecord(user) else {
             return false
         }
-        let kerbPrinc = try? dsRecord.values(forAttribute:"dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal" )
+        let kerbPrinc = try? dsRecord.values(forAttribute:"dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal" )
 
-        let kerbPrincPrefs = UserDefaults.standard.string(forKey:"_xcreds_activedirectory_kerberosPrincipal" )
+        let kerbPrincPrefs = UserDefaults.standard.string(forKey:"_trioX_activedirectory_kerberosPrincipal" )
 
-        let oidcUsername = try? dsRecord.values(forAttribute:"dsAttrTypeNative:_xcreds_oidc_username" )
+        let oidcUsername = try? dsRecord.values(forAttribute:"dsAttrTypeNative:_trioX_oidc_username" )
 
-        let oidcUsernamePrefs = UserDefaults.standard.string(forKey:"_xcreds_oidc_username" )
+        let oidcUsernamePrefs = UserDefaults.standard.string(forKey:"_trioX_oidc_username" )
 
 
         if kerbPrinc == nil && oidcUsername == nil && kerbPrincPrefs == nil && oidcUsernamePrefs == nil {
@@ -327,7 +327,7 @@ class MainController: NSObject, UpdateCredentialsFeedbackProtocol {
                 return (nil,nil)
 
             }
-            let err = keychainUtil.updatePassword(serviceName: "xcreds local password",accountName:accountName, pass:localPassword, shouldUpdateACL: true, keychainPassword: localPassword)
+            let err = keychainUtil.updatePassword(serviceName: "TrioX local password",accountName:accountName, pass:localPassword, shouldUpdateACL: true, keychainPassword: localPassword)
             if err == false {
                 return (nil,nil)
             }
@@ -387,18 +387,18 @@ class MainController: NSObject, UpdateCredentialsFeedbackProtocol {
                     let userInfo = retUserAccountInfo
 
                     if let username = userInfo.username, let fullUsername = userInfo.fullUsername {
-                        UserDefaults.standard.set(username, forKey:"_xcreds_oidc_username")
-                        UserDefaults.standard.set(fullUsername, forKey:"_xcreds_oidc_full_username")
+                        UserDefaults.standard.set(username, forKey:"_trioX_oidc_username")
+                        UserDefaults.standard.set(fullUsername, forKey:"_trioX_oidc_full_username")
 
                         //if user oidc username doesn't exist in DS, write to a file in ~/L/AS for login window to migrate
                         let currentUser = PasswordUtils.getCurrentConsoleUserRecord()
-                        if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_username") as? [String], userNames.count>0, let username = userNames.first {
+                        if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_trioX_oidc_username") as? [String], userNames.count>0, let username = userNames.first {
                             TCSLogWithMark("Found existing username \(username) in DS")
 
                         }
                         else {
-                            TCSLogWithMark("No _xcreds_oidc_username found in DS so setting migrate file");
-                            let appSupportFolder = NSHomeDirectory() + "/Library/Application Support/XCreds"
+                            TCSLogWithMark("No _trioX_oidc_username found in DS so setting migrate file");
+                            let appSupportFolder = NSHomeDirectory() + "/Library/Application Support/trioX"
                             let plistPath = appSupportFolder + "/ds_info.plist"
 
                             do {
@@ -412,14 +412,14 @@ class MainController: NSObject, UpdateCredentialsFeedbackProtocol {
                                     try FileManager.default.removeItem(at: URL(filePath: plistPath))
                                 }
                                 if let subValue = idTokenInfo["sub"] as? String, let issuerValue = idTokenInfo["iss"] as? String{
-                                    var dictToWrite = ["_xcreds_oidc_username":username,
-                                                       "_xcreds_oidc_full_username":fullUsername,
+                                    var dictToWrite = ["_trioX_oidc_username":username,
+                                                       "_trioX_oidc_full_username":fullUsername,
                                                        "subValue":subValue,
                                                        "issuerValue":issuerValue,
                                                        "localuser":PasswordUtils.currentConsoleUserName]
 
                                     if let kerberosPrincipalName = userInfo.kerberosPrincipalName {
-                                        dictToWrite["_xcreds_activedirectory_kerberosPrincipal"] = kerberosPrincipalName
+                                        dictToWrite["_trioX_activedirectory_kerberosPrincipal"] = kerberosPrincipalName
                                     }
                                     //write dictToWrite to file as plist
                                     TCSLog("writing plist file: \(plistPath)")
@@ -432,7 +432,7 @@ class MainController: NSObject, UpdateCredentialsFeedbackProtocol {
 
                         }
                         if let kerberosPrincipalName = userInfo.kerberosPrincipalName {
-                            UserDefaults.standard.set(kerberosPrincipalName, forKey:"_xcreds_activedirectory_kerberosPrincipal")
+                            UserDefaults.standard.set(kerberosPrincipalName, forKey:"_trioX_activedirectory_kerberosPrincipal")
                         }
                     }
                 case .error(let message):
@@ -582,7 +582,7 @@ class MainController: NSObject, UpdateCredentialsFeedbackProtocol {
 
         let keychainUtil = KeychainUtil()
 
-        guard let idToken = try? keychainUtil.findPassword(serviceName: "xcreds idToken", accountName: "idToken").1 else {
+        guard let idToken = try? keychainUtil.findPassword(serviceName: "trioX idToken", accountName: "idToken").1 else {
             TCSLogWithMark("cannot find ID token")
 
             return nil

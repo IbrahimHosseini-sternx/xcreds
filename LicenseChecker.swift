@@ -1,6 +1,6 @@
 //
 //  LicenseChecker.swift
-//  XCreds
+// trioX
 //
 //
 
@@ -46,7 +46,7 @@ class LicenseChecker: NSObject {
             TCSLogErrorWithMark("did not get first launch date")
         }
         // let check = TCSLicenseCheck()
-        // let status = check.checkLicenseStatus("so.trio.xcreds", withExtension: "")
+        // let status = check.checkLicenseStatus("so.trio.trioX", withExtension: "")
         let status = TCSLicenseStatus.valid // Default to valid for now
         let dateFormatter = ISO8601DateFormatter()
         dateFormatter.formatOptions = [.withFractionalSeconds, .withFullDate]

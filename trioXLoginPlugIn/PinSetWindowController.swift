@@ -1,6 +1,6 @@
 //
 //  PinPromptWindowController.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

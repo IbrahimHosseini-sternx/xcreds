@@ -1,6 +1,6 @@
 //
 //  CredentialProviderViewController.swift
-//  XCreds AutoFill Extension
+// trioX AutoFill Extension
 //
 //
 
@@ -58,7 +58,7 @@ class CredentialProviderViewController: ASCredentialProviderViewController {
     @IBAction func passwordSelected(_ sender: AnyObject?) {
         let keychainUtil = KeychainUtil()
 
-        let keychainAccountAndPassword = try? keychainUtil.findPassword(serviceName: "xcreds local password",accountName:PrefKeys.password.rawValue)
+        let keychainAccountAndPassword = try? keychainUtil.findPassword(serviceName: "trioX local password",accountName:PrefKeys.password.rawValue)
 
         guard let keychainAccountAndPassword = keychainAccountAndPassword  else {
             TCSLogWithMark("No keychainAccountAndPassword")
@@ -68,12 +68,12 @@ class CredentialProviderViewController: ASCredentialProviderViewController {
         }
         var dsUsername:String?
         let currentUser = PasswordUtils.getCurrentConsoleUserRecord()
-        if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_full_username") as? [String], userNames.count>0, let username = userNames.first {
+        if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_trioX_oidc_full_username") as? [String], userNames.count>0, let username = userNames.first {
             TCSLogWithMark()
             dsUsername = username
 
         }
-        else if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal") as? [String], userNames.count>0, let username = userNames.first {
+        else if let userNames = try? currentUser?.values(forAttribute: "dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal") as? [String], userNames.count>0, let username = userNames.first {
             TCSLogWithMark()
             dsUsername = username
 
@@ -92,7 +92,7 @@ class CredentialProviderViewController: ASCredentialProviderViewController {
         var error: NSError?
 
         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            let reason = "XCreds Login Password"
+            let reason = "trioX Login Password"
 
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) {
                 [weak self] success, authenticationError in
@@ -108,7 +108,7 @@ class CredentialProviderViewController: ASCredentialProviderViewController {
             }
         }
         else if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
-            let reason = "XCreds Login Password"
+            let reason = "trioX Login Password"
 
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason) {
                 [weak self] success, authenticationError in

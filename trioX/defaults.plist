@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>redirectURI</key>
-	<string>xcreds://auth/</string>
+	<string>trioX://auth/</string>
 	<key>refreshRateHours</key>
 	<integer>3</integer>
 	<key>refreshRateMinutes</key>
@@ -13,7 +13,7 @@
 	<key>verifyPassword</key>
 	<true/>
 	<key>LogFileName</key>
-	<string>xcreds.log</string>
+	<string>trioX.log</string>
 	<key>shouldShowPreferencesOnStart</key>
 	<false/>
 	<key>shouldSetGoogleAccessTypeToOffline</key>

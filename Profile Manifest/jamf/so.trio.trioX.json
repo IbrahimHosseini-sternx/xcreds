@@ -1,6 +1,6 @@
 {
-    "title": "XCreds (so.trio.xcreds)",
-    "description": "XCreds 5.5 (8913) OAuth Settings",
+    "title": "TrioX (so.trio.trioX)",
+    "description": "TrioX 5.5 (8913) OAuth Settings",
     "properties": {
         "ADDomain": {
             "type": "string",
@@ -9,7 +9,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 5
@@ -17,11 +17,11 @@
         "mapKerberosPrincipalName": {
             "type": "string",
             "title": "Map Kerberos Principal Name",
-            "description": "The OIDC claim that has the kerberos principal name. This is used when logging in with OIDC and ADDomain is defined. During login, the claim that contains the kerberos principal name will be read and the local account will set dsAttrTypeNative:_xcreds_activedirectory_kerberosPrincipal to the kerberos principal name. The menu item will then use this value and the password to get a kerberos ticket.",
+            "description": "The OIDC claim that has the kerberos principal name. This is used when logging in with OIDC and ADDomain is defined. During login, the claim that contains the kerberos principal name will be read and the local account will set dsAttrTypeNative:_trioX_activedirectory_kerberosPrincipal to the kerberos principal name. The menu item will then use this value and the password to get a kerberos ticket.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 10
@@ -34,7 +34,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 15
@@ -46,7 +46,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 20
@@ -58,7 +58,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 25
@@ -71,7 +71,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 30
@@ -84,7 +84,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 35
@@ -97,7 +97,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 40
@@ -126,7 +126,7 @@
                 "type": "string"
             },
             "title": "Create Admin If Group Member",
-            "description": "List of groups that should have members be given local administrator status. Local administrator status can be given on first authentication when account created, or on later sign in of existing user when a group member. Administrator status is removed if group membership later revoked. Administrator status is not removed if user is the only XCreds admin user. Set as an Array of Strings of the group identifier.",
+            "description": "List of groups that should have members be given local administrator status. Local administrator status can be given on first authentication when account created, or on later sign in of existing user when a group member. Administrator status is removed if group membership later revoked. Administrator status is not removed if user is the only TrioX admin user. Set as an Array of Strings of the group identifier.",
             "property_order": 55
         },
         "claimsToAddToLocalUserAccount": {
@@ -135,7 +135,7 @@
                 "type": "string"
             },
             "title": "Claims To Add To Local User Account",
-            "description": "List of claims that should be added to the user local account. Will be prefixed with _xcreds_oidc_. Set as an Array of Strings of the claim.",
+            "description": "List of claims that should be added to the user local account. Will be prefixed with _trioX_oidc_. Set as an Array of Strings of the claim.",
             "property_order": 60
         },
         "systemInfoAdditionsArray": {
@@ -151,11 +151,11 @@
             "type": "boolean",
             "title": "Should Switch To Login Window When Locked",
             "default": false,
-            "description": "When set to true and the user locks the current session, XCreds will tell the system to switch to Login Window. The current session will stay active but the user will login with the XCreds Login Window to resume the session.",
+            "description": "When set to true and the user locks the current session, TrioX will tell the system to switch to Login Window. The current session will stay active but the user will login with the TrioX Login Window to resume the session.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 70
@@ -168,7 +168,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 75
@@ -181,7 +181,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 80
@@ -194,7 +194,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 85
@@ -207,7 +207,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 90
@@ -220,7 +220,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 95
@@ -232,7 +232,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 100
@@ -245,7 +245,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 105
@@ -257,7 +257,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 110
@@ -269,7 +269,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 115
@@ -282,7 +282,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 120
@@ -295,7 +295,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 125
@@ -308,7 +308,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 130
@@ -321,7 +321,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 135
@@ -335,7 +335,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 140
@@ -348,7 +348,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 145
@@ -362,7 +362,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 150
@@ -375,7 +375,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 155
@@ -388,7 +388,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 160
@@ -401,7 +401,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 165
@@ -414,7 +414,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 170
@@ -427,7 +427,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 175
@@ -436,11 +436,11 @@
             "type": "boolean",
             "title": "Should Remove Menu Item Auto Launch",
             "default": false,
-            "description": "When XCreds is installed, a launch agent is installed to automatically keep the menu item running when a user is logged in. Setting shouldRemoveMenuItemAutoLaunch to true makes XCreds at the login window remove the launchagent plist that was installed. This will cause the launchagent to not launch XCreds menu item on log in.",
+            "description": "When TrioX is installed, a launch agent is installed to automatically keep the menu item running when a user is logged in. Setting shouldRemoveMenuItemAutoLaunch to true makes TrioX at the login window remove the launchagent plist that was installed. This will cause the launchagent to not launch TrioX menu item on log in.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 180
@@ -453,7 +453,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 185
@@ -466,7 +466,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 190
@@ -474,12 +474,12 @@
         "redirectURI": {
             "type": "string",
             "title": "Redirect URI",
-            "default": "xcreds://auth/",
-            "description": "The URI passed back to the webview after successful authentication. Default value: xcreds://auth/",
+            "default": "TrioX://auth/",
+            "description": "The URI passed back to the webview after successful authentication. Default value: TrioX://auth/",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 195
@@ -492,7 +492,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 200
@@ -505,7 +505,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 205
@@ -518,7 +518,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 210
@@ -531,7 +531,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 215
@@ -544,7 +544,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 220
@@ -557,7 +557,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 225
@@ -566,11 +566,11 @@
             "type": "boolean",
             "title": "Show Sign In Menu Item",
             "default": true,
-            "description": "Determine if the Sign In menu item is shown in the XCreds menu. When not set or set to true, show Sign In. If false, the Sign In menu item is hidden.",
+            "description": "Determine if the Sign In menu item is shown in the TrioX menu. When not set or set to true, show Sign In. If false, the Sign In menu item is hidden.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 230
@@ -583,7 +583,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 235
@@ -592,11 +592,11 @@
             "type": "boolean",
             "title": "Prefer Local Login over Cloud Login",
             "default": false,
-            "description": "Favor using XCreds' local login screen over the cloud login UI.",
+            "description": "Favor using TrioX' local login screen over the cloud login UI.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 240
@@ -609,7 +609,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 245
@@ -622,7 +622,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 250
@@ -634,7 +634,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 255
@@ -646,7 +646,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 260
@@ -659,7 +659,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 265
@@ -672,7 +672,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 270
@@ -685,7 +685,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 275
@@ -697,7 +697,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 280
@@ -710,7 +710,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 285
@@ -722,7 +722,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 290
@@ -734,7 +734,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 295
@@ -747,7 +747,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 300
@@ -760,7 +760,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 305
@@ -773,7 +773,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 310
@@ -782,11 +782,11 @@
             "type": "boolean",
             "title": "Should Show Menu Bar Sign In Without Login Window Sign In",
             "default": false,
-            "description": "If the discovery URL is defined and there are no tokens or tickets, the sign in window in the user session will show even if the user did not log in from the XCreds Login Window",
+            "description": "If the discovery URL is defined and there are no tokens or tickets, the sign in window in the user session will show even if the user did not log in from the TrioX Login Window",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 315
@@ -799,7 +799,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 320
@@ -812,7 +812,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 325
@@ -821,11 +821,11 @@
             "type": "boolean",
             "title": "Show Configure WiFi",
             "default": true,
-            "description": "Show Configure WiFi button in XCreds Login.",
+            "description": "Show Configure WiFi button in TrioX Login.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 330
@@ -834,11 +834,11 @@
             "type": "boolean",
             "title": "Show Shutdown Button",
             "default": true,
-            "description": "Show Shutdown button in XCreds Login.",
+            "description": "Show Shutdown button in TrioX Login.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 335
@@ -847,11 +847,11 @@
             "type": "boolean",
             "title": "Show Restart Button",
             "default": true,
-            "description": "Show Restart button in XCreds Login.",
+            "description": "Show Restart button in TrioX Login.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 340
@@ -860,11 +860,11 @@
             "type": "boolean",
             "title": "Show System Info Button",
             "default": true,
-            "description": "Show Configure System Info in XCreds Login.",
+            "description": "Show Configure System Info in TrioX Login.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 345
@@ -877,7 +877,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 350
@@ -890,7 +890,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 355
@@ -903,7 +903,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 360
@@ -915,7 +915,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 365
@@ -924,11 +924,11 @@
             "type": "boolean",
             "title": "Show Mac Login Window button",
             "default": true,
-            "description": "Show the Mac Login Window button in XCreds Login.",
+            "description": "Show the Mac Login Window button in TrioX Login.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 370
@@ -941,7 +941,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 375
@@ -953,7 +953,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 380
@@ -965,7 +965,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 385
@@ -974,11 +974,11 @@
             "type": "boolean",
             "title": "Show Support Status Message",
             "default": true,
-            "description": "Show message in XCreds Login reminding people to buy support.",
+            "description": "Show message in TrioX Login reminding people to buy support.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 390
@@ -991,7 +991,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 395
@@ -1000,11 +1000,11 @@
             "type": "boolean",
             "title": "Show Version and Build Number",
             "default": true,
-            "description": "(Deprecated in v5.4 and replaced by shouldActivateSystemInfoButton) Show the version number and build number in the lower left corner of XCreds Login.",
+            "description": "(Deprecated in v5.4 and replaced by shouldActivateSystemInfoButton) Show the version number and build number in the lower left corner of TrioX Login.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 400
@@ -1017,7 +1017,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 405
@@ -1025,11 +1025,11 @@
         "username": {
             "type": "string",
             "title": "Local Username",
-            "description": "When a user uses cloud login, XCreds will try and figure out the local username based on the email or other data returned for the IdP. Use this value to force the local username for any cloud login. Provide only the shortname.",
+            "description": "When a user uses cloud login, TrioX will try and figure out the local username based on the email or other data returned for the IdP. Use this value to force the local username for any cloud login. Provide only the shortname.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 410
@@ -1038,11 +1038,11 @@
             "type": "boolean",
             "title": "Keychain Reset",
             "default": false,
-            "description": "When a local user password does not match the cloud or AD password, this key will allow the user to select a Reset button to set their password to match their AD/cloud password, move their current keychain aside and create a new keychain. If XCreds does not have access to local admin credentials set from the XCreds command line tools, the user will prompted to enter local admin credentials.",
+            "description": "When a local user password does not match the cloud or AD password, this key will allow the user to select a Reset button to set their password to match their AD/cloud password, move their current keychain aside and create a new keychain. If TrioX does not have access to local admin credentials set from the TrioX command line tools, the user will prompted to enter local admin credentials.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 415
@@ -1055,7 +1055,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 420
@@ -1068,7 +1068,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 425
@@ -1080,7 +1080,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 430
@@ -1092,7 +1092,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 435
@@ -1105,7 +1105,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 440
@@ -1118,7 +1118,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 445
@@ -1131,7 +1131,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 450
@@ -1144,7 +1144,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 455
@@ -1157,7 +1157,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 460
@@ -1170,7 +1170,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 465
@@ -1178,11 +1178,11 @@
         "idpHostName": {
             "type": "string",
             "title": "IDP Host Name",
-            "description": "Hostname of the page that has the password field. When the user submits the form, XCreds will use idpHostName to identify a page it needs to look for the password field. The password value is identified by an HTML id defined by passwordElementID. If this value is not defined. XCreds will look for login.microsoftonline.com and accounts.google.com. This value is commonly set for other IdP’s and for Azure environments that use ADFS.",
+            "description": "Hostname of the page that has the password field. When the user submits the form, TrioX will use idpHostName to identify a page it needs to look for the password field. The password value is identified by an HTML id defined by passwordElementID. If this value is not defined. TrioX will look for login.microsoftonline.com and accounts.google.com. This value is commonly set for other IdP’s and for Azure environments that use ADFS.",
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 470
@@ -1212,7 +1212,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 485
@@ -1225,7 +1225,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 490
@@ -1246,7 +1246,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 500
@@ -1259,7 +1259,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 505
@@ -1272,7 +1272,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 510
@@ -1285,7 +1285,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 515
@@ -1298,7 +1298,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 520
@@ -1311,7 +1311,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 525
@@ -1323,7 +1323,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 530
@@ -1336,7 +1336,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 535
@@ -1349,7 +1349,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 540
@@ -1362,7 +1362,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 545
@@ -1451,7 +1451,7 @@
                     "AutoMount": {
                         "type": "boolean",
                         "title": "AutoMount",
-                        "description": "Automatically mount when XCreds starts"
+                        "description": "Automatically mount when TrioX starts"
                     }
                 }
             },
@@ -1478,7 +1478,7 @@
             "links": [
                 {
                     "rel": "More information",
-                    "href": "https://triosoftinc.com/knowledge-base/xcreds-admin-guide/#preferences"
+                    "href": "https://triosoftinc.com/knowledge-base/trioX-admin-guide/#preferences"
                 }
             ],
             "property_order": 575

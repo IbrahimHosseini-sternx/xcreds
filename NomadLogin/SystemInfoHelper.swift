@@ -14,7 +14,7 @@ class SystemInfoHelper {
     enum BatteryError: Error { case error }
 
     func appVersion() -> String? {
-        let bundle = Bundle.findBundleWithName(name: "XCreds")
+        let bundle = Bundle.findBundleWithName(name: "TrioX")
 
         if let bundle = bundle {
 
@@ -24,7 +24,7 @@ class SystemInfoHelper {
                let buildString = infoPlist["CFBundleVersion"]
             {
 
-                return "XCreds \(verString) (\(buildString))"
+                return "TrioX \(verString) (\(buildString))"
             }
         }
         return nil

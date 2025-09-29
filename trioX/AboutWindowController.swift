@@ -1,6 +1,6 @@
 //
 //  AboutWindowController.swift
-//  xCreds
+// trioX
 //
 //
 
@@ -27,7 +27,7 @@ class AboutWindowController: NSWindowController {
              let creditsPath = Bundle.main.path(forResource: "Credits", ofType: "txt")
              if  let creditsPath = creditsPath ,let creditsString = try? String(contentsOfFile: creditsPath, encoding: .utf8), let build = build, let appVersion = appVersion  {
 
-                 aboutTextView.string="XCreds\nCopyright triosoftinc Software, Inc.\nVersion \(appVersion) (\(build))\n\n"+creditsString
+                 aboutTextView.string="trioX\nCopyright triosoftinc Software, Inc.\nVersion \(appVersion) (\(build))\n\n"+creditsString
 
              }
          }

@@ -43,7 +43,7 @@ class WifiWindowController: NSWindowController, NetworkManagerDelegate, NSMenuDe
     let wifiLog = "wifiLog"
     private var defaultFadeDuration: TimeInterval = 0.1
     private var completionHandler: (() -> Void)?
-    var delegate: XCredsMechanismProtocol?
+    var delegate: TrioXMechanismProtocol?
     let networkManager = NetworkManager()
 
     @IBAction func wifiCredentialCancelButtonPressed(_ sender: NSButton) {

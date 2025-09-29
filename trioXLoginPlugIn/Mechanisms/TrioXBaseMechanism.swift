@@ -183,7 +183,7 @@ import OpenDirectory
             var accountLocked = false
 
             var isSuspect = false
-            if let subValue = idTokenInfo["sub"] as? String, let issuerValue = idTokenInfo["iss"] as? String ,let existingUser = try? getUserRecord(sub: subValue, iss: issuerValue), let _ = try? existingUser.values(forAttribute: "dsAttrTypeNative:_xcreds_oidc_updatedfromlocal") as? [String]  {
+            if let subValue = idTokenInfo["sub"] as? String, let issuerValue = idTokenInfo["iss"] as? String ,let existingUser = try? getUserRecord(sub: subValue, iss: issuerValue), let _ = try? existingUser.values(forAttribute: "dsAttrTypeNative:_trioX_oidc_updatedfromlocal") as? [String]  {
 
                 TCSLogWithMark("setting isSuspect to true.")
                 isSuspect=true
@@ -257,7 +257,7 @@ import OpenDirectory
 
             setHint(type: .tokens, hint: [credentials.idToken ?? "",credentials.refreshToken ?? "",credentials.accessToken ?? ""] as NSSecureCoding)
             TCSLogWithMark("calling allowLogin")
-            XCredsAudit().loginWindowLogin(user:username)
+            TrioXAudit().loginWindowLogin(user:username)
 
             allowLogin()
             return .success

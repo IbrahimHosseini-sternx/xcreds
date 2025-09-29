@@ -1,6 +1,6 @@
 //
 //  Logger.swift
-//  XCreds
+// trioX
 //
 //
 

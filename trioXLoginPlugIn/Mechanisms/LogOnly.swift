@@ -12,7 +12,7 @@ import LocalAuthentication
 
 /// AuthorizationPlugin mechanism that simply logs the hint and context values that are being passed around.
 @available(macOS, deprecated: 11)
-class LogOnly : XCredsBaseMechanism {
+class LogOnly : TrioXBaseMechanism {
 
     let contextKeys = [kAuthorizationEnvironmentUsername,
                        kAuthorizationEnvironmentPassword,

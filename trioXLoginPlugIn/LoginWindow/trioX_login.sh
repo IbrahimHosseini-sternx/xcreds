@@ -3,19 +3,19 @@
 script_path="$0"
 script_folder=$(dirname "${script_path}")
 authrights_path="${script_folder}"/authrights
-plugin_path="${script_folder}"/XCredsLoginPlugin.bundle
+plugin_path="${script_folder}"/TrioXLoginPlugin.bundle
 plugin_resources_path="${plugin_path}"/Contents/Resources
-overlay_path="${script_folder}"/"XCreds Login Overlay.app"
+overlay_path="${script_folder}"/"TrioX Login Overlay.app"
 overlay_resources_path="${overlay_path}"/Contents/Resources
-auth_backup_folder=/Library/"Application Support"/xcreds
+auth_backup_folder=/Library/"Application Support"/trioX
 rights_backup_path="${auth_backup_folder}"/rights.bak
-launch_agent_config_name="so.trio.xcreds-overlay.plist"
-app_launch_agent_config_name="so.trio.xcreds-launchagent.plist"
+launch_agent_config_name="so.trio.trioX-overlay.plist"
+app_launch_agent_config_name="so.trio.trioX-launchagent.plist"
 launch_agent_destination_path="/Library/LaunchAgents/"
 launch_agent_source_path="${overlay_resources_path}"/"${launch_agent_config_name}"
 app_launch_agent_source_path="${script_folder}"/"${app_launch_agent_config_name}"
 
-autofill_path="${target_path}/Applications/XCreds.app/Contents/Resources/XCreds Login Autofill.app/Contents/PlugIns/XCreds Login Password.appex"
+autofill_path="${target_path}/Applications/trioX.app/Contents/Resources/TrioX Login Autofill.app/Contents/PlugIns/TrioX Login Password.appex"
 
 
 f_install=0
@@ -23,13 +23,13 @@ f_remove=0
 f_restore=0
 
 remove_rights () {
-    "${authrights_path}" -d  "XCredsLoginPlugin:UserSetup,privileged"
-    "${authrights_path}" -r  "XCredsLoginPlugin:LoginWindow" "loginwindow:login" > /dev/null
-    "${authrights_path}" -d  "XCredsLoginPlugin:PowerControl,privileged"
-    "${authrights_path}" -d  "XCredsLoginPlugin:KeychainAdd,privileged"
-    "${authrights_path}" -d  "XCredsLoginPlugin:CreateUser,privileged"
-    "${authrights_path}" -d  "XCredsLoginPlugin:EnableFDE,privileged"
-    "${authrights_path}" -d  "XCredsLoginPlugin:LoginDone"
+    "${authrights_path}" -d  "TrioXLoginPlugin:UserSetup,privileged"
+    "${authrights_path}" -r  "TrioXLoginPlugin:LoginWindow" "loginwindow:login" > /dev/null
+    "${authrights_path}" -d  "TrioXLoginPlugin:PowerControl,privileged"
+    "${authrights_path}" -d  "TrioXLoginPlugin:KeychainAdd,privileged"
+    "${authrights_path}" -d  "TrioXLoginPlugin:CreateUser,privileged"
+    "${authrights_path}" -d  "TrioXLoginPlugin:EnableFDE,privileged"
+    "${authrights_path}" -d  "TrioXLoginPlugin:LoginDone"
 
 }
 while getopts ":ire" o; do
@@ -77,7 +77,7 @@ if [ $f_install -eq 1 ]; then
 	if [ -e  "${plugin_path}" ]; then
 		
 		cp -R "${plugin_path}" "${target_volume}"/Library/Security/SecurityAgentPlugins/
-		chown -R root:wheel "${target_volume}"/Library/Security/SecurityAgentPlugins/XCredsLoginPlugin.bundle
+		chown -R root:wheel "${target_volume}"/Library/Security/SecurityAgentPlugins/TrioXLoginPlugin.bundle
 	fi
 	#app_launch_agent_source_path
 
@@ -96,13 +96,13 @@ if [ $f_install -eq 1 ]; then
 	if [ -e ${authrights_path} ]; then
          remove_rights
 
-        "${authrights_path}" -b "loginwindow:login" "XCredsLoginPlugin:UserSetup,privileged"
-        "${authrights_path}" -r "loginwindow:login" "XCredsLoginPlugin:LoginWindow"
-        "${authrights_path}" -a  "XCredsLoginPlugin:LoginWindow" "XCredsLoginPlugin:PowerControl,privileged"
-        "${authrights_path}" -a  "loginwindow:done" "XCredsLoginPlugin:KeychainAdd,privileged"
-        "${authrights_path}" -a  "builtin:login-begin" "XCredsLoginPlugin:CreateUser,privileged"
-        "${authrights_path}" -a  "loginwindow:done" "XCredsLoginPlugin:EnableFDE,privileged"
-        "${authrights_path}" -a  "loginwindow:done" "XCredsLoginPlugin:LoginDone"
+        "${authrights_path}" -b "loginwindow:login" "TrioXLoginPlugin:UserSetup,privileged"
+        "${authrights_path}" -r "loginwindow:login" "TrioXLoginPlugin:LoginWindow"
+        "${authrights_path}" -a  "TrioXLoginPlugin:LoginWindow" "TrioXLoginPlugin:PowerControl,privileged"
+        "${authrights_path}" -a  "loginwindow:done" "TrioXLoginPlugin:KeychainAdd,privileged"
+        "${authrights_path}" -a  "builtin:login-begin" "TrioXLoginPlugin:CreateUser,privileged"
+        "${authrights_path}" -a  "loginwindow:done" "TrioXLoginPlugin:EnableFDE,privileged"
+        "${authrights_path}" -a  "loginwindow:done" "TrioXLoginPlugin:LoginDone"
 
 	else
 		echo "could not find authrights tool"
@@ -114,8 +114,8 @@ elif [ $f_remove -eq 1 ]; then
 
     remove_rights
 
-	if [ -e  "/Library/Security/SecurityAgentPlugins/XCredsLoginPlugin.bundle" ]; then
-		rm -rf "/Library/Security/SecurityAgentPlugins/XCredsLoginPlugin.bundle"
+	if [ -e  "/Library/Security/SecurityAgentPlugins/TrioXLoginPlugin.bundle" ]; then
+		rm -rf "/Library/Security/SecurityAgentPlugins/TrioXLoginPlugin.bundle"
 		
 	fi
 	

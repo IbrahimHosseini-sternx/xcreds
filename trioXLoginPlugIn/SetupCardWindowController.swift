@@ -1,6 +1,6 @@
 //
 //  SetupCardWindowController.swift
-//  XCreds
+// trioX
 //
 //
 

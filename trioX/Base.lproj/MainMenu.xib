@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24128" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24128"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -12,7 +12,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="XCreds" customModuleProvider="target">
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TrioX" customModuleProvider="target">
             <connections>
                 <outlet property="statusMenu" destination="6OK-7Y-Yf9" id="ESM-bD-ycD"/>
             </connections>
@@ -20,11 +20,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="XCreds" id="1Xt-HY-uBw">
+                <menuItem title="TrioX" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="XCreds" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="TrioX" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About XCreds" id="5kV-Vb-QxS">
+                            <menuItem title="About TrioX" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -38,7 +38,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide xCreds" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide TrioX" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -56,7 +56,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit xCreds" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit TrioX" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -669,7 +669,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="xcreds Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="TrioX Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -682,7 +682,7 @@
         </menu>
         <menu id="6OK-7Y-Yf9">
             <items>
-                <menuItem title="About XCreds (x.x.x)" tag="1" id="E49-8d-Cmr">
+                <menuItem title="About TrioX (x.x.x)" tag="1" id="E49-8d-Cmr">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="aboutMenuItemSelected:" target="1OV-ou-Ss5" id="r1J-8r-Iax"/>
@@ -769,7 +769,7 @@
             </connections>
             <point key="canvasLocation" x="-284.5" y="-157.5"/>
         </menu>
-        <customObject id="1OV-ou-Ss5" customClass="StatusMenuController" customModule="XCreds" customModuleProvider="target">
+        <customObject id="1OV-ou-Ss5" customClass="StatusMenuController" customModule="TrioX" customModuleProvider="target">
             <connections>
                 <outlet property="aboutMenuItem" destination="E49-8d-Cmr" id="Uoc-2g-XI9"/>
                 <outlet property="aboutMenuItemSeparator" destination="Uvh-o1-mcs" id="FhI-xC-w67"/>

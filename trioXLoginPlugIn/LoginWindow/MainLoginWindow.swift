@@ -1,6 +1,6 @@
 //
 //  MainLoginWIndow.swift
-//  XCredsLoginPlugin
+// trioXLoginPlugin
 //
 //
 

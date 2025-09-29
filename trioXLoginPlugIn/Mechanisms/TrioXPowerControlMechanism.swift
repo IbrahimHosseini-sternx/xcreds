@@ -20,8 +20,8 @@ class TrioXPowerControlMechanism: TrioXBaseMechanism {
         TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ TrioXPowerControlMechanism mech starting starting mech starting ~~~~~~~~~~~~~~~~~~~")
 
 //        if AuthorizationDBManager.shared.rightExists(right: "loginwindow:login"){
-//            TCSLogWithMark("setting standard login back to XCreds login")
-//            let _ = AuthorizationDBManager.shared.replace(right:"loginwindow:login", withNewRight: "XCredsLoginPlugin:LoginWindow")
+//            TCSLogWithMark("setting standard login back to TrioX login")
+//            let _ = AuthorizationDBManager.shared.replace(right:"loginwindow:login", withNewRight: "TrioXLoginPlugin:LoginWindow")
 //        }
         guard let userName = usernameContext else {
             TCSLogWithMark("No username was set somehow, pass the login to the next mech.")
@@ -46,12 +46,12 @@ class TrioXPowerControlMechanism: TrioXBaseMechanism {
         case SpecialUsers.standardLoginWindow.rawValue:
             TCSLogWithMark("mechanism right to boot back to mac login window (SpecialUsers.standardLoginWindow)")
 //            if
-//                AuthorizationDBManager.shared.rightExists(right: "XCredsLoginPlugin:LoginWindow")==true{
-//                if AuthorizationDBManager.shared.replace(right:"XCredsLoginPlugin:LoginWindow", withNewRight: "loginwindow:login") == false {
-//                    TCSLogWithMark("could not replace loginwindow:login with XCredsLoginPlugin:LoginWindow")
+//                AuthorizationDBManager.shared.rightExists(right: "TrioXLoginPlugin:LoginWindow")==true{
+//                if AuthorizationDBManager.shared.replace(right:"TrioXLoginPlugin:LoginWindow", withNewRight: "loginwindow:login") == false {
+//                    TCSLogWithMark("could not replace loginwindow:login with TrioXLoginPlugin:LoginWindow")
 //                }
 //            }
-//            for right in ["XCredsLoginPlugin:UserSetup,privileged","XCredsLoginPlugin:PowerControl,privileged","XCredsLoginPlugin:KeychainAdd,privileged","XCredsLoginPlugin:CreateUser,privileged","XCredsLoginPlugin:EnableFDE,privileged","XCredsLoginPlugin:LoginDone"] {
+//            for right in ["TrioXLoginPlugin:UserSetup,privileged","TrioXLoginPlugin:PowerControl,privileged","TrioXLoginPlugin:KeychainAdd,privileged","TrioXLoginPlugin:CreateUser,privileged","TrioXLoginPlugin:EnableFDE,privileged","TrioXLoginPlugin:LoginDone"] {
 //
 //                if AuthorizationDBManager.shared.rightExists(right:right)==true {
 //                    if AuthorizationDBManager.shared.remove(right: right)
