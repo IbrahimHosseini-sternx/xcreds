@@ -685,10 +685,11 @@
         </menu>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="ewK-Yh-gWi" customClass="TCSTrioXLoginOverlayWindow" customModule="TrioX_Login_Overlay" customModuleProvider="target">
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="0.0" y="0.0" width="1000" height="1000"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
+            <rect key="contentRect" x="25" y="25" width="880" height="109"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1512" height="948"/>
             <view key="contentView" id="1nr-Jh-HO9">
-                <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                <rect key="frame" x="0.0" y="0.0" width="880" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GfD-0a-eQ7">
