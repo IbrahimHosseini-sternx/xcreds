@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "760291DF2C116E450075FBD8"
-               BuildableName = "XCreds Login Autofill.app"
-               BlueprintName = "XCreds Login Autofill"
+               BuildableName = "TrioX Login Autofill.app"
+               BlueprintName = "TrioX Login Autofill"
                ReferencedContainer = "container:trioX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "760291DF2C116E450075FBD8"
-            BuildableName = "XCreds Login Autofill.app"
-            BlueprintName = "XCreds Login Autofill"
+            BuildableName = "TrioX Login Autofill.app"
+            BlueprintName = "TrioX Login Autofill"
             ReferencedContainer = "container:trioX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -68,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "760291DF2C116E450075FBD8"
-            BuildableName = "XCreds Login Autofill.app"
-            BlueprintName = "XCreds Login Autofill"
+            BuildableName = "TrioX Login Autofill.app"
+            BlueprintName = "TrioX Login Autofill"
             ReferencedContainer = "container:trioX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -20,11 +20,11 @@
 		760291E32C116E450075FBD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760291E22C116E450075FBD8 /* AppDelegate.swift */; };
 		760291E52C116E450075FBD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760291E42C116E450075FBD8 /* ViewController.swift */; };
 		760291EA2C116E470075FBD8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 760291E92C116E470075FBD8 /* Base */; };
-		760291EF2C116E5F0075FBD8 /* XCreds Login Autofill.app in Resources */ = {isa = PBXBuildFile; fileRef = 760291E02C116E450075FBD8 /* XCreds Login Autofill.app */; };
+		760291EF2C116E5F0075FBD8 /* TrioX Login Autofill.app in Resources */ = {isa = PBXBuildFile; fileRef = 760291E02C116E450075FBD8 /* TrioX Login Autofill.app */; };
 		760291F52C116EDB0075FBD8 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760291CB2C1166870075FBD8 /* AuthenticationServices.framework */; };
 		760291F82C116EDB0075FBD8 /* CredentialProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760291F72C116EDB0075FBD8 /* CredentialProviderViewController.swift */; };
 		760291FB2C116EDB0075FBD8 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 760291FA2C116EDB0075FBD8 /* Base */; };
-		760292002C116EDB0075FBD8 /* XCreds Login Password.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 760291F42C116EDB0075FBD8 /* XCreds Login Password.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		760292002C116EDB0075FBD8 /* TrioX Login Password.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 760291F42C116EDB0075FBD8 /* TrioX Login Password.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		760292072C11751E0075FBD8 /* KeychainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767116B2284B045800CCD6FF /* KeychainUtil.swift */; };
 		760292092C1175360075FBD8 /* TCSUnifiedLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D7ADF9284EB15000332EBC /* TCSUnifiedLogger.m */; };
 		7602920B2C1175620075FBD8 /* PrefKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE06AD27FD1DC3009E0F3A /* PrefKeys.swift */; };
@@ -51,7 +51,7 @@
 		760418D72A1332660051411B /* DSQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760418D62A1332660051411B /* DSQueryable.swift */; };
 		760418D92A1332770051411B /* SystemInfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760418D82A1332770051411B /* SystemInfoHelper.swift */; };
 		760418E02A133A370051411B /* DSQueryable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760418D62A1332660051411B /* DSQueryable.swift */; };
-		760769C12D9120C1006A1F4E /* so.trio.xcreds-launchagent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 760769C02D9120C1006A1F4E /* so.trio.xcreds-launchagent.plist */; };
+		760769C12D9120C1006A1F4E /* so.trio.trioX-launchagent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 760769C02D9120C1006A1F4E /* so.trio.trioX-launchagent.plist */; };
 		760CA4CA2DAF38DC00066F31 /* NSAlert+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760CA4C92DAF38DC00066F31 /* NSAlert+showAlert.swift */; };
 		760CA4CB2DAF38DC00066F31 /* NSAlert+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760CA4C92DAF38DC00066F31 /* NSAlert+showAlert.swift */; };
 		760CA4CC2DAF38DC00066F31 /* NSAlert+showAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760CA4C92DAF38DC00066F31 /* NSAlert+showAlert.swift */; };
@@ -59,11 +59,11 @@
 		761121B72B3D26EE005F7D02 /* SystemInfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760418D82A1332770051411B /* SystemInfoHelper.swift */; };
 		761121B82B3D26F5005F7D02 /* LocalCheckAndMigrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760418DA2A13328C0051411B /* LocalCheckAndMigrate.swift */; };
 		761121B92B3D26FB005F7D02 /* DS+AD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760418D42A1332520051411B /* DS+AD.swift */; };
-		7611CEC0288B75140063A644 /* XCredsCreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611CEBF288B75140063A644 /* XCredsCreateUser.swift */; };
-		7611CEC2288B96760063A644 /* XCredsEnableFDE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611CEC1288B96760063A644 /* XCredsEnableFDE.swift */; };
+		7611CEC0288B75140063A644 /* TrioXCreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611CEBF288B75140063A644 /* TrioXCreateUser.swift */; };
+		7611CEC2288B96760063A644 /* TrioXEnableFDE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611CEC1288B96760063A644 /* TrioXEnableFDE.swift */; };
 		7613FDF7289E114F00340CCD /* loadpage.html in Resources */ = {isa = PBXBuildFile; fileRef = 7613FDF6289E114F00340CCD /* loadpage.html */; };
 		7614D03C2B181A5D006EAF36 /* icon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 7614D03B2B181A5D006EAF36 /* icon_128x128.png */; };
-		761B486C28A3575000C6A02B /* XCredsLoginDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B486B28A3575000C6A02B /* XCredsLoginDone.swift */; };
+		761B486C28A3575000C6A02B /* TrioXLoginDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B486B28A3575000C6A02B /* TrioXLoginDone.swift */; };
 		762177E62B7144460051B756 /* OIDCLite in Frameworks */ = {isa = PBXBuildFile; productRef = 762177E52B7144460051B756 /* OIDCLite */; };
 		7623384C2B53029D00F2D714 /* ShareMounterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763DDF152B4F100D000D48CC /* ShareMounterMenu.swift */; };
 		7623384D2B53029D00F2D714 /* ShareMounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C4ACBE2B3D0F8D003B3605 /* ShareMounter.swift */; };
@@ -76,10 +76,10 @@
 		7631936E287D2AB100D36BF7 /* TCSUnifiedLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D7ADF9284EB15000332EBC /* TCSUnifiedLogger.m */; };
 		76319370287DE24D00D36BF7 /* NSFileManager+TCSRealHomeFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D7ADFC284EB18600332EBC /* NSFileManager+TCSRealHomeFolder.m */; };
 		76319373287E18BF00D36BF7 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632909B2876673500CF8857 /* DataExtension.swift */; };
-		76319374287E198C00D36BF7 /* XCredsLoginPlugin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 766355BD2870CA6A002E3867 /* XCredsLoginPlugin.bundle */; };
+		76319374287E198C00D36BF7 /* TrioXLoginPlugin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 766355BD2870CA6A002E3867 /* TrioXLoginPlugin.bundle */; };
 		76319377287E1FAF00D36BF7 /* authrights in Resources */ = {isa = PBXBuildFile; fileRef = 7631935D287D22C700D36BF7 /* authrights */; };
 		7632909D2876674100CF8857 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632909B2876673500CF8857 /* DataExtension.swift */; };
-		7632E39F287347C100E37923 /* XCredsKeychainAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632E39E287347C100E37923 /* XCredsKeychainAdd.swift */; };
+		7632E39F287347C100E37923 /* TrioXKeychainAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632E39E287347C100E37923 /* TrioXKeychainAdd.swift */; };
 		7632E3A12873497C00E37923 /* LogShim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632E3A02873497C00E37923 /* LogShim.swift */; };
 		7632E3A2287357CC00E37923 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE06AB27FD1D92009E0F3A /* TokenManager.swift */; };
 		7632E3A32873581100E37923 /* KeychainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767116B2284B045800CCD6FF /* KeychainUtil.swift */; };
@@ -104,7 +104,7 @@
 		76456CE22DC99BFA00AEA261 /* NSError+EasyError.m in Sources */ = {isa = PBXBuildFile; fileRef = 76456CE02DC99BFA00AEA261 /* NSError+EasyError.m */; };
 		76477E042C626B5D00F01D56 /* OIDCLite in Frameworks */ = {isa = PBXBuildFile; productRef = 76477E032C626B5D00F01D56 /* OIDCLite */; };
 		764859F22B2FA2E800507C16 /* Window+ForceToFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE06AF27FD1DD8009E0F3A /* Window+ForceToFront.swift */; };
-		7649056F2B6CADA9008B552F /* xcredsmenuItemWindowBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7649056E2B6CADA9008B552F /* xcredsmenuItemWindowBackgroundImage.png */; };
+		7649056F2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7649056E2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png */; };
 		7649CD2B2D4B03FD00D6BEE2 /* UsernamePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */; };
 		7649CD2C2D4B03FD00D6BEE2 /* UsernamePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */; };
 		764D8126284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D8124284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.swift */; };
@@ -138,7 +138,7 @@
 		766184B82DCE5DB5009D5A8C /* colorline.png in Resources */ = {isa = PBXBuildFile; fileRef = 766184B72DCE5DB5009D5A8C /* colorline.png */; };
 		766184B92DCE5DB5009D5A8C /* colorline.png in Resources */ = {isa = PBXBuildFile; fileRef = 766184B72DCE5DB5009D5A8C /* colorline.png */; };
 		76634F372D05FFA3000A63E8 /* LogOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76634F362D05FFA3000A63E8 /* LogOnly.swift */; };
-		766355C32870CB6F002E3867 /* XCredsLoginPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 766355C22870CB6F002E3867 /* XCredsLoginPlugin.m */; };
+		766355C32870CB6F002E3867 /* TrioXLoginPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 766355C22870CB6F002E3867 /* TrioXLoginPlugin.m */; };
 		766355CA2870DCF5002E3867 /* TCSUnifiedLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D7ADF9284EB15000332EBC /* TCSUnifiedLogger.m */; };
 		766355CB2870E5E9002E3867 /* NSFileManager+TCSRealHomeFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D7ADFC284EB18600332EBC /* NSFileManager+TCSRealHomeFolder.m */; };
 		766355CC2870E9AD002E3867 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE06B327FD1E5F009E0F3A /* WebViewController.swift */; };
@@ -154,10 +154,10 @@
 		76673CD229D3CFF900452848 /* errorpage.html in Resources */ = {isa = PBXBuildFile; fileRef = 766CC43729D3AED2009BC526 /* errorpage.html */; };
 		76673CD529D3D5F500452848 /* LicenseChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76673CD429D3D5F500452848 /* LicenseChecker.swift */; };
 		76673CD629D3D5F500452848 /* LicenseChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76673CD429D3D5F500452848 /* LicenseChecker.swift */; };
-		766C602D2D3F409D0033E274 /* XCredsAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766C602C2D3F409D0033E274 /* XCredsAudit.swift */; };
-		766C602E2D3F409D0033E274 /* XCredsAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766C602C2D3F409D0033E274 /* XCredsAudit.swift */; };
+		766C602D2D3F409D0033E274 /* TrioXAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766C602C2D3F409D0033E274 /* TrioXAudit.swift */; };
+		766C602E2D3F409D0033E274 /* TrioXAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766C602C2D3F409D0033E274 /* TrioXAudit.swift */; };
 		766CC43829D3AED2009BC526 /* errorpage.html in Resources */ = {isa = PBXBuildFile; fileRef = 766CC43729D3AED2009BC526 /* errorpage.html */; };
-		766F1E562D495BBF00AA5637 /* so.trio.xcreds.json in Resources */ = {isa = PBXBuildFile; fileRef = 766F1E552D495BBF00AA5637 /* so.trio.xcreds.json */; };
+		766F1E562D495BBF00AA5637 /* so.trio.trioX.json in Resources */ = {isa = PBXBuildFile; fileRef = 766F1E552D495BBF00AA5637 /* so.trio.trioX.json */; };
 		766F4C4B2883AFD90021F548 /* pleaseWaitGraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = 766F4C4A2883AFD90021F548 /* pleaseWaitGraphic.png */; };
 		766FD60D2A1B06AC00C8F244 /* DefaultsOverride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766FD60C2A1B06AC00C8F244 /* DefaultsOverride.swift */; };
 		767116A7284AABC500CCD6FF /* NotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767116A6284AABC500CCD6FF /* NotifyManager.swift */; };
@@ -184,7 +184,7 @@
 		767CB2D02B13B92B006CA2AC /* OpenDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767CB2CF2B13B92B006CA2AC /* OpenDirectory.framework */; };
 		7681FEC52A4C8B9000F91CD1 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7681FEC42A4C8B9000F91CD1 /* AboutWindowController.swift */; };
 		7681FEC72A4C8BC800F91CD1 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7681FEC62A4C8BC800F91CD1 /* AboutWindow.xib */; };
-		7681FEC92A4CFEA200F91CD1 /* so.trio.xcreds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7681FEC82A4CFEA200F91CD1 /* so.trio.xcreds.plist */; };
+		7681FEC92A4CFEA200F91CD1 /* so.trio.trioX.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7681FEC82A4CFEA200F91CD1 /* so.trio.trioX.plist */; };
 		7683973129A854EC003D9B9F /* NSImage+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683973029A854EC003D9B9F /* NSImage+String.swift */; };
 		7683973229A854EC003D9B9F /* NSImage+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683973029A854EC003D9B9F /* NSImage+String.swift */; };
 		768633D92AFC4908004065E5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7677908428908E40004E7085 /* NetworkManager.swift */; };
@@ -215,9 +215,9 @@
 		76BEF7E5287202090013E2A1 /* RestartX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E3287202080013E2A1 /* RestartX@2x.png */; };
 		76BEF7E8287202AF0013E2A1 /* ShutdownX.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E6287202AF0013E2A1 /* ShutdownX.png */; };
 		76BEF7E9287202AF0013E2A1 /* ShutdownX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E7287202AF0013E2A1 /* ShutdownX@2x.png */; };
-		76BEF7EC28724A0B0013E2A1 /* XCredsLoginMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7EA28724A0B0013E2A1 /* XCredsLoginMechanism.swift */; };
-		76BEF7ED28724A0C0013E2A1 /* XCredsBaseMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7EB28724A0B0013E2A1 /* XCredsBaseMechanism.swift */; };
-		76BEF7F328724F120013E2A1 /* XCredsPowerControlMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F228724F120013E2A1 /* XCredsPowerControlMechanism.swift */; };
+		76BEF7EC28724A0B0013E2A1 /* TrioXLoginMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7EA28724A0B0013E2A1 /* TrioXLoginMechanism.swift */; };
+		76BEF7ED28724A0C0013E2A1 /* TrioXBaseMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7EB28724A0B0013E2A1 /* TrioXBaseMechanism.swift */; };
+		76BEF7F328724F120013E2A1 /* TrioXPowerControlMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F228724F120013E2A1 /* TrioXPowerControlMechanism.swift */; };
 		76BEF7F628724FA80013E2A1 /* NSTaskWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F528724FA80013E2A1 /* NSTaskWrapper.swift */; };
 		76BEF7F82872504C0013E2A1 /* ContextAndHintHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F72872504C0013E2A1 /* ContextAndHintHandling.swift */; };
 		76BEF7FA28726C700013E2A1 /* AuthorizationDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */; };
@@ -240,11 +240,11 @@
 		76C840892D03BFF400E41802 /* PinSetWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C840862D03BFF400E41802 /* PinSetWindowController.swift */; };
 		76C8408A2D03BFF400E41802 /* PinSetWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C840872D03BFF400E41802 /* PinSetWindowController.xib */; };
 		76C8408B2D03BFF400E41802 /* PinSetWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C840862D03BFF400E41802 /* PinSetWindowController.swift */; };
-		76CA72BA2D0794D800C209A1 /* xcredstap.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 76A247532C22747400859E0A /* xcredstap.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76CA72BA2D0794D800C209A1 /* trioxtap.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 76A247532C22747400859E0A /* trioxtap.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		76CB9077287FBEEA00C70D0C /* Helper+URLDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CB9076287FBEEA00C70D0C /* Helper+URLDecode.swift */; };
 		76CB9078287FBEEA00C70D0C /* Helper+URLDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CB9076287FBEEA00C70D0C /* Helper+URLDecode.swift */; };
 		76CB907B2880E41E00C70D0C /* LogShim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7632E3A02873497C00E37923 /* LogShim.swift */; };
-		76CB907E288112C200C70D0C /* xcreds_login.sh in Resources */ = {isa = PBXBuildFile; fileRef = 76CB907C288112AF00C70D0C /* xcreds_login.sh */; };
+		76CB907E288112C200C70D0C /* trioX_login.sh in Resources */ = {isa = PBXBuildFile; fileRef = 76CB907C288112AF00C70D0C /* trioX_login.sh */; };
 		76CCF5442B12E478003F85E9 /* SelectLocalAccountWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CCF5422B12E478003F85E9 /* SelectLocalAccountWindowController.swift */; };
 		76CCF5452B12E478003F85E9 /* SelectLocalAccountWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76CCF5432B12E478003F85E9 /* SelectLocalAccountWindowController.xib */; };
 		76D1756A2B23C28700E64A62 /* MainLoginWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FDC5D52B22D47A0035D61E /* MainLoginWindowController.xib */; };
@@ -264,9 +264,9 @@
 		76DC0A6D28836EB2007C42B2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A6B28836EB2007C42B2 /* MainMenu.xib */; };
 		76DC0A7328836EFE007C42B2 /* TCSReturnWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7DB2871F5F00013E2A1 /* TCSReturnWindow.m */; };
 		76DC0A7428836F45007C42B2 /* RestartX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E3287202080013E2A1 /* RestartX@2x.png */; };
-		76DC0A79288370BA007C42B2 /* so.trio.xcreds-overlay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A78288370BA007C42B2 /* so.trio.xcreds-overlay.plist */; };
-		76DC0A7C28837158007C42B2 /* XCreds Login Overlay.app in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A6528836EB1007C42B2 /* XCreds Login Overlay.app */; };
-		76DC0A7E288376BC007C42B2 /* TCSXCredsLoginOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC0A7D288376BC007C42B2 /* TCSXCredsLoginOverlayWindow.swift */; };
+		76DC0A79288370BA007C42B2 /* so.trio.trioX-overlay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A78288370BA007C42B2 /* so.trio.trioX-overlay.plist */; };
+		76DC0A7C28837158007C42B2 /* TrioX Login Overlay.app in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A6528836EB1007C42B2 /* TrioX Login Overlay.app */; };
+		76DC0A7E288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC0A7D288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift */; };
 		76DC0A83288382D2007C42B2 /* returnArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A7628837028007C42B2 /* returnArrow.png */; };
 		76DC0A8428838375007C42B2 /* AuthorizationDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */; };
 		76DC0A8528838467007C42B2 /* LoggerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EECCFF2875135900483C66 /* LoggerHelper.swift */; };
@@ -279,13 +279,13 @@
 		76DF7FD52B50FA9A00B3B543 /* UpdatePasswordWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E466652B1A4C16006529B6 /* UpdatePasswordWindowController.xib */; };
 		76E466662B1A4C16006529B6 /* UpdatePasswordWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E466642B1A4C16006529B6 /* UpdatePasswordWindowController.swift */; };
 		76E466672B1A4C16006529B6 /* UpdatePasswordWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76E466652B1A4C16006529B6 /* UpdatePasswordWindowController.xib */; };
-		76E74DCF2B3902F0004C6429 /* XCredsMechanismProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E74DCE2B3902F0004C6429 /* XCredsMechanismProtocol.swift */; };
-		76E74DD02B3902F0004C6429 /* XCredsMechanismProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E74DCE2B3902F0004C6429 /* XCredsMechanismProtocol.swift */; };
+		76E74DCF2B3902F0004C6429 /* TrioXMechanismProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E74DCE2B3902F0004C6429 /* TrioXMechanismProtocol.swift */; };
+		76E74DD02B3902F0004C6429 /* TrioXMechanismProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E74DCE2B3902F0004C6429 /* TrioXMechanismProtocol.swift */; };
 		76E74DD12B390327004C6429 /* ContextAndHintHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F72872504C0013E2A1 /* ContextAndHintHandling.swift */; };
 		76E74DD22B39034B004C6429 /* SelectLocalAccountWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CCF5422B12E478003F85E9 /* SelectLocalAccountWindowController.swift */; };
 		76E74DD32B390358004C6429 /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766355DA287132E9002E3867 /* LoginWebViewController.swift */; };
 		76E9CE702A0DC6E30060220C /* TCSLoginWindowUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9CE6F2A0DC6E30060220C /* TCSLoginWindowUtilities.m */; };
-		76EAAFD72CEFE22100A5FEE3 /* XCredsUserSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAAFD62CEFE22000A5FEE3 /* XCredsUserSetup.swift */; };
+		76EAAFD72CEFE22100A5FEE3 /* TrioXUserSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAAFD62CEFE22000A5FEE3 /* TrioXUserSetup.swift */; };
 		76EAAFDA2CEFED3800A5FEE3 /* SecretKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAAFD82CEFED3800A5FEE3 /* SecretKeeper.swift */; };
 		76EAAFDB2CEFED3800A5FEE3 /* UserSecretManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAAFD92CEFED3800A5FEE3 /* UserSecretManager.swift */; };
 		76EAAFDC2CEFED3800A5FEE3 /* SecretKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAAFD82CEFED3800A5FEE3 /* SecretKeeper.swift */; };
@@ -368,7 +368,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				760292002C116EDB0075FBD8 /* XCreds Login Password.appex in Embed Foundation Extensions */,
+				760292002C116EDB0075FBD8 /* TrioX Login Password.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +427,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				76CA72BA2D0794D800C209A1 /* xcredstap.appex in Embed Foundation Extensions */,
+				76CA72BA2D0794D800C209A1 /* trioxtap.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,16 +440,16 @@
 		1FB9F5102E85237800EE7745 /* icon_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_64x64.png; sourceTree = "<group>"; };
 		760148A82B23639D00E119A2 /* NSBundle+FindBundlePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBundle+FindBundlePath.swift"; sourceTree = "<group>"; };
 		760291CB2C1166870075FBD8 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
-		760291E02C116E450075FBD8 /* XCreds Login Autofill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XCreds Login Autofill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		760291E02C116E450075FBD8 /* TrioX Login Autofill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrioX Login Autofill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		760291E22C116E450075FBD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		760291E42C116E450075FBD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		760291E92C116E470075FBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		760291EB2C116E470075FBD8 /* XCreds_AutoFill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCreds_AutoFill.entitlements; sourceTree = "<group>"; };
-		760291F42C116EDB0075FBD8 /* XCreds Login Password.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "XCreds Login Password.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		760291EB2C116E470075FBD8 /* TrioX_AutoFill.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrioX_AutoFill.entitlements; sourceTree = "<group>"; };
+		760291F42C116EDB0075FBD8 /* TrioX Login Password.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TrioX Login Password.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		760291F72C116EDB0075FBD8 /* CredentialProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialProviderViewController.swift; sourceTree = "<group>"; };
 		760291FA2C116EDB0075FBD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CredentialProviderViewController.xib; sourceTree = "<group>"; };
 		760291FC2C116EDB0075FBD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		760291FD2C116EDB0075FBD8 /* XCreds_AutoFill_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCreds_AutoFill_Extension.entitlements; sourceTree = "<group>"; };
+		760291FD2C116EDB0075FBD8 /* TrioX_AutoFill_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrioX_AutoFill_Extension.entitlements; sourceTree = "<group>"; };
 		760418CE2A1332210051411B /* SignIn.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignIn.xib; sourceTree = "<group>"; };
 		760418CF2A1332210051411B /* SignInWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWindowController.swift; sourceTree = "<group>"; };
 		760418D42A1332520051411B /* DS+AD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DS+AD.swift"; sourceTree = "<group>"; };
@@ -458,17 +458,17 @@
 		760418DA2A13328C0051411B /* LocalCheckAndMigrate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalCheckAndMigrate.swift; sourceTree = "<group>"; };
 		760418DC2A1334210051411B /* NoLoMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoLoMechanism.swift; sourceTree = "<group>"; };
 		760418DE2A1334D00051411B /* CheckAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckAD.swift; sourceTree = "<group>"; };
-		760769C02D9120C1006A1F4E /* so.trio.xcreds-launchagent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "so.trio.xcreds-launchagent.plist"; sourceTree = "<group>"; };
+		760769C02D9120C1006A1F4E /* so.trio.trioX-launchagent.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "so.trio.trioX-launchagent.plist"; sourceTree = "<group>"; };
 		760CA4C92DAF38DC00066F31 /* NSAlert+showAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAlert+showAlert.swift"; sourceTree = "<group>"; };
-		7611CEBF288B75140063A644 /* XCredsCreateUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsCreateUser.swift; sourceTree = "<group>"; };
-		7611CEC1288B96760063A644 /* XCredsEnableFDE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsEnableFDE.swift; sourceTree = "<group>"; };
+		7611CEBF288B75140063A644 /* TrioXCreateUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXCreateUser.swift; sourceTree = "<group>"; };
+		7611CEC1288B96760063A644 /* TrioXEnableFDE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXEnableFDE.swift; sourceTree = "<group>"; };
 		7613FDF6289E114F00340CCD /* loadpage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = loadpage.html; sourceTree = "<group>"; };
 		7614D03B2B181A5D006EAF36 /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_128x128.png; path = trioX/Assets.xcassets/AppIcon.appiconset/icon_128x128.png; sourceTree = "<group>"; };
-		761B486B28A3575000C6A02B /* XCredsLoginDone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsLoginDone.swift; sourceTree = "<group>"; };
+		761B486B28A3575000C6A02B /* TrioXLoginDone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXLoginDone.swift; sourceTree = "<group>"; };
 		7631935D287D22C700D36BF7 /* authrights */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = authrights; sourceTree = BUILT_PRODUCTS_DIR; };
 		7631935F287D22C700D36BF7 /* authrights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authrights.swift; sourceTree = "<group>"; };
 		7632909B2876673500CF8857 /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
-		7632E39E287347C100E37923 /* XCredsKeychainAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsKeychainAdd.swift; sourceTree = "<group>"; };
+		7632E39E287347C100E37923 /* TrioXKeychainAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXKeychainAdd.swift; sourceTree = "<group>"; };
 		7632E3A02873497C00E37923 /* LogShim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogShim.swift; path = Mechanisms/LogShim.swift; sourceTree = "<group>"; };
 		76342E592B282653007D4F29 /* DesktopLoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopLoginWindowController.swift; sourceTree = "<group>"; };
 		7639B9B92C2281F30073F05A /* CCIDCardReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCIDCardReader.swift; sourceTree = "<group>"; };
@@ -482,7 +482,7 @@
 		7644C9C82C76E38700178884 /* TCTaskHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTaskHelper.h; sourceTree = "<group>"; };
 		76456CDF2DC99BFA00AEA261 /* NSError+EasyError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+EasyError.h"; sourceTree = "<group>"; };
 		76456CE02DC99BFA00AEA261 /* NSError+EasyError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+EasyError.m"; sourceTree = "<group>"; };
-		7649056E2B6CADA9008B552F /* xcredsmenuItemWindowBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xcredsmenuItemWindowBackgroundImage.png; sourceTree = "<group>"; };
+		7649056E2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trioXmenuItemWindowBackgroundImage.png; sourceTree = "<group>"; };
 		7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsernamePassword.swift; path = trioX/UsernamePassword.swift; sourceTree = "<group>"; };
 		764D8124284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyLocalPasswordWindowController.swift; sourceTree = "<group>"; };
 		764D8125284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyLocalPasswordWindowController.xib; sourceTree = "<group>"; };
@@ -510,26 +510,26 @@
 		7659CA06298E1BB6005D1AA3 /* DefaultBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultBackground.png; sourceTree = "<group>"; };
 		766184B72DCE5DB5009D5A8C /* colorline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorline.png; sourceTree = "<group>"; };
 		76634F362D05FFA3000A63E8 /* LogOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnly.swift; sourceTree = "<group>"; };
-		766355BD2870CA6A002E3867 /* XCredsLoginPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCredsLoginPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		766355C12870CB6F002E3867 /* XCredsLoginPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XCredsLoginPlugin.h; path = trioXLoginPlugIn/XCredsLoginPlugin.h; sourceTree = SOURCE_ROOT; };
-		766355C22870CB6F002E3867 /* XCredsLoginPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XCredsLoginPlugin.m; path = trioXLoginPlugIn/XCredsLoginPlugin.m; sourceTree = SOURCE_ROOT; };
-		766355C42870CCC3002E3867 /* XCredsLoginPlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCredsLoginPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
+		766355BD2870CA6A002E3867 /* TrioXLoginPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrioXLoginPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		766355C12870CB6F002E3867 /* TrioXLoginPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TrioXLoginPlugin.h; path = trioXLoginPlugIn/TrioXLoginPlugin.h; sourceTree = SOURCE_ROOT; };
+		766355C22870CB6F002E3867 /* TrioXLoginPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TrioXLoginPlugin.m; path = trioXLoginPlugIn/TrioXLoginPlugin.m; sourceTree = SOURCE_ROOT; };
+		766355C42870CCC3002E3867 /* TrioXLoginPlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrioXLoginPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
 		766355DA287132E9002E3867 /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginWebViewController.swift; path = trioXLoginPlugIn/LoginWindow/LoginWebViewController.swift; sourceTree = SOURCE_ROOT; };
 		766355E128713C47002E3867 /* LoginWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWindow.swift; sourceTree = "<group>"; };
 		766355E4287148C1002E3867 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tokens.swift; path = Shared/Tokens.swift; sourceTree = SOURCE_ROOT; };
 		76673CD429D3D5F500452848 /* LicenseChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseChecker.swift; sourceTree = "<group>"; };
-		766C602C2D3F409D0033E274 /* XCredsAudit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XCredsAudit.swift; path = Shared/XCredsAudit.swift; sourceTree = "<group>"; };
+		766C602C2D3F409D0033E274 /* TrioXAudit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrioXAudit.swift; path = Shared/TrioXAudit.swift; sourceTree = "<group>"; };
 		766CC42129D3A320009BC526 /* Paddle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Paddle.framework; path = Carthage/Build/Mac/Paddle.framework; sourceTree = "<group>"; };
 		766CC42229D3A321009BC526 /* ProductLicense.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProductLicense.framework; path = Carthage/Build/Mac/ProductLicense.framework; sourceTree = "<group>"; };
 		766CC43729D3AED2009BC526 /* errorpage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = errorpage.html; sourceTree = "<group>"; };
-		766F1E552D495BBF00AA5637 /* so.trio.xcreds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = so.trio.xcreds.json; path = "Profile Manifest/jamf/so.trio.xcreds.json"; sourceTree = "<group>"; };
+		766F1E552D495BBF00AA5637 /* so.trio.trioX.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = so.trio.trioX.json; path = "Profile Manifest/jamf/so.trio.trioX.json"; sourceTree = "<group>"; };
 		766F4C4A2883AFD90021F548 /* pleaseWaitGraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pleaseWaitGraphic.png; sourceTree = "<group>"; };
 		766FD60C2A1B06AC00C8F244 /* DefaultsOverride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsOverride.swift; sourceTree = "<group>"; };
 		767116A6284AABC500CCD6FF /* NotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyManager.swift; sourceTree = "<group>"; };
 		767116A8284AAE2B00CCD6FF /* ScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleManager.swift; sourceTree = "<group>"; };
 		767116AB284AB4C000CCD6FF /* PasswordUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordUtils.swift; sourceTree = "<group>"; };
 		767116AD284AB59400CCD6FF /* SecurityPrivateAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityPrivateAPI.h; sourceTree = "<group>"; };
-		767116AE284AB5D900CCD6FF /* XCreds-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XCreds-Bridging-Header.h"; sourceTree = "<group>"; };
+		767116AE284AB5D900CCD6FF /* TrioX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrioX-Bridging-Header.h"; sourceTree = "<group>"; };
 		767116B0284B021500CCD6FF /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		767116B2284B045800CCD6FF /* KeychainUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainUtil.swift; sourceTree = "<group>"; };
 		7675444428918CD100613840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = trioXLoginPlugIn/Info.plist; sourceTree = "<group>"; };
@@ -547,10 +547,10 @@
 		767CB2CF2B13B92B006CA2AC /* OpenDirectory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenDirectory.framework; path = System/Library/Frameworks/OpenDirectory.framework; sourceTree = SDKROOT; };
 		7681FEC42A4C8B9000F91CD1 /* AboutWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
 		7681FEC62A4C8BC800F91CD1 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
-		7681FEC82A4CFEA200F91CD1 /* so.trio.xcreds.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.info; fileEncoding = 4; name = so.trio.xcreds.plist; path = "Profile Manifest/so.trio.xcreds.plist"; sourceTree = "<group>"; };
+		7681FEC82A4CFEA200F91CD1 /* so.trio.trioX.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.info; fileEncoding = 4; name = so.trio.trioX.plist; path = "Profile Manifest/so.trio.trioX.plist"; sourceTree = "<group>"; };
 		7683973029A854EC003D9B9F /* NSImage+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+String.swift"; sourceTree = "<group>"; };
 		76873E2E2A107736001418A9 /* DefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DefaultsHelper.swift; path = trioX/DefaultsHelper.swift; sourceTree = "<group>"; };
-		76A247532C22747400859E0A /* xcredstap.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = xcredstap.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		76A247532C22747400859E0A /* trioxtap.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = trioxtap.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A247542C22747400859E0A /* CryptoTokenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoTokenKit.framework; path = System/Library/Frameworks/CryptoTokenKit.framework; sourceTree = SDKROOT; };
 		76A247572C22747400859E0A /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		76A247592C22747400859E0A /* TokenDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDriver.swift; sourceTree = "<group>"; };
@@ -573,9 +573,9 @@
 		76BEF7E3287202080013E2A1 /* RestartX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RestartX@2x.png"; sourceTree = "<group>"; };
 		76BEF7E6287202AF0013E2A1 /* ShutdownX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShutdownX.png; sourceTree = "<group>"; };
 		76BEF7E7287202AF0013E2A1 /* ShutdownX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutdownX@2x.png"; sourceTree = "<group>"; };
-		76BEF7EA28724A0B0013E2A1 /* XCredsLoginMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsLoginMechanism.swift; sourceTree = "<group>"; };
-		76BEF7EB28724A0B0013E2A1 /* XCredsBaseMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsBaseMechanism.swift; sourceTree = "<group>"; };
-		76BEF7F228724F120013E2A1 /* XCredsPowerControlMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCredsPowerControlMechanism.swift; sourceTree = "<group>"; };
+		76BEF7EA28724A0B0013E2A1 /* TrioXLoginMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXLoginMechanism.swift; sourceTree = "<group>"; };
+		76BEF7EB28724A0B0013E2A1 /* TrioXBaseMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXBaseMechanism.swift; sourceTree = "<group>"; };
+		76BEF7F228724F120013E2A1 /* TrioXPowerControlMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXPowerControlMechanism.swift; sourceTree = "<group>"; };
 		76BEF7F528724FA80013E2A1 /* NSTaskWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTaskWrapper.swift; sourceTree = "<group>"; };
 		76BEF7F72872504C0013E2A1 /* ContextAndHintHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextAndHintHandling.swift; sourceTree = "<group>"; };
 		76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizationDBManager.swift; path = trioXLoginPlugIn/LoginWindow/AuthorizationDBManager.swift; sourceTree = SOURCE_ROOT; };
@@ -592,7 +592,7 @@
 		76C840862D03BFF400E41802 /* PinSetWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinSetWindowController.swift; sourceTree = "<group>"; };
 		76C840872D03BFF400E41802 /* PinSetWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinSetWindowController.xib; sourceTree = "<group>"; };
 		76CB9076287FBEEA00C70D0C /* Helper+URLDecode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper+URLDecode.swift"; sourceTree = "<group>"; };
-		76CB907C288112AF00C70D0C /* xcreds_login.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = xcreds_login.sh; sourceTree = "<group>"; };
+		76CB907C288112AF00C70D0C /* trioX_login.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = trioX_login.sh; sourceTree = "<group>"; };
 		76CCF5422B12E478003F85E9 /* SelectLocalAccountWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocalAccountWindowController.swift; sourceTree = "<group>"; };
 		76CCF5432B12E478003F85E9 /* SelectLocalAccountWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectLocalAccountWindowController.xib; sourceTree = "<group>"; };
 		76D1757D2B24096C00E64A62 /* MainLoginWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLoginWindow.swift; sourceTree = "<group>"; };
@@ -603,29 +603,29 @@
 		76D7ADFC284EB18600332EBC /* NSFileManager+TCSRealHomeFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+TCSRealHomeFolder.m"; sourceTree = "<group>"; };
 		76D7ADFD284EB18600332EBC /* NSFileManager+TCSRealHomeFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TCSRealHomeFolder.h"; sourceTree = "<group>"; };
 		76DB5CF32A09AE9A0014F8E1 /* get_pw.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = get_pw.js; path = Javascript/get_pw/get_pw.js; sourceTree = "<group>"; };
-		76DC0A6528836EB1007C42B2 /* XCreds Login Overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XCreds Login Overlay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76DC0A6528836EB1007C42B2 /* TrioX Login Overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrioX Login Overlay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DC0A6728836EB1007C42B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76DC0A6928836EB2007C42B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76DC0A6C28836EB2007C42B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		76DC0A6E28836EB2007C42B2 /* XCreds_Login_Overlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCreds_Login_Overlay.entitlements; sourceTree = "<group>"; };
+		76DC0A6E28836EB2007C42B2 /* TrioX_Login_Overlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrioX_Login_Overlay.entitlements; sourceTree = "<group>"; };
 		76DC0A7628837028007C42B2 /* returnArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = returnArrow.png; sourceTree = "<group>"; };
-		76DC0A78288370BA007C42B2 /* so.trio.xcreds-overlay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "so.trio.xcreds-overlay.plist"; sourceTree = "<group>"; };
-		76DC0A7D288376BC007C42B2 /* TCSXCredsLoginOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCSXCredsLoginOverlayWindow.swift; sourceTree = "<group>"; };
+		76DC0A78288370BA007C42B2 /* so.trio.trioX-overlay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "so.trio.trioX-overlay.plist"; sourceTree = "<group>"; };
+		76DC0A7D288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCSTrioXLoginOverlayWindow.swift; sourceTree = "<group>"; };
 		76DC0A7F2883785A007C42B2 /* trioX-Login-Overlay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trioX-Login-Overlay-Info.plist"; sourceTree = SOURCE_ROOT; };
 		76DD6D122859978F00A700ED /* OIDCLite */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = OIDCLite; path = ../OIDCLite; sourceTree = "<group>"; };
 		76E466642B1A4C16006529B6 /* UpdatePasswordWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordWindowController.swift; sourceTree = "<group>"; };
 		76E466652B1A4C16006529B6 /* UpdatePasswordWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdatePasswordWindowController.xib; sourceTree = "<group>"; };
-		76E74DCE2B3902F0004C6429 /* XCredsMechanismProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCredsMechanismProtocol.swift; sourceTree = "<group>"; };
+		76E74DCE2B3902F0004C6429 /* TrioXMechanismProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrioXMechanismProtocol.swift; sourceTree = "<group>"; };
 		76E9CE6E2A0DC6E30060220C /* TCSLoginWindowUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TCSLoginWindowUtilities.h; path = trioX/TCSLoginWindowUtilities.h; sourceTree = "<group>"; };
 		76E9CE6F2A0DC6E30060220C /* TCSLoginWindowUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TCSLoginWindowUtilities.m; path = trioX/TCSLoginWindowUtilities.m; sourceTree = "<group>"; };
-		76EAAFD62CEFE22000A5FEE3 /* XCredsUserSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCredsUserSetup.swift; sourceTree = "<group>"; };
+		76EAAFD62CEFE22000A5FEE3 /* TrioXUserSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrioXUserSetup.swift; sourceTree = "<group>"; };
 		76EAAFD82CEFED3800A5FEE3 /* SecretKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeeper.swift; sourceTree = "<group>"; };
 		76EAAFD92CEFED3800A5FEE3 /* UserSecretManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSecretManager.swift; sourceTree = "<group>"; };
-		76EE069A27FD1D00009E0F3A /* XCreds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCreds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76EE069A27FD1D00009E0F3A /* TrioX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrioX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EE069D27FD1D00009E0F3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76EE069F27FD1D01009E0F3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76EE06A227FD1D01009E0F3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		76EE06A427FD1D01009E0F3A /* xCreds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = xCreds.entitlements; sourceTree = "<group>"; };
+		76EE06A427FD1D01009E0F3A /* trioX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = trioX.entitlements; sourceTree = "<group>"; };
 		76EE06AA27FD1D66009E0F3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		76EE06AB27FD1D92009E0F3A /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		76EE06AD27FD1DC3009E0F3A /* PrefKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefKeys.swift; sourceTree = "<group>"; };
@@ -725,7 +725,7 @@
 				760291E22C116E450075FBD8 /* AppDelegate.swift */,
 				760291E42C116E450075FBD8 /* ViewController.swift */,
 				760291E82C116E470075FBD8 /* Main.storyboard */,
-				760291EB2C116E470075FBD8 /* XCreds_AutoFill.entitlements */,
+				760291EB2C116E470075FBD8 /* TrioX_AutoFill.entitlements */,
 			);
 			path = "trioX AutoFill";
 			sourceTree = "<group>";
@@ -736,7 +736,7 @@
 				760291F72C116EDB0075FBD8 /* CredentialProviderViewController.swift */,
 				760291F92C116EDB0075FBD8 /* CredentialProviderViewController.xib */,
 				760291FC2C116EDB0075FBD8 /* Info.plist */,
-				760291FD2C116EDB0075FBD8 /* XCreds_AutoFill_Extension.entitlements */,
+				760291FD2C116EDB0075FBD8 /* TrioX_AutoFill_Extension.entitlements */,
 			);
 			path = "trioX AutoFill Extension";
 			sourceTree = "<group>";
@@ -810,8 +810,8 @@
 				76B882A829CCFD7900BB8186 /* TCSKeychain.m */,
 				7677908328908E40004E7085 /* WifiWindowController.swift */,
 				7677908528908E40004E7085 /* WifiWindowController.xib */,
-				766355C12870CB6F002E3867 /* XCredsLoginPlugin.h */,
-				766355C22870CB6F002E3867 /* XCredsLoginPlugin.m */,
+				766355C12870CB6F002E3867 /* TrioXLoginPlugin.h */,
+				766355C22870CB6F002E3867 /* TrioXLoginPlugin.m */,
 			);
 			path = trioXLoginPlugIn;
 			sourceTree = "<group>";
@@ -849,14 +849,14 @@
 			isa = PBXGroup;
 			children = (
 				76634F362D05FFA3000A63E8 /* LogOnly.swift */,
-				76EAAFD62CEFE22000A5FEE3 /* XCredsUserSetup.swift */,
-				761B486B28A3575000C6A02B /* XCredsLoginDone.swift */,
-				7611CEC1288B96760063A644 /* XCredsEnableFDE.swift */,
-				7611CEBF288B75140063A644 /* XCredsCreateUser.swift */,
-				7632E39E287347C100E37923 /* XCredsKeychainAdd.swift */,
-				76BEF7F228724F120013E2A1 /* XCredsPowerControlMechanism.swift */,
-				76BEF7EA28724A0B0013E2A1 /* XCredsLoginMechanism.swift */,
-				76BEF7EB28724A0B0013E2A1 /* XCredsBaseMechanism.swift */,
+				76EAAFD62CEFE22000A5FEE3 /* TrioXUserSetup.swift */,
+				761B486B28A3575000C6A02B /* TrioXLoginDone.swift */,
+				7611CEC1288B96760063A644 /* TrioXEnableFDE.swift */,
+				7611CEBF288B75140063A644 /* TrioXCreateUser.swift */,
+				7632E39E287347C100E37923 /* TrioXKeychainAdd.swift */,
+				76BEF7F228724F120013E2A1 /* TrioXPowerControlMechanism.swift */,
+				76BEF7EA28724A0B0013E2A1 /* TrioXLoginMechanism.swift */,
+				76BEF7EB28724A0B0013E2A1 /* TrioXBaseMechanism.swift */,
 			);
 			path = Mechanisms;
 			sourceTree = "<group>";
@@ -869,7 +869,7 @@
 				089B22F02AFAED280006B6BC /* NetworkMonitor.swift */,
 				0F4EBA532E8A87E900A4ECF6 /* LoginProgressWindowController.xib */,
 				76FDC5D52B22D47A0035D61E /* MainLoginWindowController.xib */,
-				76CB907C288112AF00C70D0C /* xcreds_login.sh */,
+				76CB907C288112AF00C70D0C /* trioX_login.sh */,
 				76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */,
 				76BEF7DC2871F5F00013E2A1 /* TCSReturnWindow.h */,
 				76BEF7DB2871F5F00013E2A1 /* TCSReturnWindow.m */,
@@ -887,7 +887,7 @@
 		76BEF7F128724EB60013E2A1 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				7649056E2B6CADA9008B552F /* xcredsmenuItemWindowBackgroundImage.png */,
+				7649056E2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png */,
 				76BEF7FF2872A3030013E2A1 /* loginwindow.png */,
 				76BEF7FE2872A3030013E2A1 /* loginwindow@2x.png */,
 				76BEF7E6287202AF0013E2A1 /* ShutdownX.png */,
@@ -923,13 +923,13 @@
 			children = (
 				766F4C4A2883AFD90021F548 /* pleaseWaitGraphic.png */,
 				76DC0A7F2883785A007C42B2 /* trioX-Login-Overlay-Info.plist */,
-				76DC0A7D288376BC007C42B2 /* TCSXCredsLoginOverlayWindow.swift */,
-				76DC0A78288370BA007C42B2 /* so.trio.xcreds-overlay.plist */,
+				76DC0A7D288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift */,
+				76DC0A78288370BA007C42B2 /* so.trio.trioX-overlay.plist */,
 				76DC0A7628837028007C42B2 /* returnArrow.png */,
 				76DC0A6728836EB1007C42B2 /* AppDelegate.swift */,
 				76DC0A6928836EB2007C42B2 /* Assets.xcassets */,
 				76DC0A6B28836EB2007C42B2 /* MainMenu.xib */,
-				76DC0A6E28836EB2007C42B2 /* XCreds_Login_Overlay.entitlements */,
+				76DC0A6E28836EB2007C42B2 /* TrioX_Login_Overlay.entitlements */,
 			);
 			path = "trioX Login Overlay";
 			sourceTree = "<group>";
@@ -965,15 +965,15 @@
 				766184B72DCE5DB5009D5A8C /* colorline.png */,
 				76456CDF2DC99BFA00AEA261 /* NSError+EasyError.h */,
 				76456CE02DC99BFA00AEA261 /* NSError+EasyError.m */,
-				760769C02D9120C1006A1F4E /* so.trio.xcreds-launchagent.plist */,
+				760769C02D9120C1006A1F4E /* so.trio.trioX-launchagent.plist */,
 				760CA4C92DAF38DC00066F31 /* NSAlert+showAlert.swift */,
 				7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */,
-				766F1E552D495BBF00AA5637 /* so.trio.xcreds.json */,
+				766F1E552D495BBF00AA5637 /* so.trio.trioX.json */,
 				7644C9C82C76E38700178884 /* TCTaskHelper.h */,
 				7644C9C72C76E38700178884 /* TCTaskHelper.m */,
 				76EAAFD82CEFED3800A5FEE3 /* SecretKeeper.swift */,
 				76EAAFD92CEFED3800A5FEE3 /* UserSecretManager.swift */,
-				766C602C2D3F409D0033E274 /* XCredsAudit.swift */,
+				766C602C2D3F409D0033E274 /* TrioXAudit.swift */,
 				7639B9B92C2281F30073F05A /* CCIDCardReader.swift */,
 				76D4726B2B43B8FA0064380C /* TCTaskWrapperWithBlocks.h */,
 				76D4726C2B43B8FB0064380C /* TCTaskWrapperWithBlocks.m */,
@@ -983,7 +983,7 @@
 				76C4BAB92B353B3F007B2C57 /* NoMAD */,
 				7614D03B2B181A5D006EAF36 /* icon_128x128.png */,
 				1FB9F5102E85237800EE7745 /* icon_64x64.png */,
-				7681FEC82A4CFEA200F91CD1 /* so.trio.xcreds.plist */,
+				7681FEC82A4CFEA200F91CD1 /* so.trio.trioX.plist */,
 				76C63A312A22872700810C53 /* History.md */,
 				760418CC2A1331710051411B /* NomadLogin */,
 				76873E2E2A107736001418A9 /* DefaultsHelper.swift */,
@@ -1016,14 +1016,14 @@
 		76EE069B27FD1D00009E0F3A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76EE069A27FD1D00009E0F3A /* XCreds.app */,
-				766355BD2870CA6A002E3867 /* XCredsLoginPlugin.bundle */,
+				76EE069A27FD1D00009E0F3A /* TrioX.app */,
+				766355BD2870CA6A002E3867 /* TrioXLoginPlugin.bundle */,
 				7631935D287D22C700D36BF7 /* authrights */,
-				76DC0A6528836EB1007C42B2 /* XCreds Login Overlay.app */,
+				76DC0A6528836EB1007C42B2 /* TrioX Login Overlay.app */,
 				76786F532A27C36A00AA8DB9 /* auth_mech_fixup */,
-				760291E02C116E450075FBD8 /* XCreds Login Autofill.app */,
-				760291F42C116EDB0075FBD8 /* XCreds Login Password.appex */,
-				76A247532C22747400859E0A /* xcredstap.appex */,
+				760291E02C116E450075FBD8 /* TrioX Login Autofill.app */,
+				760291F42C116EDB0075FBD8 /* TrioX Login Password.appex */,
+				76A247532C22747400859E0A /* trioxtap.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1052,7 +1052,7 @@
 				767116B2284B045800CCD6FF /* KeychainUtil.swift */,
 				767116AD284AB59400CCD6FF /* SecurityPrivateAPI.h */,
 				76EE06AB27FD1D92009E0F3A /* TokenManager.swift */,
-				76E74DCE2B3902F0004C6429 /* XCredsMechanismProtocol.swift */,
+				76E74DCE2B3902F0004C6429 /* TrioXMechanismProtocol.swift */,
 				76EE06AD27FD1DC3009E0F3A /* PrefKeys.swift */,
 				764D8128284BCAB100B3EE54 /* Window+Shake.swift */,
 				767B939B2A28279E0038935E /* View+Shake.swift */,
@@ -1065,7 +1065,7 @@
 				76EE06B527FD1E79009E0F3A /* PreferencesWindow.xib */,
 				764D812E284C06AB00B3EE54 /* defaults.plist */,
 				767832732C234A6200E31295 /* tap-Bridging-Header.h */,
-				767116AE284AB5D900CCD6FF /* XCreds-Bridging-Header.h */,
+				767116AE284AB5D900CCD6FF /* TrioX-Bridging-Header.h */,
 				76EE06B727FD1EB7009E0F3A /* PreferencesWindowController.swift */,
 				7681FEC42A4C8B9000F91CD1 /* AboutWindowController.swift */,
 				76EE06AF27FD1DD8009E0F3A /* Window+ForceToFront.swift */,
@@ -1077,8 +1077,8 @@
 				767116A6284AABC500CCD6FF /* NotifyManager.swift */,
 				76EE069F27FD1D01009E0F3A /* Assets.xcassets */,
 				76EE06A127FD1D01009E0F3A /* MainMenu.xib */,
-				76EE06A427FD1D01009E0F3A /* xCreds.entitlements */,
-				766355C42870CCC3002E3867 /* XCredsLoginPlugin-Bridging-Header.h */,
+				76EE06A427FD1D01009E0F3A /* trioX.entitlements */,
+				766355C42870CCC3002E3867 /* TrioXLoginPlugin-Bridging-Header.h */,
 			);
 			path = trioX;
 			sourceTree = "<group>";
@@ -1086,9 +1086,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		760291DF2C116E450075FBD8 /* XCreds Login Autofill */ = {
+		760291DF2C116E450075FBD8 /* TrioX Login Autofill */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 760291EC2C116E470075FBD8 /* Build configuration list for PBXNativeTarget "XCreds Login Autofill" */;
+			buildConfigurationList = 760291EC2C116E470075FBD8 /* Build configuration list for PBXNativeTarget "TrioX Login Autofill" */;
 			buildPhases = (
 				760291DC2C116E450075FBD8 /* Sources */,
 				760291DD2C116E450075FBD8 /* Frameworks */,
@@ -1100,14 +1100,14 @@
 			dependencies = (
 				760291FF2C116EDB0075FBD8 /* PBXTargetDependency */,
 			);
-			name = "XCreds Login Autofill";
+			name = "TrioX Login Autofill";
 			productName = "XCreds AutoFill";
-			productReference = 760291E02C116E450075FBD8 /* XCreds Login Autofill.app */;
+			productReference = 760291E02C116E450075FBD8 /* TrioX Login Autofill.app */;
 			productType = "com.apple.product-type.application";
 		};
-		760291F32C116EDB0075FBD8 /* XCreds Login Password */ = {
+		760291F32C116EDB0075FBD8 /* TrioX Login Password */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 760292012C116EDB0075FBD8 /* Build configuration list for PBXNativeTarget "XCreds Login Password" */;
+			buildConfigurationList = 760292012C116EDB0075FBD8 /* Build configuration list for PBXNativeTarget "TrioX Login Password" */;
 			buildPhases = (
 				760291F02C116EDB0075FBD8 /* Sources */,
 				760291F12C116EDB0075FBD8 /* Frameworks */,
@@ -1117,9 +1117,9 @@
 			);
 			dependencies = (
 			);
-			name = "XCreds Login Password";
+			name = "TrioX Login Password";
 			productName = "XCreds AutoFill Extension";
-			productReference = 760291F42C116EDB0075FBD8 /* XCreds Login Password.appex */;
+			productReference = 760291F42C116EDB0075FBD8 /* TrioX Login Password.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		7631935C287D22C700D36BF7 /* authrights */ = {
@@ -1143,9 +1143,9 @@
 			productReference = 7631935D287D22C700D36BF7 /* authrights */;
 			productType = "com.apple.product-type.tool";
 		};
-		766355BC2870CA6A002E3867 /* XCredsLoginPlugin */ = {
+		766355BC2870CA6A002E3867 /* TrioXLoginPlugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 766355C02870CA6A002E3867 /* Build configuration list for PBXNativeTarget "XCredsLoginPlugin" */;
+			buildConfigurationList = 766355C02870CA6A002E3867 /* Build configuration list for PBXNativeTarget "TrioXLoginPlugin" */;
 			buildPhases = (
 				766355B92870CA6A002E3867 /* Sources */,
 				766355BA2870CA6A002E3867 /* Frameworks */,
@@ -1156,12 +1156,12 @@
 			);
 			dependencies = (
 			);
-			name = XCredsLoginPlugin;
+			name = TrioXLoginPlugin;
 			packageProductDependencies = (
 				766355CD2870E9D3002E3867 /* OIDCLite */,
 			);
 			productName = XCredsLoginPlugin;
-			productReference = 766355BD2870CA6A002E3867 /* XCredsLoginPlugin.bundle */;
+			productReference = 766355BD2870CA6A002E3867 /* TrioXLoginPlugin.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		76786F522A27C36A00AA8DB9 /* auth_mech_fixup */ = {
@@ -1181,9 +1181,9 @@
 			productReference = 76786F532A27C36A00AA8DB9 /* auth_mech_fixup */;
 			productType = "com.apple.product-type.tool";
 		};
-		76A247522C22747400859E0A /* xcredstap */ = {
+		76A247522C22747400859E0A /* trioxtap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76A247652C22747400859E0A /* Build configuration list for PBXNativeTarget "xcredstap" */;
+			buildConfigurationList = 76A247652C22747400859E0A /* Build configuration list for PBXNativeTarget "trioxtap" */;
 			buildPhases = (
 				76A2474F2C22747400859E0A /* Sources */,
 				76A247502C22747400859E0A /* Frameworks */,
@@ -1193,14 +1193,14 @@
 			);
 			dependencies = (
 			);
-			name = xcredstap;
+			name = trioxtap;
 			productName = tapgo;
-			productReference = 76A247532C22747400859E0A /* xcredstap.appex */;
+			productReference = 76A247532C22747400859E0A /* trioxtap.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		76DC0A6428836EB1007C42B2 /* XCreds Login Overlay */ = {
+		76DC0A6428836EB1007C42B2 /* TrioX Login Overlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76DC0A6F28836EB2007C42B2 /* Build configuration list for PBXNativeTarget "XCreds Login Overlay" */;
+			buildConfigurationList = 76DC0A6F28836EB2007C42B2 /* Build configuration list for PBXNativeTarget "TrioX Login Overlay" */;
 			buildPhases = (
 				76DC0A6128836EB1007C42B2 /* Sources */,
 				76DC0A6228836EB1007C42B2 /* Frameworks */,
@@ -1211,14 +1211,14 @@
 			);
 			dependencies = (
 			);
-			name = "XCreds Login Overlay";
+			name = "TrioX Login Overlay";
 			productName = "XCreds Login Overlay";
-			productReference = 76DC0A6528836EB1007C42B2 /* XCreds Login Overlay.app */;
+			productReference = 76DC0A6528836EB1007C42B2 /* TrioX Login Overlay.app */;
 			productType = "com.apple.product-type.application";
 		};
-		76EE069927FD1D00009E0F3A /* XCreds */ = {
+		76EE069927FD1D00009E0F3A /* TrioX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76EE06A727FD1D01009E0F3A /* Build configuration list for PBXNativeTarget "XCreds" */;
+			buildConfigurationList = 76EE06A727FD1D01009E0F3A /* Build configuration list for PBXNativeTarget "TrioX" */;
 			buildPhases = (
 				76EE069627FD1D00009E0F3A /* Sources */,
 				76EE069727FD1D00009E0F3A /* Frameworks */,
@@ -1235,7 +1235,7 @@
 				76319379287E204500D36BF7 /* PBXTargetDependency */,
 				76A247602C22747400859E0A /* PBXTargetDependency */,
 			);
-			name = XCreds;
+			name = TrioX;
 			packageProductDependencies = (
 				76DD6D16285997F300A700ED /* OIDCLite */,
 				76319365287D24E100D36BF7 /* ArgumentParser */,
@@ -1244,7 +1244,7 @@
 				76477E032C626B5D00F01D56 /* OIDCLite */,
 			);
 			productName = xCreds;
-			productReference = 76EE069A27FD1D00009E0F3A /* XCreds.app */;
+			productReference = 76EE069A27FD1D00009E0F3A /* TrioX.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1301,14 +1301,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76EE069927FD1D00009E0F3A /* XCreds */,
-				766355BC2870CA6A002E3867 /* XCredsLoginPlugin */,
+				76EE069927FD1D00009E0F3A /* TrioX */,
+				766355BC2870CA6A002E3867 /* TrioXLoginPlugin */,
 				7631935C287D22C700D36BF7 /* authrights */,
-				76DC0A6428836EB1007C42B2 /* XCreds Login Overlay */,
+				76DC0A6428836EB1007C42B2 /* TrioX Login Overlay */,
 				76786F522A27C36A00AA8DB9 /* auth_mech_fixup */,
-				760291DF2C116E450075FBD8 /* XCreds Login Autofill */,
-				760291F32C116EDB0075FBD8 /* XCreds Login Password */,
-				76A247522C22747400859E0A /* xcredstap */,
+				760291DF2C116E450075FBD8 /* TrioX Login Autofill */,
+				760291F32C116EDB0075FBD8 /* TrioX Login Password */,
+				76A247522C22747400859E0A /* trioxtap */,
 			);
 		};
 /* End PBXProject section */
@@ -1380,7 +1380,7 @@
 				76DC0A83288382D2007C42B2 /* returnArrow.png in Resources */,
 				76DC0A6A28836EB2007C42B2 /* Assets.xcassets in Resources */,
 				76DC0A6D28836EB2007C42B2 /* MainMenu.xib in Resources */,
-				76DC0A79288370BA007C42B2 /* so.trio.xcreds-overlay.plist in Resources */,
+				76DC0A79288370BA007C42B2 /* so.trio.trioX-overlay.plist in Resources */,
 				76DC0A7428836F45007C42B2 /* RestartX@2x.png in Resources */,
 				766F4C4B2883AFD90021F548 /* pleaseWaitGraphic.png in Resources */,
 			);
@@ -1390,16 +1390,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				766F1E562D495BBF00AA5637 /* so.trio.xcreds.json in Resources */,
+				766F1E562D495BBF00AA5637 /* so.trio.trioX.json in Resources */,
 				766184B82DCE5DB5009D5A8C /* colorline.png in Resources */,
-				760769C12D9120C1006A1F4E /* so.trio.xcreds-launchagent.plist in Resources */,
-				760291EF2C116E5F0075FBD8 /* XCreds Login Autofill.app in Resources */,
-				76DC0A7C28837158007C42B2 /* XCreds Login Overlay.app in Resources */,
+				760769C12D9120C1006A1F4E /* so.trio.trioX-launchagent.plist in Resources */,
+				760291EF2C116E5F0075FBD8 /* TrioX Login Autofill.app in Resources */,
+				76DC0A7C28837158007C42B2 /* TrioX Login Overlay.app in Resources */,
 				76DB5CF42A09AE9A0014F8E1 /* get_pw.js in Resources */,
 				762761602B294A7C0067D1D4 /* icon_128x128.png in Resources */,
-				76CB907E288112C200C70D0C /* xcreds_login.sh in Resources */,
+				76CB907E288112C200C70D0C /* trioX_login.sh in Resources */,
 				76319377287E1FAF00D36BF7 /* authrights in Resources */,
-				76319374287E198C00D36BF7 /* XCredsLoginPlugin.bundle in Resources */,
+				76319374287E198C00D36BF7 /* TrioXLoginPlugin.bundle in Resources */,
 				76D175742B23C57500E64A62 /* LocalUsersViewController.xib in Resources */,
 				76EE06B627FD1E79009E0F3A /* PreferencesWindow.xib in Resources */,
 				76EE06A027FD1D01009E0F3A /* Assets.xcassets in Resources */,
@@ -1415,12 +1415,12 @@
 				76C63A322A22872700810C53 /* History.md in Resources */,
 				764D8127284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.xib in Resources */,
 				76DF7FD52B50FA9A00B3B543 /* UpdatePasswordWindowController.xib in Resources */,
-				7649056F2B6CADA9008B552F /* xcredsmenuItemWindowBackgroundImage.png in Resources */,
+				7649056F2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png in Resources */,
 				76EE06A327FD1D01009E0F3A /* MainMenu.xib in Resources */,
 				76D1756A2B23C28700E64A62 /* MainLoginWindowController.xib in Resources */,
 				1FB9F5112E85237800EE7745 /* icon_64x64.png in Resources */,
 				76EE06B227FD1E24009E0F3A /* DesktopLoginWindowController.xib in Resources */,
-				7681FEC92A4CFEA200F91CD1 /* so.trio.xcreds.plist in Resources */,
+				7681FEC92A4CFEA200F91CD1 /* so.trio.trioX.plist in Resources */,
 				76F0B6E02B421FC8008F7D71 /* loadpage.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1498,29 +1498,29 @@
 				760418D52A1332520051411B /* DS+AD.swift in Sources */,
 				76FDC5D62B22D47A0035D61E /* MainLoginWindowController.swift in Sources */,
 				76C4BAB12B353A3A007B2C57 /* DNSResolver.m in Sources */,
-				76BEF7ED28724A0C0013E2A1 /* XCredsBaseMechanism.swift in Sources */,
+				76BEF7ED28724A0C0013E2A1 /* TrioXBaseMechanism.swift in Sources */,
 				766355CF2870E9E7002E3867 /* PrefKeys.swift in Sources */,
 				7657DEB42B350476003A23DB /* NoMADSession.swift in Sources */,
 				7657DEC42B3505CB003A23DB /* ADLDAPPing.swift in Sources */,
 				760418D72A1332660051411B /* DSQueryable.swift in Sources */,
 				76DF1D5B2A2AD42C00770690 /* LocalCheckAndMigrate.swift in Sources */,
-				761B486C28A3575000C6A02B /* XCredsLoginDone.swift in Sources */,
+				761B486C28A3575000C6A02B /* TrioXLoginDone.swift in Sources */,
 				76C661D92D3974910005F2CD /* PinPromptWindowController.swift in Sources */,
 				7649CD2C2D4B03FD00D6BEE2 /* UsernamePassword.swift in Sources */,
 				7657DEC72B3505EB003A23DB /* Extensions.swift in Sources */,
 				764297AD2D015AB800678928 /* SetupCardWindowController.swift in Sources */,
-				76BEF7F328724F120013E2A1 /* XCredsPowerControlMechanism.swift in Sources */,
+				76BEF7F328724F120013E2A1 /* TrioXPowerControlMechanism.swift in Sources */,
 				76873E302A107736001418A9 /* DefaultsHelper.swift in Sources */,
 				76B040A528EFC788002A289B /* Helper+URLDecode.swift in Sources */,
 				7632909D2876674100CF8857 /* DataExtension.swift in Sources */,
 				7683973229A854EC003D9B9F /* NSImage+String.swift in Sources */,
-				766C602E2D3F409D0033E274 /* XCredsAudit.swift in Sources */,
+				766C602E2D3F409D0033E274 /* TrioXAudit.swift in Sources */,
 				7677908628908E40004E7085 /* WifiWindowController.swift in Sources */,
 				76E466662B1A4C16006529B6 /* UpdatePasswordWindowController.swift in Sources */,
 				76EECCFD2873E9ED00483C66 /* VerifyLocalPasswordWindowController.swift in Sources */,
-				76EAAFD72CEFE22100A5FEE3 /* XCredsUserSetup.swift in Sources */,
+				76EAAFD72CEFE22100A5FEE3 /* TrioXUserSetup.swift in Sources */,
 				76D4726E2B43B8FB0064380C /* TCTaskWrapperWithBlocks.m in Sources */,
-				76BEF7EC28724A0B0013E2A1 /* XCredsLoginMechanism.swift in Sources */,
+				76BEF7EC28724A0B0013E2A1 /* TrioXLoginMechanism.swift in Sources */,
 				766355CA2870DCF5002E3867 /* TCSUnifiedLogger.m in Sources */,
 				76C4BAB02B353A30007B2C57 /* KlistUtil.swift in Sources */,
 				764446FD2CF80CD800E6289E /* StateFileHelper.swift in Sources */,
@@ -1537,18 +1537,18 @@
 				76673CD629D3D5F500452848 /* LicenseChecker.swift in Sources */,
 				767B939D2A28289E0038935E /* View+Shake.swift in Sources */,
 				760418D22A1332210051411B /* SignInWindowController.swift in Sources */,
-				7611CEC0288B75140063A644 /* XCredsCreateUser.swift in Sources */,
+				7611CEC0288B75140063A644 /* TrioXCreateUser.swift in Sources */,
 				764859F22B2FA2E800507C16 /* Window+ForceToFront.swift in Sources */,
-				766355C32870CB6F002E3867 /* XCredsLoginPlugin.m in Sources */,
+				766355C32870CB6F002E3867 /* TrioXLoginPlugin.m in Sources */,
 				766355CB2870E5E9002E3867 /* NSFileManager+TCSRealHomeFolder.m in Sources */,
-				7632E39F287347C100E37923 /* XCredsKeychainAdd.swift in Sources */,
+				7632E39F287347C100E37923 /* TrioXKeychainAdd.swift in Sources */,
 				76D1757E2B24096C00E64A62 /* MainLoginWindow.swift in Sources */,
 				7677908728908E40004E7085 /* NetworkManager.swift in Sources */,
 				76BEF7FA28726C700013E2A1 /* AuthorizationDBManager.swift in Sources */,
 				76BEF7E12871F74D0013E2A1 /* ControlsViewController.swift in Sources */,
 				76EECD012875135900483C66 /* LoggerHelper.swift in Sources */,
 				76C840892D03BFF400E41802 /* PinSetWindowController.swift in Sources */,
-				7611CEC2288B96760063A644 /* XCredsEnableFDE.swift in Sources */,
+				7611CEC2288B96760063A644 /* TrioXEnableFDE.swift in Sources */,
 				7639B9BA2C2281F30073F05A /* CCIDCardReader.swift in Sources */,
 				7657DEBD2B35055F003A23DB /* Logger.swift in Sources */,
 				76EECCFE2873EA6500483C66 /* Window+Shake.swift in Sources */,
@@ -1560,7 +1560,7 @@
 				76EECD0528753C7F00483C66 /* String+Base64URLEncoded.swift in Sources */,
 				7657DECD2B35061E003A23DB /* SiteManager.swift in Sources */,
 				760148A92B23639D00E119A2 /* NSBundle+FindBundlePath.swift in Sources */,
-				76E74DD02B3902F0004C6429 /* XCredsMechanismProtocol.swift in Sources */,
+				76E74DD02B3902F0004C6429 /* TrioXMechanismProtocol.swift in Sources */,
 				766355DB287132E9002E3867 /* LoginWebViewController.swift in Sources */,
 				7657DEDA2B351B5B003A23DB /* UNIXUtilities.swift in Sources */,
 				089B22F12AFAED280006B6BC /* NetworkMonitor.swift in Sources */,
@@ -1606,7 +1606,7 @@
 				76DC0A88288387D8007C42B2 /* NSFileManager+TCSRealHomeFolder.m in Sources */,
 				76DC0A8428838375007C42B2 /* AuthorizationDBManager.swift in Sources */,
 				76DC0A8628838656007C42B2 /* TCSUnifiedLogger.m in Sources */,
-				76DC0A7E288376BC007C42B2 /* TCSXCredsLoginOverlayWindow.swift in Sources */,
+				76DC0A7E288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift in Sources */,
 				767C42842AC6645700542099 /* AuthRightsHelper.swift in Sources */,
 				760CA4CC2DAF38DC00066F31 /* NSAlert+showAlert.swift in Sources */,
 				76DC0A87288386FA007C42B2 /* NSTaskWrapper.swift in Sources */,
@@ -1642,7 +1642,7 @@
 				7657DEB32B350476003A23DB /* NoMADSession.swift in Sources */,
 				760418E02A133A370051411B /* DSQueryable.swift in Sources */,
 				764447152CF825D500E6289E /* AuthRightsHelper.swift in Sources */,
-				766C602D2D3F409D0033E274 /* XCredsAudit.swift in Sources */,
+				766C602D2D3F409D0033E274 /* TrioXAudit.swift in Sources */,
 				76C661DA2D3974F30005F2CD /* SetupCardWindowController.swift in Sources */,
 				76C8408B2D03BFF400E41802 /* PinSetWindowController.swift in Sources */,
 				764446FE2CF80CD800E6289E /* StateFileHelper.swift in Sources */,
@@ -1672,7 +1672,7 @@
 				7681FEC52A4C8B9000F91CD1 /* AboutWindowController.swift in Sources */,
 				768633D92AFC4908004065E5 /* NetworkManager.swift in Sources */,
 				7657DED92B351B5B003A23DB /* UNIXUtilities.swift in Sources */,
-				76E74DCF2B3902F0004C6429 /* XCredsMechanismProtocol.swift in Sources */,
+				76E74DCF2B3902F0004C6429 /* TrioXMechanismProtocol.swift in Sources */,
 				76EE06C227FD1F50009E0F3A /* StatusMenuController.swift in Sources */,
 				76EE06B027FD1DD8009E0F3A /* Window+ForceToFront.swift in Sources */,
 				76D4726D2B43B8FB0064380C /* TCTaskWrapperWithBlocks.m in Sources */,
@@ -1709,17 +1709,17 @@
 /* Begin PBXTargetDependency section */
 		760291FF2C116EDB0075FBD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 760291F32C116EDB0075FBD8 /* XCreds Login Password */;
+			target = 760291F32C116EDB0075FBD8 /* TrioX Login Password */;
 			targetProxy = 760291FE2C116EDB0075FBD8 /* PBXContainerItemProxy */;
 		};
 		760292062C116EEE0075FBD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 760291DF2C116E450075FBD8 /* XCreds Login Autofill */;
+			target = 760291DF2C116E450075FBD8 /* TrioX Login Autofill */;
 			targetProxy = 760292052C116EEE0075FBD8 /* PBXContainerItemProxy */;
 		};
 		76319376287E19A500D36BF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 766355BC2870CA6A002E3867 /* XCredsLoginPlugin */;
+			target = 766355BC2870CA6A002E3867 /* TrioXLoginPlugin */;
 			targetProxy = 76319375287E19A500D36BF7 /* PBXContainerItemProxy */;
 		};
 		76319379287E204500D36BF7 /* PBXTargetDependency */ = {
@@ -1729,12 +1729,12 @@
 		};
 		76A247602C22747400859E0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76A247522C22747400859E0A /* xcredstap */;
+			target = 76A247522C22747400859E0A /* trioxtap */;
 			targetProxy = 76A2475F2C22747400859E0A /* PBXContainerItemProxy */;
 		};
 		76DC0A7B28837152007C42B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76DC0A6428836EB1007C42B2 /* XCreds Login Overlay */;
+			target = 76DC0A6428836EB1007C42B2 /* TrioX Login Overlay */;
 			targetProxy = 76DC0A7A28837152007C42B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1934,7 +1934,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_SWIFT_SYMBOLS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCredsLoginPlugin-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioXLoginPlugin-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1950,7 +1950,7 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_SWIFT_SYMBOLS = NO;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCredsLoginPlugin-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioXLoginPlugin-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1986,7 +1986,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCredsLoginPlugin-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioXLoginPlugin-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -2023,7 +2023,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCredsLoginPlugin-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioXLoginPlugin-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -2412,7 +2412,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		760291EC2C116E470075FBD8 /* Build configuration list for PBXNativeTarget "XCreds Login Autofill" */ = {
+		760291EC2C116E470075FBD8 /* Build configuration list for PBXNativeTarget "TrioX Login Autofill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				760291ED2C116E470075FBD8 /* Debug */,
@@ -2421,7 +2421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		760292012C116EDB0075FBD8 /* Build configuration list for PBXNativeTarget "XCreds Login Password" */ = {
+		760292012C116EDB0075FBD8 /* Build configuration list for PBXNativeTarget "TrioX Login Password" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				760292022C116EDB0075FBD8 /* Debug */,
@@ -2439,7 +2439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		766355C02870CA6A002E3867 /* Build configuration list for PBXNativeTarget "XCredsLoginPlugin" */ = {
+		766355C02870CA6A002E3867 /* Build configuration list for PBXNativeTarget "TrioXLoginPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				766355BE2870CA6A002E3867 /* Debug */,
@@ -2457,7 +2457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76A247652C22747400859E0A /* Build configuration list for PBXNativeTarget "xcredstap" */ = {
+		76A247652C22747400859E0A /* Build configuration list for PBXNativeTarget "trioxtap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76A247632C22747400859E0A /* Debug */,
@@ -2466,7 +2466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76DC0A6F28836EB2007C42B2 /* Build configuration list for PBXNativeTarget "XCreds Login Overlay" */ = {
+		76DC0A6F28836EB2007C42B2 /* Build configuration list for PBXNativeTarget "TrioX Login Overlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76DC0A7028836EB2007C42B2 /* Debug */,
@@ -2484,7 +2484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76EE06A727FD1D01009E0F3A /* Build configuration list for PBXNativeTarget "XCreds" */ = {
+		76EE06A727FD1D01009E0F3A /* Build configuration list for PBXNativeTarget "TrioX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76EE06A827FD1D01009E0F3A /* Debug */,

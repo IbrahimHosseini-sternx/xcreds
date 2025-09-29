@@ -24,8 +24,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "76EE069927FD1D00009E0F3A"
-               BuildableName = "XCreds.app"
-               BlueprintName = "XCreds"
+               BuildableName = "TrioX.app"
+               BlueprintName = "TrioX"
                ReferencedContainer = "container:trioX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "76DC0A6428836EB1007C42B2"
-               BuildableName = "XCreds Login Overlay.app"
-               BlueprintName = "XCreds Login Overlay"
+               BuildableName = "TrioX Login Overlay.app"
+               BlueprintName = "TrioX Login Overlay"
                ReferencedContainer = "container:trioX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "76DC0A6428836EB1007C42B2"
-            BuildableName = "XCreds Login Overlay.app"
-            BlueprintName = "XCreds Login Overlay"
+            BuildableName = "TrioX Login Overlay.app"
+            BlueprintName = "TrioX Login Overlay"
             ReferencedContainer = "container:trioX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "76DC0A6428836EB1007C42B2"
-            BuildableName = "XCreds Login Overlay.app"
-            BlueprintName = "XCreds Login Overlay"
+            BuildableName = "TrioX Login Overlay.app"
+            BlueprintName = "TrioX Login Overlay"
             ReferencedContainer = "container:trioX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

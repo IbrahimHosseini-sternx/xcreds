@@ -17,8 +17,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "76A247522C22747400859E0A"
-               BuildableName = "xcredstap.appex"
-               BlueprintName = "xcredstap"
+               BuildableName = "trioxtap.appex"
+               BlueprintName = "trioxtap"
                ReferencedContainer = "container:trioX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -31,8 +31,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "76EE069927FD1D00009E0F3A"
-               BuildableName = "XCreds.app"
-               BlueprintName = "XCreds"
+               BuildableName = "TrioX.app"
+               BlueprintName = "TrioX"
                ReferencedContainer = "container:trioX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "76EE069927FD1D00009E0F3A"
-            BuildableName = "XCreds.app"
-            BlueprintName = "XCreds"
+            BuildableName = "TrioX.app"
+            BlueprintName = "TrioX"
             ReferencedContainer = "container:trioX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,8 +81,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "76EE069927FD1D00009E0F3A"
-            BuildableName = "XCreds.app"
-            BlueprintName = "XCreds"
+            BuildableName = "TrioX.app"
+            BlueprintName = "TrioX"
             ReferencedContainer = "container:trioX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -15,8 +15,8 @@
                   <BuildableReference
                      BuildableIdentifier = "primary"
                      BlueprintIdentifier = "766355BC2870CA6A002E3867"
-                     BuildableName = "XCredsLoginPlugin.bundle"
-                     BlueprintName = "XCredsLoginPlugin"
+                     BuildableName = "TrioXLoginPlugin.bundle"
+                     BlueprintName = "TrioXLoginPlugin"
                      ReferencedContainer = "container:trioX.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "766355BC2870CA6A002E3867"
-               BuildableName = "XCredsLoginPlugin.bundle"
-               BlueprintName = "XCredsLoginPlugin"
+               BuildableName = "TrioXLoginPlugin.bundle"
+               BlueprintName = "TrioXLoginPlugin"
                ReferencedContainer = "container:trioX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -69,8 +69,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "766355BC2870CA6A002E3867"
-            BuildableName = "XCredsLoginPlugin.bundle"
-            BlueprintName = "XCredsLoginPlugin"
+            BuildableName = "TrioXLoginPlugin.bundle"
+            BlueprintName = "TrioXLoginPlugin"
             ReferencedContainer = "container:trioX.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
