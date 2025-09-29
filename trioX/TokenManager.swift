@@ -36,6 +36,22 @@ enum StringOrArray:Decodable{
             throw DecodingError.typeMismatch(StringOrArray.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for Names"))
         }
 }
+
+// Decodes a JWT string and returns the payload as a dictionary.
+// Expects a string with three base64url segments separated by '.'
+func jwtDecode(value: String) -> [String: Any]? {
+    let segments = value.components(separatedBy: ".")
+    guard segments.count >= 2 else { return nil }
+    let payloadSegment = segments[1]
+    guard let data = base64UrlDecode(value: payloadSegment) else { return nil }
+    do {
+        let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
+        return jsonObject as? [String: Any]
+    } catch {
+        return nil
+    }
+}
+
 protocol TokenManagerFeedbackDelegate {
     func tokenError(_ err:String)
     func credentialsUpdated(_ credentials:Creds)

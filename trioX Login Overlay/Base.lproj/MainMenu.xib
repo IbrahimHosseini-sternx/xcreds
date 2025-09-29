@@ -23,11 +23,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="TrioX Login Overlay" id="1Xt-HY-uBw">
+                <menuItem title="XCreds Login Overlay" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="TrioX Login Overlay" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="XCreds Login Overlay" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About TrioX Login Overlay" id="5kV-Vb-QxS">
+                            <menuItem title="About XCreds Login Overlay" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -41,7 +41,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide TrioX Login Overlay" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide XCreds Login Overlay" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -59,7 +59,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit TrioX Login Overlay" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit XCreds Login Overlay" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -672,7 +672,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="TrioX Login Overlay Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="XCreds Login Overlay Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -683,13 +683,12 @@
             </items>
             <point key="canvasLocation" x="200" y="121"/>
         </menu>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="ewK-Yh-gWi" customClass="TCSXTrioXLoginOverlayWindow">
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" releasedWhenClosed="NO" frameAutosaveName="" animationBehavior="default" id="ewK-Yh-gWi" customClass="TCSTrioXLoginOverlayWindow" customModule="TrioX_Login_Overlay" customModuleProvider="target">
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="25" y="25" width="872" height="109"/>
+            <rect key="contentRect" x="0.0" y="0.0" width="1000" height="1000"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1512" height="948"/>
             <view key="contentView" id="1nr-Jh-HO9">
-                <rect key="frame" x="0.0" y="0.0" width="872" height="109"/>
+                <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GfD-0a-eQ7">
@@ -723,9 +722,9 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="XKY-p3-ykt"/>
             </connections>
-            <point key="canvasLocation" x="-479" y="714.5"/>
+            <point key="canvasLocation" x="-177" y="773"/>
         </window>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Ayg-7T-0us" customClass="TCSTrioXLoginOverlayWindow" customModule="TrioX_Login_Overlay" customModuleProvider="target">
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Ayg-7T-0us" customClass="TCSXCredsLoginOverlayWindow" customModule="TrioX_Login_Overlay" customModuleProvider="target">
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="144" y="174" width="362" height="190"/>

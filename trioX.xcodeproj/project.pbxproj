@@ -1782,7 +1782,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "XCreds AutoFill/XCreds_AutoFill.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TrioX AutoFill/trioX_AutoFill.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C4R35UCU7G;
@@ -1806,12 +1806,12 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.xcreds.XCreds-AutoFill";
+				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.trioX.TrioX-AutoFill";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCreds-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1823,7 +1823,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "XCreds AutoFill/XCreds_AutoFill.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TrioX AutoFill/trioX_AutoFill.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C4R35UCU7G;
@@ -1843,11 +1843,11 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.xcreds.XCreds-AutoFill";
+				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.trioX.TrioX-AutoFill";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCreds-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1857,7 +1857,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "XCreds AutoFill Extension/XCreds_AutoFill_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TrioX AutoFill Extension/trioX_AutoFill_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4R35UCU7G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1869,7 +1869,7 @@
 					"$(inherited)",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "XCreds AutoFill Extension/Info.plist";
+				INFOPLIST_FILE = "TrioX AutoFill Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "XCreds AutoFill Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
@@ -1880,12 +1880,12 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.xcreds.XCreds-AutoFill.XCreds-AutoFill-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.trioX.TrioX-AutoFill.TrioX-AutoFill-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCreds-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1895,7 +1895,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "XCreds AutoFill Extension/XCreds_AutoFill_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TrioX AutoFill Extension/trioX_AutoFill_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4R35UCU7G;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -1903,7 +1903,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_PREPROCESSOR_DEFINITIONS = "AUTOFILL_TARGET=1";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "XCreds AutoFill Extension/Info.plist";
+				INFOPLIST_FILE = "TrioX AutoFill Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "XCreds AutoFill Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
@@ -1914,11 +1914,11 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.xcreds.XCreds-AutoFill.XCreds-AutoFill-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.trioX.TrioX-AutoFill.TrioX-AutoFill-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCreds-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1958,7 +1958,7 @@
 		766355BE2870CA6A002E3867 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = XCreds/xCreds.entitlements;
+				CODE_SIGN_ENTITLEMENTS = trioX/trioX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1969,7 +1969,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = headers;
-				INFOPLIST_FILE = XCredsLoginPlugin/Info.plist;
+				INFOPLIST_FILE = TrioXLoginPlugin/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSPrincipalClass = "";
@@ -1980,7 +1980,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = so.trio.XCredsLoginPlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = so.trio.trioXLoginPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1995,7 +1995,7 @@
 		766355BF2870CA6A002E3867 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = XCreds/xCreds.entitlements;
+				CODE_SIGN_ENTITLEMENTS = trioX/trioX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -2006,7 +2006,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = headers;
-				INFOPLIST_FILE = XCredsLoginPlugin/Info.plist;
+				INFOPLIST_FILE = TrioXLoginPlugin/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
 				INFOPLIST_KEY_NSPrincipalClass = "";
@@ -2017,7 +2017,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = so.trio.XCredsLoginPlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = so.trio.trioXLoginPlugin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -2084,7 +2084,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/tap-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/tap-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -2117,7 +2117,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/tap-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/tap-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -2127,7 +2127,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "XCreds Login Overlay/XCreds_Login_Overlay.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TrioX Login Overlay/trioX_Login_Overlay.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C4R35UCU7G;
@@ -2137,7 +2137,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "XCreds-Login-Overlay-Info.plist";
+				INFOPLIST_FILE = "TrioX-Login-Overlay-Info.plist";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
@@ -2148,13 +2148,13 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.XCreds-Login-Overlay";
+				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.trioX-Login-Overlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCreds-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -2164,7 +2164,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "XCreds Login Overlay/XCreds_Login_Overlay.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TrioX Login Overlay/trioX_Login_Overlay.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C4R35UCU7G;
@@ -2174,7 +2174,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "XCreds-Login-Overlay-Info.plist";
+				INFOPLIST_FILE = "TrioX-Login-Overlay-Info.plist";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
@@ -2185,13 +2185,13 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.XCreds-Login-Overlay";
+				PRODUCT_BUNDLE_IDENTIFIER = "so.trio.trioX-Login-Overlay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCreds-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -2327,7 +2327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = XCreds/xCreds.entitlements;
+				CODE_SIGN_ENTITLEMENTS = trioX/trioX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C4R35UCU7G;
@@ -2339,7 +2339,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = headers;
-				INFOPLIST_FILE = XCreds/Info.plist;
+				INFOPLIST_FILE = trioX/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
@@ -2355,12 +2355,12 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = so.trio.xcreds;
+				PRODUCT_BUNDLE_IDENTIFIER = so.trio.trioX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCreds-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -2371,7 +2371,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = XCreds/xCreds.entitlements;
+				CODE_SIGN_ENTITLEMENTS = trioX/trioX.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = C4R35UCU7G;
@@ -2383,7 +2383,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = headers;
-				INFOPLIST_FILE = XCreds/Info.plist;
+				INFOPLIST_FILE = trioX/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "©  2025 triosoftinc Software, Inc";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Detect if there is a connection to the internets";
@@ -2399,12 +2399,12 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 5.5;
-				PRODUCT_BUNDLE_IDENTIFIER = so.trio.xcreds;
+				PRODUCT_BUNDLE_IDENTIFIER = so.trio.trioX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_SWIFT_SYMBOLS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "XCreds/XCreds-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "trioX/TrioX-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
