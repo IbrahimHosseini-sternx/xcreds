@@ -9,7 +9,7 @@ class Token: TKSmartCardToken, TKTokenDelegate {
 
     init(smartCard: TKSmartCard, aid AID: Data?, tokenDriver: TKSmartCardTokenDriver) throws {
         
-        let instanceID = "xcredstap" // Fill in a unique persistent identifier of the token instance.
+        let instanceID = "trioXtap" // Fill in a unique persistent identifier of the token instance.
         super.init(smartCard: smartCard, aid:nil, instanceID:instanceID, tokenDriver: tokenDriver)
     }
 

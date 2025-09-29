@@ -22,7 +22,7 @@ if [ -f "${prebeta_filename}" ] &&  [ -n "${upload}" ]; then
 #	curl --progress-bar -X POST "https://${bitbucket_username}:${bitbucket_password}@api.bitbucket.org/2.0/repositories/triosoftinc/xcreds/downloads" --form files=@"${prebeta_filename}" > /tmp/curl.log
 	owner="triosoftinc"
 	GH_API="https://api.github.com"
-	repo="xcreds"
+	repo="trioX"
 	tag="prebeta"
 	GH_REPO="$GH_API/repos/$owner/$repo"
 	GH_TAGS="$GH_REPO/releases/tags/$tag"

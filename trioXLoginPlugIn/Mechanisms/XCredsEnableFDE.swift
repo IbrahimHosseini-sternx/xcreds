@@ -7,7 +7,7 @@
 import Cocoa
 
 @available(macOS, deprecated: 11)
-class XCredsEnableFDE : XCredsBaseMechanism {
+class TrioXEnableFDE : TrioXBaseMechanism {
     let enableFDELog = "enableFDELog"
     // basic mech to enable FileVault
     // needs to be a separate mech b/c it needs to run after loginwindow:done
@@ -46,8 +46,8 @@ class XCredsEnableFDE : XCredsBaseMechanism {
         os_log("Rekeying FileVault", log: enableFDELog, type: .default)
         
         let userArgs = [
-            "Username" : xcredsUser ?? "",
-            "Password" : xcredsPass ?? "",
+            "Username" : trioXUser ?? "",
+            "Password" : trioXPass ?? "",
             ]
         
         var userInfo : Data
@@ -134,8 +134,8 @@ class XCredsEnableFDE : XCredsBaseMechanism {
             os_log("Enabling FileVault", log: enableFDELog, type: .default)
             
             let userArgs = [
-                "Username" : xcredsUser ?? "",
-                "Password" : xcredsPass ?? "",
+                "Username" : trioXUser ?? "",
+                "Password" : trioXPass ?? "",
                 ]
             
             var userInfo : Data

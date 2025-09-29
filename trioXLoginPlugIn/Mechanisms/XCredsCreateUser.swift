@@ -9,7 +9,7 @@ import OpenDirectory
 
 /// Mechanism to create a local user and homefolder.
 @available(macOS, deprecated: 11)
-class XCredsCreateUser: XCredsBaseMechanism {
+class TrioXCreateUser: TrioXBaseMechanism {
 
     let createUserLog = "createUserLog"
     let uiLog = "uiLog"
@@ -44,9 +44,9 @@ class XCredsCreateUser: XCredsBaseMechanism {
             localLogin=true
         }
 
-        if let xcredsGroups = groups {
+        if let trioXGroups = groups {
 
-            TCSLogWithMark("group: \(xcredsGroups)")
+            TCSLogWithMark("group: \(trioXGroups)")
         }
 
         // check if we are a guest account
@@ -62,20 +62,20 @@ class XCredsCreateUser: XCredsBaseMechanism {
                 return
             }
             
-            let result = cliTask("/usr/sbin/sysadminctl", arguments: ["-deleteUser", xcredsUser ?? "NONE"], waitForTermination: true)
+            let result = cliTask("/usr/sbin/sysadminctl", arguments: ["-deleteUser", trioXUser ?? "NONE"], waitForTermination: true)
             
             try? result.write(toFile: "/tmp/sysadminctl.output", atomically: true, encoding: String.Encoding.utf8)
             
             if let path = getManagedPreference(key: .GuestUserAccountPasswordPath) as? String {
                 do {
                     let pass = password + "\n"
-                    try pass.write(toFile: path + "-\(xcredsUser!)", atomically: true, encoding: String.Encoding.utf8)
+                    try pass.write(toFile: path + "-\(trioXUser!)", atomically: true, encoding: String.Encoding.utf8)
                 } catch {
                     TCSLog("Unable to write out guest password")
                 }
             }
         }
-        TCSLogWithMark("user:\(xcredsUser ?? "")")
+        TCSLogWithMark("user:\(trioXUser ?? "")")
         var isAdmin = false
         var shouldRemoveAdmin = false
         if let createAdmin = getManagedPreference(key: .CreateAdminUser) as? Bool {
@@ -105,7 +105,7 @@ class XCredsCreateUser: XCredsBaseMechanism {
             fullname=fullnameHint
         }
 
-        if let xcredsPass=xcredsPass,let xcredsUser = xcredsUser, XCredsCreateUser.checkForLocalUser(name: xcredsUser)==false{
+        if let trioXPass=trioXPass,let trioXUser = trioXUser, TrioXCreateUser.checkForLocalUser(name: trioXUser)==false{
 
             TCSLogWithMark("Setting hint to create new user")
             setHint(type: .isAccountCreationPending, hint: true as NSSecureCoding)
@@ -165,7 +165,7 @@ class XCredsCreateUser: XCredsBaseMechanism {
             customAttributes["dsAttrTypeNative:\(metaPrefix)_creationDate"] = currentDate
 
 
-            guard let xcredsFirst=xcredsFirst, let xcredsLast = xcredsLast else {
+            guard let trioXFirst=trioXFirst, let trioXLast = trioXLast else {
                 TCSLogErrorWithMark("first or last name not defined. bailing")
                 denyLogin(message:"first or last name not defined.")
 
@@ -180,10 +180,10 @@ class XCredsCreateUser: XCredsBaseMechanism {
                 let primaryGroupID = (DefaultsOverride.standardOverride.string(forKey: PrefKeys.primaryGroupID.rawValue) ?? "20")
 
 
-                try createUser(shortName: xcredsUser,
-                               first: xcredsFirst ,
-                               last: xcredsLast, fullName: fullname,
-                               pass: xcredsPass,
+                try createUser(shortName: trioXUser,
+                               first: trioXFirst ,
+                               last: trioXLast, fullName: fullname,
+                               pass: trioXPass,
                                uid: uid,
                                gid: primaryGroupID,
                                canChangePass: true,
@@ -195,14 +195,14 @@ class XCredsCreateUser: XCredsBaseMechanism {
             catch CreateUserError.userPasswordSetError(let mesg){
                 denyLogin(message:mesg)
                 //create home anyways because account has issues if not created even if a password is not set.
-                createHome(xcredsUser:xcredsUser, uid:uid)
+                createHome(trioXUser:trioXUser, uid:uid)
                 return
 
             }
             catch{
                 denyLogin(message:error.localizedDescription)
             }
-            createHome(xcredsUser:xcredsUser, uid:uid)
+            createHome(trioXUser:trioXUser, uid:uid)
 
             
         } else {
@@ -254,20 +254,20 @@ class XCredsCreateUser: XCredsBaseMechanism {
             alias=aliasHint
         }
         // Set the xcreds attributes to stamp this account as the mapped one
-        setTimestampFor(xcredsUser ?? "")
-        let _ = updateOIDCInfo(user: xcredsUser ?? "", localOnly: localLogin)
+        setTimestampFor(trioXUser ?? "")
+        let _ = updateOIDCInfo(user: trioXUser ?? "", localOnly: localLogin)
 
         TCSLogWithMark("seeing if we have an alias")
-        if let alias = alias, let xcredsUser = xcredsUser {
+        if let alias = alias, let trioXUser = trioXUser {
             TCSLogWithMark("adding alias: \(alias)")
-            if XCredsCreateUser.addAlias(name: xcredsUser, alias: alias)==false {
+            if TrioXCreateUser.addAlias(name: trioXUser, alias: alias)==false {
                 os_log("error adding alias", log: createUserLog, type: .debug)
             }
         }
         TCSLogWithMark("Checking if user should be made admin")
-        if let xcredsUser = xcredsUser {
+        if let trioXUser = trioXUser {
             do {
-                let record = try getLocalRecord(xcredsUser)
+                let record = try getLocalRecord(trioXUser)
 
                 if isAdmin == true {
 
@@ -318,7 +318,7 @@ class XCredsCreateUser: XCredsBaseMechanism {
 
                 }
 
-                if let username = xcredsUser, let password = xcredsPass{
+                if let username = trioXUser, let password = trioXPass{
                     let fullname = fullname ?? ""
 
                     try userManager.setUIDUser(fullName: fullname, rfidUID: rfidUIDData, username: username, password:password, uid: NSNumber(value: -1), pin: rfidPIN)
@@ -344,12 +344,12 @@ class XCredsCreateUser: XCredsBaseMechanism {
 
             let node = try ODNode.init(session: session, type: ODNodeType(kODNodeTypeLocalNodes))
             TCSLogWithMark()
-            let user = try node.record(withRecordType: kODRecordTypeUsers, name: xcredsUser!, attributes: kODAttributeTypeRecordName)
+            let user = try node.record(withRecordType: kODRecordTypeUsers, name: trioXUser!, attributes: kODAttributeTypeRecordName)
             TCSLogWithMark()
             try user.setNodeCredentials(adminUserName, password: adminPassword)
             TCSLogWithMark()
             TCSLogWithMark("changing password with secure token admin")
-            try user.changePassword(nil, toPassword: xcredsPass!)
+            try user.changePassword(nil, toPassword: trioXPass!)
             TCSLogWithMark()
         }
         catch {
@@ -539,10 +539,10 @@ class XCredsCreateUser: XCredsBaseMechanism {
         return true
 
     }
-    func createHome(xcredsUser:String, uid:String) {
-        TCSLogWithMark("Creating local homefolder for \(xcredsUser)")
-        createHomeDirFor(xcredsUser)
-        TCSLogWithMark("Fixup home permissions for: \(xcredsUser)")
+    func createHome(trioXUser:String, uid:String) {
+        TCSLogWithMark("Creating local homefolder for \(trioXUser)")
+        createHomeDirFor(trioXUser)
+        TCSLogWithMark("Fixup home permissions for: \(trioXUser)")
         let _ = cliTask("/usr/sbin/diskutil resetUserPermissions / \(uid)", arguments: nil, waitForTermination: true)
         TCSLogWithMark("Account creation complete, allowing login")
 
@@ -753,7 +753,7 @@ class XCredsCreateUser: XCredsBaseMechanism {
             os_log("Checking UIDTool", log: createUserLog, type: .debug)
             if FileManager.default.isExecutableFile(atPath: uidToolpath) {
                 os_log("Calling UIDTool", log: createUserLog, type: .debug)
-                let uid = cliTask(uidToolpath, arguments: [xcredsUser ?? "NONE" ], waitForTermination: true)
+                let uid = cliTask(uidToolpath, arguments: [trioXUser ?? "NONE" ], waitForTermination: true)
                 if uid != "" {
                     os_log("Found custom uid, using: %{public}@", log: createUserLog, type: .debug, uid)
                     return uid.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)

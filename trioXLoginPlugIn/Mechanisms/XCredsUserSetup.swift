@@ -5,12 +5,12 @@
 
 // import ProductLicense  // Commented out - missing dependency
 @available(macOS, deprecated: 11)
-class XCredsUserSetup: XCredsBaseMechanism{
+class TrioXUserSetup: TrioXBaseMechanism{
 
     @objc override func run() {
-        TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ XCredsUserSetup mech starting ~~~~~~~~~~~~~~~~~~~")
+        TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ TrioXUserSetup mech starting ~~~~~~~~~~~~~~~~~~~")
         
-        let bundle = Bundle.findBundleWithName(name: "XCreds")
+        let bundle = Bundle.findBundleWithName(name: "trioX")
 
         if let bundle = bundle {
             let infoPlist = bundle.infoDictionary

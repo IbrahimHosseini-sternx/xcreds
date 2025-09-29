@@ -10,15 +10,15 @@ import Security
 import OpenDirectory
 // headless mech to add items to a keychain
 @available(macOS, deprecated: 11)
-class XCredsKeychainAdd : XCredsBaseMechanism {
+class TrioXKeychainAdd : TrioXBaseMechanism {
     
     let fm = FileManager.default
     var username = ""
     var userpass = ""
-    let kItemName = "xcreds"
+    let kItemName = "trioX"
     
     @objc override func run() {
-        TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ XCredsKeychainAdd mech starting starting mech starting ~~~~~~~~~~~~~~~~~~~")
+        TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ TrioXKeychainAdd mech starting starting mech starting ~~~~~~~~~~~~~~~~~~~")
 
         // get username and password
         // get reference to user's keychain

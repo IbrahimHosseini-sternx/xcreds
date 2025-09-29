@@ -4,7 +4,7 @@ import Network
 
 
 @available(macOS, deprecated: 11)
-@objc class XCredsLoginMechanism: XCredsBaseMechanism {
+@objc class TrioXLoginMechanism: TrioXBaseMechanism {
     var loginWebViewController: LoginWebViewController?
     @objc var signInViewController: SignInViewController?
     enum LoginWindowType {
@@ -64,7 +64,7 @@ import Network
         }
 
         TCSLogWithMark("Checking for autologin.")
-        if FileManager.default.fileExists(atPath: "/tmp/xcredsrun") {
+        if FileManager.default.fileExists(atPath: "/tmp/trioXrun") {
             os_log("XCreds has run once already. Load regular window as this isn't a reboot", log: checkADLog, type: .debug)
             return false
         }

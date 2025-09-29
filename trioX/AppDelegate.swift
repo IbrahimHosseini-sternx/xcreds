@@ -11,19 +11,19 @@ import CryptoTokenKit
 
 @main
 @available(macOS, deprecated: 11)
-struct xcreds:ParsableCommand {
+struct trioX:ParsableCommand {
 
     static var configuration = CommandConfiguration(
-        abstract: "Command line interface for XCreds.",
+        abstract: "Command line interface for trioX.",
         subcommands: [Status.self,ImportRFIDUsers.self, ShowTemplate.self,SetRFIDUser.self, ShowRFIDUser.self,ShowRFIDUsers.self, RemoveRFIDUser.self,SetAdminUser.self,ShowAdminUser.self, ClearAdminUser.self,ClearRFIDUsers.self, ListReaders.self,RFIDListener.self, RunApp.self],
         defaultSubcommand: RunApp.self)
 
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct Status:ParsableCommand {
         @Flag(help:"JSON output") var json:Bool = false
-        static var configuration = CommandConfiguration(abstract: "Get status of XCreds")
+        static var configuration = CommandConfiguration(abstract: "Get status of trioX")
         @Argument(parsing: .allUnrecognized)
 
 
@@ -32,22 +32,22 @@ extension xcreds {
         func run() throws {
             TCSUnifiedLogger.shared().suppressDebug=true
 
-            struct XCredsInfo:Codable {
+            struct TrioXInfo:Codable {
                 var consoleRights:[String]?
                 var userInfo:[String:Dictionary<String,String>]?
                 var oidcUsers:[[String:String]]?
-                var xcredsVersion:String=""
-                var xcredsBuild:String=""
+                var trioXVersion:String=""
+                var trioXBuild:String=""
 
-                var xcredLicenseStatus:String=""
-                var xcredsLicenseDaysRemaining:String=""
+                var trioXLicenseStatus:String=""
+                var trioXLicenseDaysRemaining:String=""
                 init() {
-                    let bundle = Bundle.findBundleWithName(name: "XCreds")
+                    let bundle = Bundle.findBundleWithName(name: "trioX")
                     if let bundle = bundle {
                         let infoPlist = bundle.infoDictionary
                         if let infoPlist = infoPlist, let buildFromInfoPlist = infoPlist["CFBundleVersion"] as? String, let versionFromInfoPlist = infoPlist["CFBundleShortVersionString"] as? String {
-                            xcredsBuild = buildFromInfoPlist
-                            xcredsVersion = versionFromInfoPlist
+                            trioXBuild = buildFromInfoPlist
+                            trioXVersion = versionFromInfoPlist
                         }
                     }
 
@@ -58,19 +58,19 @@ extension xcreds {
                     case .valid(let secRemaining):
                         let daysRemaining = Int(secRemaining/(24*60*60))
 
-                        xcredLicenseStatus="Valid"
-                        xcredsLicenseDaysRemaining=String(format:"%i",daysRemaining)
+                        trioXLicenseStatus="Valid"
+                        trioXLicenseDaysRemaining=String(format:"%i",daysRemaining)
                     case .invalid:
-                        xcredLicenseStatus="Invalid"
+                        trioXLicenseStatus="Invalid"
 
                     case .trial(_):
-                        xcredLicenseStatus="Trial"
+                        trioXLicenseStatus="Trial"
 
                     case .trialExpired:
-                        xcredLicenseStatus="trialExpired"
+                        trioXLicenseStatus="trialExpired"
 
                     case .expired:
-                        xcredLicenseStatus="expired"
+                        trioXLicenseStatus="expired"
 
                     }
                 }
@@ -107,19 +107,19 @@ extension xcreds {
             if !json{
 
 
-                print("----- XCreds Info -----")
-                print("     " + "XCreds Version:" + info.xcredsVersion)
-                print("     " + "XCreds Build number:" + info.xcredsBuild)
-                print("     " + "License Status:" + info.xcredLicenseStatus)
-                if info.xcredLicenseStatus.isEmpty==false {
-                    print("     " + "Days Remaining:" + info.xcredsLicenseDaysRemaining)
+                print("----- trioX Info -----")
+                print("     " + "trioX Version:" + info.trioXVersion)
+                print("     " + "trioX Build number:" + info.trioXBuild)
+                print("     " + "License Status:" + info.trioXLicenseStatus)
+                if info.trioXLicenseStatus.isEmpty==false {
+                    print("     " + "Days Remaining:" + info.trioXLicenseDaysRemaining)
 
                 }
                 print("----- Last User Info -----")
 
-                if let loginWindowAuditRecord = XCredsAudit().auditRecord(path: "/var/db/securityagent/.xcredsaudit") {
+                if let loginWindowAuditRecord = TrioXAudit().auditRecord(path: "/var/db/securityagent/.trioXaudit") {
 
-                    let auditDict = XCredsAudit().auditRecordDictionary(loginWindowAuditRecord)
+                    let auditDict = TrioXAudit().auditRecordDictionary(loginWindowAuditRecord)
                     for (k,v) in auditDict{
                         if !json {
                             print("     " + k +  ": " + v)
@@ -146,9 +146,9 @@ extension xcreds {
                     if let userDetails = userDetails {
                         if let homeDirArray = userDetails["dsAttrTypeStandard:NFSHomeDirectory"] as? Array<String>, homeDirArray.count>0{
                             let homeDir = homeDirArray[0]
-                            if let auditRecord = XCredsAudit().auditRecord(path: homeDir+"/.xcredsaudit") {
+                            if let auditRecord = TrioXAudit().auditRecord(path: homeDir+"/.trioXaudit") {
 
-                                let auditDict = XCredsAudit().auditRecordDictionary(auditRecord)
+                                let auditDict = TrioXAudit().auditRecordDictionary(auditRecord)
                                 for (k,v) in auditDict{
                                     userDetailsInfo[k] = v
                                     if !json {
@@ -205,7 +205,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct ListReaders:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "List currently plugged in RFID readers.")
 
@@ -232,7 +232,7 @@ extension xcreds {
 }
 
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct RFIDListener:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Listen and print the RFID of scanned cards.")
 
@@ -290,7 +290,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct RunApp:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Start app normally.")
             @Argument(parsing: .allUnrecognized)
@@ -317,7 +317,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct ShowAdminUser:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Show currently set admin user. Used for resetting keychain.")
 
@@ -343,7 +343,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct ClearRFIDUser:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Clear rfid user.")
 
@@ -381,7 +381,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct ClearRFIDUsers:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Clear all users. Does not clear the admin user.")
 
@@ -401,7 +401,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct ClearAdminUser:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Clear the current admin user used for resetting keychain.")
 
@@ -421,7 +421,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct SetAdminUser:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Set the current admin user used for resetting keychain.")
 
@@ -446,7 +446,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct SetRFIDUser:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Add an RFID user.")
         @Argument(parsing: .allUnrecognized)
@@ -507,7 +507,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct ShowRFIDUsers:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Show RFID users.")
 
@@ -544,7 +544,7 @@ extension xcreds {
 }
 
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct ShowRFIDUser:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Show RFID user.")
 
@@ -603,7 +603,7 @@ extension xcreds {
     }
 }
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct RemoveRFIDUser:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Remove RFID user by rfid-uid.")
 
@@ -656,7 +656,7 @@ extension xcreds {
 
 
 @available(macOS, deprecated: 11)
-extension xcreds {
+extension trioX {
     struct ImportRFIDUsers:ParsableCommand {
         static var configuration = CommandConfiguration(abstract: "Import users from a CSV for RFID login. Format:Full Name,Username,Password,RFID-UID,PIN,UID. PIN and UID can be left blank. All imported user data is encrypted and stored in a file located in /usr/local/var/triosoftinc. The file is only readable by root.")
 

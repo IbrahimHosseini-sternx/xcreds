@@ -2,14 +2,14 @@
 //
 
 @available(macOS, deprecated: 11)
-class XCredsLoginDone: XCredsBaseMechanism {
+class TrioXLoginDone: TrioXBaseMechanism {
 
     override init(mechanism: UnsafePointer<MechanismRecord>) {
         super.init(mechanism: mechanism)
     }
 
     @objc override func run() {
-        TCSLogWithMark("XCredsLoginDone mech starting")
+        TCSLogWithMark("TrioXLoginDone mech starting")
 
         let isAccountCreationPending = getHint(type: .isAccountCreationPending) as? Bool ?? false
 

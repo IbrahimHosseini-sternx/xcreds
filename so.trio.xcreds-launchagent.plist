@@ -5,12 +5,12 @@
     <key>KeepAlive</key>
     <true/>
 	<key>Label</key>
-	<string>so.trio.xcreds-launchagent</string>
+	<string>so.trio.trioX-launchagent</string>
 	<key>ProcessType</key>
 	<string>Interactive</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Applications/XCreds.app/Contents/MacOS/XCreds</string>
+		<string>/Applications/trioX.app/Contents/MacOS/trioX</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>

@@ -1,7 +1,7 @@
 import Cocoa
 import OpenDirectory
 @available(macOS, deprecated: 11)
-@objc class XCredsBaseMechanism: NSObject, XCredsMechanismProtocol, DSQueryable {
+@objc class TrioXBaseMechanism: NSObject, TrioXMechanismProtocol, DSQueryable {
 
     
     func reload() {
@@ -325,7 +325,7 @@ import OpenDirectory
     }
     func setupPrefs(){
         TCSLogWithMark()
-        UserDefaults.standard.addSuite(named: "so.trio.xcreds")
+        UserDefaults.standard.addSuite(named: "so.trio.trioX")
         let defaultsPath = Bundle(for: type(of: self)).path(forResource: "defaults", ofType: "plist")
 
         if let defaultsPath = defaultsPath {
@@ -335,16 +335,16 @@ import OpenDirectory
         }
     }
 
-    var xcredsPass: String? {
+    var trioXPass: String? {
         get {
             guard let userPass = getHint(type: .pass) as? String else {
                 return nil
             }
-            os_log("Computed xcredsPass accessed: %@", log: noLoMechlog, type: .debug)
+            os_log("Computed trioXPass accessed: %@", log: noLoMechlog, type: .debug)
             return userPass
         }
     }
-    var xcredsFirst: String? {
+    var trioXFirst: String? {
         get {
             guard let firstName = getHint(type: .firstName) as? String else {
                 return ""
@@ -354,7 +354,7 @@ import OpenDirectory
         }
     }
 
-    var xcredsLast: String? {
+    var trioXLast: String? {
         get {
             guard let lastName = getHint(type: .lastName) as? String else {
                 return ""
@@ -363,7 +363,7 @@ import OpenDirectory
             return lastName
         }
     }
-    var xcredsUser: String? {
+    var trioXUser: String? {
         get {
             guard let userName = getHint(type: .user) as? String else {
                 TCSLogWithMark("no usernames")
@@ -642,7 +642,7 @@ import OpenDirectory
         do {
 
 
-            let data =  NSData(contentsOfFile: "/tmp/xcredsrun") as? Data
+            let data =  NSData(contentsOfFile: "/tmp/trioXrun") as? Data
             guard let data = data  else {
                 return nil
             }
@@ -667,7 +667,7 @@ import OpenDirectory
 
             let data = try NSKeyedArchiver.archivedData(withRootObject: dict, requiringSecureCoding: true)
 
-            try data.write(to: URL.init(fileURLWithPath: "/tmp/xcredsrun"))
+            try data.write(to: URL.init(fileURLWithPath: "/tmp/trioXrun"))
 
         }
         catch {

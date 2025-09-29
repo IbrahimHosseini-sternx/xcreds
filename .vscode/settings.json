@@ -1,9 +1,5 @@
 {
-    "editor.quickSuggestions": {
-        "comments": "off",
-        "strings": "off",
-        "other": "off"
-    },
+    "editor.quickSuggestions": false,
     "swift.path": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
     "swift.path.shell": "/bin/zsh",
     "swift.buildPath": "/usr/bin/swift",

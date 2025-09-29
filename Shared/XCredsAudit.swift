@@ -7,7 +7,7 @@
 import Foundation
 
 @available(macOS, deprecated: 11)
-class XCredsAudit {
+class TrioXAudit {
 
 
     struct AuditRecord:Codable {
@@ -28,7 +28,7 @@ class XCredsAudit {
     init() {
         let applicationSupportPath = NSSearchPathForDirectoriesInDomains(.applicationSupportDirectory, .localDomainMask, true)
 
-        let loginWindowConfigFilePath = ((applicationSupportPath[0] as NSString).appendingPathComponent("XCreds") as NSString).appendingPathComponent("xcredsaudit")
+        let loginWindowConfigFilePath = ((applicationSupportPath[0] as NSString).appendingPathComponent("trioX") as NSString).appendingPathComponent("trioXaudit")
 
         if geteuid()==0 {
             configFileURL = URL(fileURLWithPath: loginWindowConfigFilePath)
@@ -36,7 +36,7 @@ class XCredsAudit {
 
         else {
             let home = NSHomeDirectory()
-            let userConfigFilePath = home + "/" + ".xcredsaudit"
+            let userConfigFilePath = home + "/" + ".trioXaudit"
             configFileURL = URL(fileURLWithPath: userConfigFilePath)
         }
     }

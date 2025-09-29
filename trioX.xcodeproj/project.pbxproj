@@ -717,7 +717,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		760291E12C116E450075FBD8 /* XCreds AutoFill */ = {
+		760291E12C116E450075FBD8 /* trioX AutoFill */ = {
 			isa = PBXGroup;
 			children = (
 				760291E22C116E450075FBD8 /* AppDelegate.swift */,
@@ -725,10 +725,10 @@
 				760291E82C116E470075FBD8 /* Main.storyboard */,
 				760291EB2C116E470075FBD8 /* XCreds_AutoFill.entitlements */,
 			);
-			path = "XCreds AutoFill";
+			path = "trioX AutoFill";
 			sourceTree = "<group>";
 		};
-		760291F62C116EDB0075FBD8 /* XCreds AutoFill Extension */ = {
+		760291F62C116EDB0075FBD8 /* trioX AutoFill Extension */ = {
 			isa = PBXGroup;
 			children = (
 				760291F72C116EDB0075FBD8 /* CredentialProviderViewController.swift */,
@@ -736,7 +736,7 @@
 				760291FC2C116EDB0075FBD8 /* Info.plist */,
 				760291FD2C116EDB0075FBD8 /* XCreds_AutoFill_Extension.entitlements */,
 			);
-			path = "XCreds AutoFill Extension";
+			path = "trioX AutoFill Extension";
 			sourceTree = "<group>";
 		};
 		760418CC2A1331710051411B /* NomadLogin */ = {
@@ -780,7 +780,7 @@
 			path = headers;
 			sourceTree = "<group>";
 		};
-		766355C72870D1B5002E3867 /* XCredsLogin */ = {
+		766355C72870D1B5002E3867 /* trioXLogin */ = {
 			isa = PBXGroup;
 			children = (
 				764297A92D015AB800678928 /* SetupCardWindowController.swift */,
@@ -811,8 +811,7 @@
 				76C661D62D3974910005F2CD /* PinPromptWindowController.swift */,
 				76C661D72D3974910005F2CD /* PinPromptWindowController.xib */,
 			);
-			name = XCredsLogin;
-			path = XCredsLoginPlugIn;
+			path = trioXLogin;
 			sourceTree = "<group>";
 		};
 		76786F542A27C36A00AA8DB9 /* auth_mech_fixup */ = {
@@ -917,7 +916,7 @@
 			name = NoMAD;
 			sourceTree = "<group>";
 		};
-		76DC0A6628836EB1007C42B2 /* XCreds Login Overlay */ = {
+		76DC0A6628836EB1007C42B2 /* trioX Login Overlay */ = {
 			isa = PBXGroup;
 			children = (
 				766F4C4A2883AFD90021F548 /* pleaseWaitGraphic.png */,
@@ -930,7 +929,7 @@
 				76DC0A6B28836EB2007C42B2 /* MainMenu.xib */,
 				76DC0A6E28836EB2007C42B2 /* XCreds_Login_Overlay.entitlements */,
 			);
-			path = "XCreds Login Overlay";
+			path = "trioX Login Overlay";
 			sourceTree = "<group>";
 		};
 		76DD6D112859978F00A700ED /* Packages */ = {
@@ -987,7 +986,7 @@
 				760418CC2A1331710051411B /* NomadLogin */,
 				76873E2E2A107736001418A9 /* DefaultsHelper.swift */,
 				76E9CE6E2A0DC6E30060220C /* TCSLoginWindowUtilities.h */,
-				760291E12C116E450075FBD8 /* XCreds AutoFill */,
+				760291E12C116E450075FBD8 /* trioX AutoFill */,
 				76E9CE6F2A0DC6E30060220C /* TCSLoginWindowUtilities.m */,
 				76673CD429D3D5F500452848 /* LicenseChecker.swift */,
 				7683973029A854EC003D9B9F /* NSImage+String.swift */,
@@ -995,18 +994,18 @@
 				7659CA06298E1BB6005D1AA3 /* DefaultBackground.png */,
 				766FD60C2A1B06AC00C8F244 /* DefaultsOverride.swift */,
 				7675444428918CD100613840 /* Info.plist */,
-				760291F62C116EDB0075FBD8 /* XCreds AutoFill Extension */,
+				760291F62C116EDB0075FBD8 /* trioX AutoFill Extension */,
 				76A247562C22747400859E0A /* tap */,
 				76DD6D15285997F300A700ED /* Frameworks */,
 				76CB9076287FBEEA00C70D0C /* Helper+URLDecode.swift */,
 				76B040A328EFC788002A289B /* Helper+JWTDecode.swift */,
 				7632909B2876673500CF8857 /* DataExtension.swift */,
 				76DD6D112859978F00A700ED /* Packages */,
-				766355C72870D1B5002E3867 /* XCredsLogin */,
-				76EE069C27FD1D00009E0F3A /* XCreds */,
+				766355C72870D1B5002E3867 /* trioXLogin */,
+				76EE069C27FD1D00009E0F3A /* trioX */,
 				76BEF7D32871F36C0013E2A1 /* FakeTrue */,
 				7631935E287D22C700D36BF7 /* authrights */,
-				76DC0A6628836EB1007C42B2 /* XCreds Login Overlay */,
+				76DC0A6628836EB1007C42B2 /* trioX Login Overlay */,
 				76786F542A27C36A00AA8DB9 /* auth_mech_fixup */,
 				76EE069B27FD1D00009E0F3A /* Products */,
 			);
@@ -1027,7 +1026,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76EE069C27FD1D00009E0F3A /* XCreds */ = {
+		76EE069C27FD1D00009E0F3A /* trioX */ = {
 			isa = PBXGroup;
 			children = (
 				76FDC5D42B22D47A0035D61E /* MainLoginWindowController.swift */,
@@ -1079,7 +1078,7 @@
 				76EE06A427FD1D01009E0F3A /* xCreds.entitlements */,
 				766355C42870CCC3002E3867 /* XCredsLoginPlugin-Bridging-Header.h */,
 			);
-			path = XCreds;
+			path = trioX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1283,7 +1282,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 76EE069527FD1D00009E0F3A /* Build configuration list for PBXProject "xCreds" */;
+			buildConfigurationList = 76EE069527FD1D00009E0F3A /* Build configuration list for PBXProject "trioX" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2472,7 +2471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76EE069527FD1D00009E0F3A /* Build configuration list for PBXProject "xCreds" */ = {
+		76EE069527FD1D00009E0F3A /* Build configuration list for PBXProject "trioX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76EE06A527FD1D01009E0F3A /* Debug */,

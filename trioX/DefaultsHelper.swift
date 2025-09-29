@@ -21,7 +21,7 @@ class DefaultsHelper: NSObject {
         }
         if includeDefault == true {
 
-            let bundle = Bundle.findBundleWithName(name: "XCreds")
+            let bundle = Bundle.findBundleWithName(name: "trioX")
 
             guard let bundle = bundle else {
                 return nil
@@ -66,7 +66,7 @@ class DefaultsHelper: NSObject {
         }
         else {
 
-            let image = NSImage(named: NSImage.Name("xcredsmenuItemWindowBackgroundImage"))
+            let image = NSImage(named: NSImage.Name("trioXmenuItemWindowBackgroundImage"))
             return image
 
 

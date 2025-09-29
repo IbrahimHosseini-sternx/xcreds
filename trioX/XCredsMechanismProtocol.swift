@@ -10,7 +10,7 @@ enum ErrorResult {
     case userCancelled
 }
 
-protocol XCredsMechanismProtocol {
+protocol TrioXMechanismProtocol {
     func allowLogin()
     func denyLogin(message:String?)
     func setHints(_ hints:[HintType:Any])

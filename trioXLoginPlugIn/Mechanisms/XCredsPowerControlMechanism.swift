@@ -14,10 +14,10 @@ enum SpecialUsers: String {
     case standardLoginWindow
 }
 @available(macOS, deprecated: 11)
-class XCredsPowerControlMechanism: XCredsBaseMechanism {
+class TrioXPowerControlMechanism: TrioXBaseMechanism {
 
     @objc override func run() {
-        TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ XCredsPowerControlMechanism mech starting starting mech starting ~~~~~~~~~~~~~~~~~~~")
+        TCSLogWithMark("~~~~~~~~~~~~~~~~~~~ TrioXPowerControlMechanism mech starting starting mech starting ~~~~~~~~~~~~~~~~~~~")
 
 //        if AuthorizationDBManager.shared.rightExists(right: "loginwindow:login"){
 //            TCSLogWithMark("setting standard login back to XCreds login")
