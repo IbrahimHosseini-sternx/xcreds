@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "trioX menu icon check~universal@1x.png",
+      "filename" : "trioXmenuItemWindowBackgroundImage.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "trioX menu icon check~universal@2x.png",
+      "filename" : "trioXmenuItemWindowBackgroundImage@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "trioX menu icon check~universal@3x.png",
+      "filename" : "trioXmenuItemWindowBackgroundImage@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
