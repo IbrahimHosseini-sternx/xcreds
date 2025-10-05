@@ -1,6 +1,16 @@
 {
   "images" : [
     {
+      "filename" : "repeat-04_light.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
       "filename" : "repeat-04.svg",
       "idiom" : "universal"
     }

@@ -1,6 +1,16 @@
 {
   "images" : [
     {
+      "filename" : "user-right-01_light.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
       "filename" : "switchUser.svg",
       "idiom" : "universal"
     }

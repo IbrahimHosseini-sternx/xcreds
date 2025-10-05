@@ -1,6 +1,16 @@
 {
   "images" : [
     {
+      "filename" : "wifi_light.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
       "filename" : "wifi.svg",
       "idiom" : "universal"
     }

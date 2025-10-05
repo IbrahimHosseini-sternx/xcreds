@@ -1,6 +1,16 @@
 {
   "images" : [
     {
+      "filename" : "refresh-ccw-01_light.svg",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
       "filename" : "restart.svg",
       "idiom" : "universal"
     }
