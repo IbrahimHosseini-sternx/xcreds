@@ -6,7 +6,6 @@
 
 import Cocoa
 import CoreGraphics
-@available(macOS, deprecated: 11)
 class ControlsViewController: NSViewController, NSPopoverDelegate {
     @IBOutlet var systemInfoPopover: NSPopover!
     @IBOutlet var systemInfoPopoverViewController: NSViewController!
@@ -21,7 +20,15 @@ class ControlsViewController: NSViewController, NSPopoverDelegate {
     @IBOutlet weak var macLoginWindowGridColumn: NSGridColumn?
     @IBOutlet weak var wifiGridColumn: NSGridColumn?
 
-    @IBOutlet weak var toolsView: NSView?
+    @IBOutlet weak var toolsView: NSView! = {
+       let view = NSView()
+        view.layer?.cornerRadius = 10
+        view.layer?.masksToBounds = true
+        view.layer?.shadowColor = NSColor.black.cgColor
+        view.layer?.shadowOpacity = 0.3
+        view.layer?.shadowRadius = 4
+        return view
+    }()
 
     let uiLog = "uiLog"
     @IBOutlet weak var systemInfoTextField: NSTextField?
@@ -254,14 +261,6 @@ class ControlsViewController: NSViewController, NSPopoverDelegate {
         }
         TCSLogWithMark()
         setupLoginWindowControlsAppearance()
-
-//        resolutionObserver = NotificationCenter.default.addObserver(forName:NSApplication.didChangeScreenParametersNotification, object: nil, queue: nil) { notification in
-//            TCSLogWithMark("Resolution changed. Resetting size")
-//            self.setupLoginWindowControlsAppearance()
-//
-//
-//        }
-
 
         let refreshTimerSecs = DefaultsOverride.standardOverride.integer(forKey: PrefKeys.autoRefreshLoginTimer.rawValue)
 

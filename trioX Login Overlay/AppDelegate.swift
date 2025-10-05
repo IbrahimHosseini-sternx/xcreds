@@ -28,6 +28,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet var window: NSWindow!
     @IBOutlet var waitWindow: NSWindow!
     var returnFileExistedOnStart = false
+    @IBOutlet weak var labelView: NSView! = {
+        let view = NSView()
+        view.wantsLayer = true
+        view.layer?.cornerRadius = 10
+        view.window?.backgroundColor = NSColor.red
+        return view
+    }()
+
+    @IBOutlet weak var cloudLoginButton: NSButton! = {
+       let btn = NSButton()
+        btn.image = NSImage(named: NSImage.Name("returnArrow"))
+        
+        return btn
+    }()
 
     var timer:Timer?
     @IBAction func cloudLoginButtonPressed(_ sender: Any) {

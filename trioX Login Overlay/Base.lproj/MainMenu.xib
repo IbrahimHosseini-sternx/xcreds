@@ -15,7 +15,9 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TrioX_Login_Overlay" customModuleProvider="target">
             <connections>
-                <outlet property="cloudLoginTextField" destination="MrL-Zn-3BA" id="bWY-at-65J"/>
+                <outlet property="cloudLoginButton" destination="ksj-I0-NcP" id="aS8-1w-g5y"/>
+                <outlet property="cloudLoginTextField" destination="MHr-PL-PO9" id="a23-w8-Ilh"/>
+                <outlet property="labelView" destination="AR8-3h-L7m" id="HNZ-G5-06C"/>
                 <outlet property="waitWindow" destination="Ayg-7T-0us" id="GCI-xI-9sJ"/>
                 <outlet property="window" destination="ewK-Yh-gWi" id="YmL-xe-4l3"/>
             </connections>
@@ -23,11 +25,11 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
             <items>
-                <menuItem title="XCreds Login Overlay" id="1Xt-HY-uBw">
+                <menuItem title="TrioX Login Overlay" id="1Xt-HY-uBw">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="XCreds Login Overlay" systemMenu="apple" id="uQy-DD-JDr">
+                    <menu key="submenu" title="TrioX Login Overlay" systemMenu="apple" id="uQy-DD-JDr">
                         <items>
-                            <menuItem title="About XCreds Login Overlay" id="5kV-Vb-QxS">
+                            <menuItem title="About TrioX Login Overlay" id="5kV-Vb-QxS">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
@@ -41,7 +43,7 @@
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                            <menuItem title="Hide XCreds Login Overlay" keyEquivalent="h" id="Olw-nP-bQN">
+                            <menuItem title="Hide TrioX Login Overlay" keyEquivalent="h" id="Olw-nP-bQN">
                                 <connections>
                                     <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
                                 </connections>
@@ -59,7 +61,7 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                            <menuItem title="Quit XCreds Login Overlay" keyEquivalent="q" id="4sb-4s-VLi">
+                            <menuItem title="Quit TrioX Login Overlay" keyEquivalent="q" id="4sb-4s-VLi">
                                 <connections>
                                     <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
                                 </connections>
@@ -672,7 +674,7 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                         <items>
-                            <menuItem title="XCreds Login Overlay Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                            <menuItem title="TrioX Login Overlay Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                 <connections>
                                     <action selector="showHelp:" target="-1" id="y7X-2Q-9no"/>
                                 </connections>
@@ -688,42 +690,70 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
             <rect key="contentRect" x="25" y="25" width="880" height="109"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1512" height="948"/>
-            <view key="contentView" id="1nr-Jh-HO9">
+            <view key="contentView" wantsLayer="YES" id="1nr-Jh-HO9">
                 <rect key="frame" x="0.0" y="0.0" width="880" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GfD-0a-eQ7">
-                        <rect key="frame" x="0.0" y="39" width="395" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="GfD-0a-eQ7">
+                        <rect key="frame" x="465" y="39" width="395" height="32"/>
                         <subviews>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MrL-Zn-3BA">
-                                <rect key="frame" x="43" y="6" width="88" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Cloud Login" drawsBackground="YES" id="UqT-fq-knF">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksj-I0-NcP">
-                                <rect key="frame" x="0.0" y="0.0" width="43" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ksj-I0-NcP">
+                                <rect key="frame" x="355" y="0.0" width="40" height="32"/>
                                 <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="returnArrow" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="LrF-1c-c51">
                                     <behavior key="behavior" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="YsC-aj-Vye"/>
+                                </constraints>
                                 <connections>
                                     <action selector="cloudLoginButtonPressed:" target="Voe-Tx-rLC" id="lJn-Y1-21o"/>
                                 </connections>
                             </button>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="AR8-3h-L7m">
+                                <rect key="frame" x="274" y="0.0" width="81" height="32"/>
+                                <subviews>
+                                    <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MHr-PL-PO9">
+                                        <rect key="frame" x="-2" y="8" width="85" height="16"/>
+                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Cloud Login" usesSingleLineMode="YES" id="AJa-GQ-z3Y">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="ZbQ-vx-Aak"/>
+                                    <constraint firstAttribute="height" constant="32" id="czk-fN-kmm"/>
+                                    <constraint firstItem="MHr-PL-PO9" firstAttribute="centerX" secondItem="AR8-3h-L7m" secondAttribute="centerX" id="f86-4j-HMw"/>
+                                    <constraint firstItem="MHr-PL-PO9" firstAttribute="centerY" secondItem="AR8-3h-L7m" secondAttribute="centerY" id="tp6-06-FHy"/>
+                                </constraints>
+                            </customView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ksj-I0-NcP" secondAttribute="trailing" id="4qF-v8-aRy"/>
+                            <constraint firstItem="AR8-3h-L7m" firstAttribute="top" secondItem="GfD-0a-eQ7" secondAttribute="top" id="DWb-4c-L8G"/>
+                            <constraint firstAttribute="bottom" secondItem="ksj-I0-NcP" secondAttribute="bottom" id="F8u-4t-A9h"/>
+                            <constraint firstAttribute="height" constant="32" id="GIN-MU-UAG"/>
+                            <constraint firstItem="ksj-I0-NcP" firstAttribute="top" secondItem="GfD-0a-eQ7" secondAttribute="top" id="Hgk-Xw-oqG"/>
+                            <constraint firstItem="ksj-I0-NcP" firstAttribute="leading" secondItem="AR8-3h-L7m" secondAttribute="trailing" id="ZQP-Uf-j2f"/>
+                            <constraint firstAttribute="bottom" secondItem="AR8-3h-L7m" secondAttribute="bottom" id="waO-o4-fZy"/>
+                        </constraints>
                     </customView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GfD-0a-eQ7" secondAttribute="trailing" constant="20" symbolic="YES" id="Lnv-4B-tfM"/>
+                    <constraint firstItem="GfD-0a-eQ7" firstAttribute="leading" secondItem="1nr-Jh-HO9" secondAttribute="leading" constant="465" id="oI0-dy-onQ"/>
+                    <constraint firstItem="GfD-0a-eQ7" firstAttribute="centerY" secondItem="1nr-Jh-HO9" secondAttribute="centerY" id="zm3-RR-6Xg"/>
+                </constraints>
+                <shadow key="shadow">
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </shadow>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="XKY-p3-ykt"/>
             </connections>
-            <point key="canvasLocation" x="-177" y="773"/>
+            <point key="canvasLocation" x="-177" y="772.5"/>
         </window>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Ayg-7T-0us" customClass="TCSXCredsLoginOverlayWindow" customModule="TrioX_Login_Overlay" customModuleProvider="target">
             <windowStyleMask key="styleMask" closable="YES" miniaturizable="YES" resizable="YES"/>
@@ -745,6 +775,6 @@
     </objects>
     <resources>
         <image name="pleaseWaitGraphic" width="432" height="216"/>
-        <image name="returnArrow" width="53.746479034423828" height="52.732395172119141"/>
+        <image name="returnArrow" width="53" height="52"/>
     </resources>
 </document>

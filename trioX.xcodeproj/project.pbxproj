@@ -104,7 +104,6 @@
 		76456CE22DC99BFA00AEA261 /* NSError+EasyError.m in Sources */ = {isa = PBXBuildFile; fileRef = 76456CE02DC99BFA00AEA261 /* NSError+EasyError.m */; };
 		76477E042C626B5D00F01D56 /* OIDCLite in Frameworks */ = {isa = PBXBuildFile; productRef = 76477E032C626B5D00F01D56 /* OIDCLite */; };
 		764859F22B2FA2E800507C16 /* Window+ForceToFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EE06AF27FD1DD8009E0F3A /* Window+ForceToFront.swift */; };
-		7649056F2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7649056E2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png */; };
 		7649CD2B2D4B03FD00D6BEE2 /* UsernamePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */; };
 		7649CD2C2D4B03FD00D6BEE2 /* UsernamePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */; };
 		764D8126284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D8124284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.swift */; };
@@ -211,18 +210,12 @@
 		76B882B329CCFDBA00BB8186 /* NSData+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B882B029CCFDBA00BB8186 /* NSData+HexString.m */; };
 		76BEF7DD2871F5F00013E2A1 /* TCSReturnWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7DB2871F5F00013E2A1 /* TCSReturnWindow.m */; };
 		76BEF7E12871F74D0013E2A1 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7E02871F74D0013E2A1 /* ControlsViewController.swift */; };
-		76BEF7E4287202090013E2A1 /* RestartX.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E2287202080013E2A1 /* RestartX.png */; };
-		76BEF7E5287202090013E2A1 /* RestartX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E3287202080013E2A1 /* RestartX@2x.png */; };
-		76BEF7E8287202AF0013E2A1 /* ShutdownX.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E6287202AF0013E2A1 /* ShutdownX.png */; };
-		76BEF7E9287202AF0013E2A1 /* ShutdownX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E7287202AF0013E2A1 /* ShutdownX@2x.png */; };
 		76BEF7EC28724A0B0013E2A1 /* TrioXLoginMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7EA28724A0B0013E2A1 /* TrioXLoginMechanism.swift */; };
 		76BEF7ED28724A0C0013E2A1 /* TrioXBaseMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7EB28724A0B0013E2A1 /* TrioXBaseMechanism.swift */; };
 		76BEF7F328724F120013E2A1 /* TrioXPowerControlMechanism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F228724F120013E2A1 /* TrioXPowerControlMechanism.swift */; };
 		76BEF7F628724FA80013E2A1 /* NSTaskWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F528724FA80013E2A1 /* NSTaskWrapper.swift */; };
 		76BEF7F82872504C0013E2A1 /* ContextAndHintHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F72872504C0013E2A1 /* ContextAndHintHandling.swift */; };
 		76BEF7FA28726C700013E2A1 /* AuthorizationDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */; };
-		76BEF8002872A3030013E2A1 /* loginwindow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7FE2872A3030013E2A1 /* loginwindow@2x.png */; };
-		76BEF8012872A3030013E2A1 /* loginwindow.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7FF2872A3030013E2A1 /* loginwindow.png */; };
 		76C0840B2A9A311E008039FA /* ControlsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C084092A9A2635008039FA /* ControlsViewController.xib */; };
 		76C4BAB02B353A30007B2C57 /* KlistUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657DEC82B350606003A23DB /* KlistUtil.swift */; };
 		76C4BAB12B353A3A007B2C57 /* DNSResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7657DEBE2B3505A3003A23DB /* DNSResolver.m */; };
@@ -263,11 +256,9 @@
 		76DC0A6A28836EB2007C42B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A6928836EB2007C42B2 /* Assets.xcassets */; };
 		76DC0A6D28836EB2007C42B2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A6B28836EB2007C42B2 /* MainMenu.xib */; };
 		76DC0A7328836EFE007C42B2 /* TCSReturnWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7DB2871F5F00013E2A1 /* TCSReturnWindow.m */; };
-		76DC0A7428836F45007C42B2 /* RestartX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76BEF7E3287202080013E2A1 /* RestartX@2x.png */; };
 		76DC0A79288370BA007C42B2 /* so.trio.trioX-overlay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A78288370BA007C42B2 /* so.trio.trioX-overlay.plist */; };
 		76DC0A7C28837158007C42B2 /* TrioX Login Overlay.app in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A6528836EB1007C42B2 /* TrioX Login Overlay.app */; };
 		76DC0A7E288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC0A7D288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift */; };
-		76DC0A83288382D2007C42B2 /* returnArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 76DC0A7628837028007C42B2 /* returnArrow.png */; };
 		76DC0A8428838375007C42B2 /* AuthorizationDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */; };
 		76DC0A8528838467007C42B2 /* LoggerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EECCFF2875135900483C66 /* LoggerHelper.swift */; };
 		76DC0A8628838656007C42B2 /* TCSUnifiedLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D7ADF9284EB15000332EBC /* TCSUnifiedLogger.m */; };
@@ -482,7 +473,6 @@
 		7644C9C82C76E38700178884 /* TCTaskHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTaskHelper.h; sourceTree = "<group>"; };
 		76456CDF2DC99BFA00AEA261 /* NSError+EasyError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+EasyError.h"; sourceTree = "<group>"; };
 		76456CE02DC99BFA00AEA261 /* NSError+EasyError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+EasyError.m"; sourceTree = "<group>"; };
-		7649056E2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trioXmenuItemWindowBackgroundImage.png; sourceTree = "<group>"; };
 		7649CD2A2D4B03FD00D6BEE2 /* UsernamePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsernamePassword.swift; path = trioX/UsernamePassword.swift; sourceTree = "<group>"; };
 		764D8124284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyLocalPasswordWindowController.swift; sourceTree = "<group>"; };
 		764D8125284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyLocalPasswordWindowController.xib; sourceTree = "<group>"; };
@@ -569,18 +559,12 @@
 		76BEF7DB2871F5F00013E2A1 /* TCSReturnWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSReturnWindow.m; sourceTree = "<group>"; };
 		76BEF7DC2871F5F00013E2A1 /* TCSReturnWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSReturnWindow.h; sourceTree = "<group>"; };
 		76BEF7E02871F74D0013E2A1 /* ControlsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
-		76BEF7E2287202080013E2A1 /* RestartX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RestartX.png; sourceTree = "<group>"; };
-		76BEF7E3287202080013E2A1 /* RestartX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RestartX@2x.png"; sourceTree = "<group>"; };
-		76BEF7E6287202AF0013E2A1 /* ShutdownX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShutdownX.png; sourceTree = "<group>"; };
-		76BEF7E7287202AF0013E2A1 /* ShutdownX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShutdownX@2x.png"; sourceTree = "<group>"; };
 		76BEF7EA28724A0B0013E2A1 /* TrioXLoginMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXLoginMechanism.swift; sourceTree = "<group>"; };
 		76BEF7EB28724A0B0013E2A1 /* TrioXBaseMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXBaseMechanism.swift; sourceTree = "<group>"; };
 		76BEF7F228724F120013E2A1 /* TrioXPowerControlMechanism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXPowerControlMechanism.swift; sourceTree = "<group>"; };
 		76BEF7F528724FA80013E2A1 /* NSTaskWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTaskWrapper.swift; sourceTree = "<group>"; };
 		76BEF7F72872504C0013E2A1 /* ContextAndHintHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextAndHintHandling.swift; sourceTree = "<group>"; };
 		76BEF7F928726C700013E2A1 /* AuthorizationDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthorizationDBManager.swift; path = trioXLoginPlugIn/LoginWindow/AuthorizationDBManager.swift; sourceTree = SOURCE_ROOT; };
-		76BEF7FE2872A3030013E2A1 /* loginwindow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginwindow@2x.png"; sourceTree = "<group>"; };
-		76BEF7FF2872A3030013E2A1 /* loginwindow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginwindow.png; sourceTree = "<group>"; };
 		76C084092A9A2635008039FA /* ControlsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlsViewController.xib; sourceTree = "<group>"; };
 		76C4ACBE2B3D0F8D003B3605 /* ShareMounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareMounter.swift; sourceTree = "<group>"; };
 		76C4BAB22B353AD7007B2C57 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
@@ -608,7 +592,6 @@
 		76DC0A6928836EB2007C42B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76DC0A6C28836EB2007C42B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		76DC0A6E28836EB2007C42B2 /* TrioX_Login_Overlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TrioX_Login_Overlay.entitlements; sourceTree = "<group>"; };
-		76DC0A7628837028007C42B2 /* returnArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = returnArrow.png; sourceTree = "<group>"; };
 		76DC0A78288370BA007C42B2 /* so.trio.trioX-overlay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "so.trio.trioX-overlay.plist"; sourceTree = "<group>"; };
 		76DC0A7D288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCSTrioXLoginOverlayWindow.swift; sourceTree = "<group>"; };
 		76DC0A7F2883785A007C42B2 /* trioX-Login-Overlay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "trioX-Login-Overlay-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -879,23 +862,8 @@
 				766355E128713C47002E3867 /* LoginWindow.swift */,
 				7651EDEC2A1451590075980B /* LocalUsersViewController.xib */,
 				76D1757D2B24096C00E64A62 /* MainLoginWindow.swift */,
-				76BEF7F128724EB60013E2A1 /* images */,
 			);
 			path = LoginWindow;
-			sourceTree = "<group>";
-		};
-		76BEF7F128724EB60013E2A1 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				7649056E2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png */,
-				76BEF7FF2872A3030013E2A1 /* loginwindow.png */,
-				76BEF7FE2872A3030013E2A1 /* loginwindow@2x.png */,
-				76BEF7E6287202AF0013E2A1 /* ShutdownX.png */,
-				76BEF7E7287202AF0013E2A1 /* ShutdownX@2x.png */,
-				76BEF7E2287202080013E2A1 /* RestartX.png */,
-				76BEF7E3287202080013E2A1 /* RestartX@2x.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		76C4BAB92B353B3F007B2C57 /* NoMAD */ = {
@@ -925,7 +893,6 @@
 				76DC0A7F2883785A007C42B2 /* trioX-Login-Overlay-Info.plist */,
 				76DC0A7D288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift */,
 				76DC0A78288370BA007C42B2 /* so.trio.trioX-overlay.plist */,
-				76DC0A7628837028007C42B2 /* returnArrow.png */,
 				76DC0A6728836EB1007C42B2 /* AppDelegate.swift */,
 				76DC0A6928836EB2007C42B2 /* Assets.xcassets */,
 				76DC0A6B28836EB2007C42B2 /* MainMenu.xib */,
@@ -1335,7 +1302,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76BEF8002872A3030013E2A1 /* loginwindow@2x.png in Resources */,
 				764297AE2D015AB800678928 /* SetupCardWindowController.xib in Resources */,
 				766355D928711C51002E3867 /* defaults.plist in Resources */,
 				7613FDF7289E114F00340CCD /* loadpage.html in Resources */,
@@ -1346,23 +1312,18 @@
 				766184B92DCE5DB5009D5A8C /* colorline.png in Resources */,
 				766CC43829D3AED2009BC526 /* errorpage.html in Resources */,
 				7614D03C2B181A5D006EAF36 /* icon_128x128.png in Resources */,
-				76BEF7E4287202090013E2A1 /* RestartX.png in Resources */,
 				0F4EBA552E8A87E900A4ECF6 /* LoginProgressWindowController.xib in Resources */,
 				76D925D32894ADB4005C3245 /* Assets.xcassets in Resources */,
-				76BEF8012872A3030013E2A1 /* loginwindow.png in Resources */,
 				766355D12870EBAD002E3867 /* VerifyOIDCPassword.xib in Resources */,
 				76EECCFC2873E6E200483C66 /* VerifyLocalPasswordWindowController.xib in Resources */,
-				76BEF7E8287202AF0013E2A1 /* ShutdownX.png in Resources */,
 				76C840882D03BFF400E41802 /* PinSetWindowController.xib in Resources */,
 				76C661D82D3974910005F2CD /* PinPromptWindowController.xib in Resources */,
 				76FDC5D72B22D47A0035D61E /* MainLoginWindowController.xib in Resources */,
 				76E466672B1A4C16006529B6 /* UpdatePasswordWindowController.xib in Resources */,
 				76C0840B2A9A311E008039FA /* ControlsViewController.xib in Resources */,
-				76BEF7E5287202090013E2A1 /* RestartX@2x.png in Resources */,
 				7651EDF72A1474330075980B /* LoginWebViewController.xib in Resources */,
 				7677908828908E40004E7085 /* WifiWindowController.xib in Resources */,
 				76DB5CF52A09AE9A0014F8E1 /* get_pw.js in Resources */,
-				76BEF7E9287202AF0013E2A1 /* ShutdownX@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1377,11 +1338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76DC0A83288382D2007C42B2 /* returnArrow.png in Resources */,
 				76DC0A6A28836EB2007C42B2 /* Assets.xcassets in Resources */,
 				76DC0A6D28836EB2007C42B2 /* MainMenu.xib in Resources */,
 				76DC0A79288370BA007C42B2 /* so.trio.trioX-overlay.plist in Resources */,
-				76DC0A7428836F45007C42B2 /* RestartX@2x.png in Resources */,
 				766F4C4B2883AFD90021F548 /* pleaseWaitGraphic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1415,7 +1374,6 @@
 				76C63A322A22872700810C53 /* History.md in Resources */,
 				764D8127284BC1C300B3EE54 /* VerifyLocalPasswordWindowController.xib in Resources */,
 				76DF7FD52B50FA9A00B3B543 /* UpdatePasswordWindowController.xib in Resources */,
-				7649056F2B6CADA9008B552F /* trioXmenuItemWindowBackgroundImage.png in Resources */,
 				76EE06A327FD1D01009E0F3A /* MainMenu.xib in Resources */,
 				76D1756A2B23C28700E64A62 /* MainLoginWindowController.xib in Resources */,
 				1FB9F5112E85237800EE7745 /* icon_64x64.png in Resources */,

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="23727" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24128" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="23727"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24128"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="SignInViewController" customModule="XCreds" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="SignInViewController" customModule="TrioX" customModuleProvider="target">
             <connections>
                 <outlet property="alertTextField" destination="e5W-zw-UxS" id="JTQ-VN-A08"/>
                 <outlet property="localOnlyCheckBox" destination="kwO-Pt-tOG" id="w4U-23-hqX"/>
@@ -28,18 +28,18 @@
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <subviews>
                 <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="11" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" verticalCompressionResistancePriority="250" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRJ-Lo-UdT" userLabel="login stack">
-                    <rect key="frame" x="27" y="8" width="283" height="266"/>
+                    <rect key="frame" x="27" y="14" width="283" height="253"/>
                     <subviews>
                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cm4-KP-f9k">
-                            <rect key="frame" x="13" y="202" width="256" height="64"/>
+                            <rect key="frame" x="13" y="221" width="256" height="32"/>
                             <constraints>
-                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="128" id="JmN-RK-K6v"/>
+                                <constraint firstAttribute="height" constant="32" id="JmN-RK-K6v"/>
                                 <constraint firstAttribute="width" relation="lessThanOrEqual" constant="256" id="PQ0-9d-m1K"/>
                             </constraints>
-                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="icon_64x64" id="As7-x6-zzU"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="logo" id="As7-x6-zzU"/>
                         </imageView>
-                        <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMs-hI-jaw">
-                            <rect key="frame" x="0.0" y="161" width="250" height="30"/>
+                        <textField focusRingType="none" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMs-hI-jaw">
+                            <rect key="frame" x="0.0" y="180" width="250" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="250" id="PcC-1B-yi1"/>
                                 <constraint firstAttribute="height" constant="30" id="ecj-Kv-Zev"/>
@@ -55,9 +55,9 @@
                             </connections>
                         </textField>
                         <stackView distribution="equalCentering" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TZJ-ht-zuy">
-                            <rect key="frame" x="0.0" y="120" width="283" height="30"/>
+                            <rect key="frame" x="0.0" y="139" width="283" height="30"/>
                             <subviews>
-                                <secureTextField verticalHuggingPriority="750" tag="99" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-bj-CPX">
+                                <secureTextField focusRingType="none" verticalHuggingPriority="750" tag="99" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-bj-CPX">
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="250" id="37q-P0-BRW"/>
@@ -108,16 +108,16 @@ DQ
                                 <real value="3.4028234663852886e+38"/>
                             </customSpacing>
                         </stackView>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9E1-Yr-3LY">
-                            <rect key="frame" x="-2" y="81" width="195" height="28"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9E1-Yr-3LY">
+                            <rect key="frame" x="-2" y="100" width="195" height="28"/>
                             <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" alignment="center" title="Tap Card to Log In" id="67B-K8-Q2B">
                                 <font key="font" metaFont="system" size="24"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e5W-zw-UxS">
-                            <rect key="frame" x="-2" y="54" width="254" height="16"/>
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="e5W-zw-UxS">
+                            <rect key="frame" x="-2" y="73" width="254" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="250" id="f1h-xK-zpp"/>
                             </constraints>
@@ -127,8 +127,8 @@ DQ
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
                         </textField>
-                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kwO-Pt-tOG" customClass="CustomCheckbox" customModule="XCreds" customModuleProvider="target">
-                            <rect key="frame" x="-3" y="24" width="161" height="22"/>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kwO-Pt-tOG" customClass="CustomCheckbox" customModule="TrioX" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="44" width="156" height="18"/>
                             <buttonCell key="cell" type="check" title="Offline Authentication" bezelStyle="regularSquare" imagePosition="left" controlSize="large" inset="2" id="LOr-pb-ijJ">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" usesAppearanceFont="YES"/>
@@ -143,8 +143,8 @@ DQ
                                 <outlet property="nextKeyView" destination="iwC-yg-Wc5" id="BYA-wD-gzn"/>
                             </connections>
                         </button>
-                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iwC-yg-Wc5" customClass="CustomCheckbox" customModule="XCreds" customModuleProvider="target">
-                            <rect key="frame" x="-3" y="-3" width="138" height="22"/>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iwC-yg-Wc5" customClass="CustomCheckbox" customModule="TrioX" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="132" height="33"/>
                             <buttonCell key="cell" type="check" title="Set up Login Card" bezelStyle="regularSquare" imagePosition="left" controlSize="large" inset="2" id="bXa-ud-i6Y">
                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                 <font key="font" metaFont="system"/>
@@ -197,6 +197,6 @@ DQ
     </objects>
     <resources>
         <image name="NSFollowLinkFreestandingTemplate" width="20" height="20"/>
-        <image name="icon_64x64" width="64" height="64"/>
+        <image name="logo" width="39" height="36"/>
     </resources>
 </document>

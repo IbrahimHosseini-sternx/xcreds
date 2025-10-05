@@ -41,7 +41,7 @@
                     <rect key="frame" x="0.0" y="14" width="1002" height="88"/>
                     <subviews>
                         <gridView xPlacement="leading" yPlacement="bottom" rowAlignment="none" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-FL-rgU">
-                            <rect key="frame" x="165" y="10" width="673" height="48"/>
+                            <rect key="frame" x="165" y="16" width="673" height="56"/>
                             <rows>
                                 <gridRow id="Ax5-pH-aQS"/>
                             </rows>
@@ -127,8 +127,8 @@ DQ
                     </subviews>
                     <constraints>
                         <constraint firstAttribute="height" constant="88" id="IQF-bl-Sm9"/>
-                        <constraint firstItem="Of1-FL-rgU" firstAttribute="top" secondItem="4X8-WT-UyO" secondAttribute="top" constant="30" id="M9T-d7-5w9"/>
-                        <constraint firstAttribute="bottom" secondItem="Of1-FL-rgU" secondAttribute="bottom" constant="10" id="VXI-lc-Rrx"/>
+                        <constraint firstItem="Of1-FL-rgU" firstAttribute="top" secondItem="4X8-WT-UyO" secondAttribute="top" constant="16" id="M9T-d7-5w9"/>
+                        <constraint firstAttribute="bottom" secondItem="Of1-FL-rgU" secondAttribute="bottom" constant="16" id="VXI-lc-Rrx"/>
                         <constraint firstItem="Of1-FL-rgU" firstAttribute="centerX" secondItem="4X8-WT-UyO" secondAttribute="centerX" id="WnJ-zT-uLN"/>
                     </constraints>
                 </customView>
@@ -190,10 +190,10 @@ DQ
         </customView>
     </objects>
     <resources>
-        <image name="RestartX" width="32" height="32"/>
-        <image name="ShutdownX" width="32" height="32"/>
-        <image name="loginwindow" width="41" height="32"/>
-        <image name="refresh symbol" width="41" height="41"/>
-        <image name="wifi" width="32" height="32"/>
+        <image name="RestartX" width="31" height="30"/>
+        <image name="ShutdownX" width="31" height="30"/>
+        <image name="loginwindow" width="30" height="30"/>
+        <image name="refresh symbol" width="31" height="30"/>
+        <image name="wifi" width="31" height="30"/>
     </resources>
 </document>
