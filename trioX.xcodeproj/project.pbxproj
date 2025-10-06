@@ -11,8 +11,6 @@
 		089B22F22AFAED810006B6BC /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B22F02AFAED280006B6BC /* NetworkMonitor.swift */; };
 		0F4EBA542E8A87E900A4ECF6 /* LoginProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4EBA532E8A87E900A4ECF6 /* LoginProgressWindowController.xib */; };
 		0F4EBA552E8A87E900A4ECF6 /* LoginProgressWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F4EBA532E8A87E900A4ECF6 /* LoginProgressWindowController.xib */; };
-		1FB9F5112E85237800EE7745 /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9F5102E85237800EE7745 /* icon_64x64.png */; };
-		1FB9F5122E85237800EE7745 /* icon_64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB9F5102E85237800EE7745 /* icon_64x64.png */; };
 		54848E8F2B47336D000DF420 /* KerbUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C4BABA2B353B4B007B2C57 /* KerbUtil.m */; };
 		54848E902B47336D000DF420 /* KerbUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C4BABA2B353B4B007B2C57 /* KerbUtil.m */; };
 		760148A92B23639D00E119A2 /* NSBundle+FindBundlePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760148A82B23639D00E119A2 /* NSBundle+FindBundlePath.swift */; };
@@ -62,12 +60,10 @@
 		7611CEC0288B75140063A644 /* TrioXCreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611CEBF288B75140063A644 /* TrioXCreateUser.swift */; };
 		7611CEC2288B96760063A644 /* TrioXEnableFDE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7611CEC1288B96760063A644 /* TrioXEnableFDE.swift */; };
 		7613FDF7289E114F00340CCD /* loadpage.html in Resources */ = {isa = PBXBuildFile; fileRef = 7613FDF6289E114F00340CCD /* loadpage.html */; };
-		7614D03C2B181A5D006EAF36 /* icon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 7614D03B2B181A5D006EAF36 /* icon_128x128.png */; };
 		761B486C28A3575000C6A02B /* TrioXLoginDone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761B486B28A3575000C6A02B /* TrioXLoginDone.swift */; };
 		762177E62B7144460051B756 /* OIDCLite in Frameworks */ = {isa = PBXBuildFile; productRef = 762177E52B7144460051B756 /* OIDCLite */; };
 		7623384C2B53029D00F2D714 /* ShareMounterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763DDF152B4F100D000D48CC /* ShareMounterMenu.swift */; };
 		7623384D2B53029D00F2D714 /* ShareMounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C4ACBE2B3D0F8D003B3605 /* ShareMounter.swift */; };
-		762761602B294A7C0067D1D4 /* icon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 7614D03B2B181A5D006EAF36 /* icon_128x128.png */; };
 		76319360287D22C700D36BF7 /* authrights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7631935F287D22C700D36BF7 /* authrights.swift */; };
 		76319366287D24E100D36BF7 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 76319365287D24E100D36BF7 /* ArgumentParser */; };
 		76319369287D24F600D36BF7 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 76319368287D24F600D36BF7 /* ArgumentParser */; };
@@ -133,9 +129,6 @@
 		7657DECD2B35061E003A23DB /* SiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657DECB2B35061E003A23DB /* SiteManager.swift */; };
 		7657DED92B351B5B003A23DB /* UNIXUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657DED82B351B5B003A23DB /* UNIXUtilities.swift */; };
 		7657DEDA2B351B5B003A23DB /* UNIXUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657DED82B351B5B003A23DB /* UNIXUtilities.swift */; };
-		7659CA07298E1BB6005D1AA3 /* DefaultBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7659CA06298E1BB6005D1AA3 /* DefaultBackground.png */; };
-		766184B82DCE5DB5009D5A8C /* colorline.png in Resources */ = {isa = PBXBuildFile; fileRef = 766184B72DCE5DB5009D5A8C /* colorline.png */; };
-		766184B92DCE5DB5009D5A8C /* colorline.png in Resources */ = {isa = PBXBuildFile; fileRef = 766184B72DCE5DB5009D5A8C /* colorline.png */; };
 		76634F372D05FFA3000A63E8 /* LogOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76634F362D05FFA3000A63E8 /* LogOnly.swift */; };
 		766355C32870CB6F002E3867 /* TrioXLoginPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 766355C22870CB6F002E3867 /* TrioXLoginPlugin.m */; };
 		766355CA2870DCF5002E3867 /* TCSUnifiedLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D7ADF9284EB15000332EBC /* TCSUnifiedLogger.m */; };
@@ -157,7 +150,6 @@
 		766C602E2D3F409D0033E274 /* TrioXAudit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766C602C2D3F409D0033E274 /* TrioXAudit.swift */; };
 		766CC43829D3AED2009BC526 /* errorpage.html in Resources */ = {isa = PBXBuildFile; fileRef = 766CC43729D3AED2009BC526 /* errorpage.html */; };
 		766F1E562D495BBF00AA5637 /* so.trio.trioX.json in Resources */ = {isa = PBXBuildFile; fileRef = 766F1E552D495BBF00AA5637 /* so.trio.trioX.json */; };
-		766F4C4B2883AFD90021F548 /* pleaseWaitGraphic.png in Resources */ = {isa = PBXBuildFile; fileRef = 766F4C4A2883AFD90021F548 /* pleaseWaitGraphic.png */; };
 		766FD60D2A1B06AC00C8F244 /* DefaultsOverride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766FD60C2A1B06AC00C8F244 /* DefaultsOverride.swift */; };
 		767116A7284AABC500CCD6FF /* NotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767116A6284AABC500CCD6FF /* NotifyManager.swift */; };
 		767116A9284AAE2B00CCD6FF /* ScheduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767116A8284AAE2B00CCD6FF /* ScheduleManager.swift */; };
@@ -428,7 +420,6 @@
 /* Begin PBXFileReference section */
 		089B22F02AFAED280006B6BC /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = trioXLoginPlugIn/LoginWindow/NetworkMonitor.swift; sourceTree = SOURCE_ROOT; };
 		0F4EBA532E8A87E900A4ECF6 /* LoginProgressWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginProgressWindowController.xib; sourceTree = "<group>"; };
-		1FB9F5102E85237800EE7745 /* icon_64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_64x64.png; sourceTree = "<group>"; };
 		760148A82B23639D00E119A2 /* NSBundle+FindBundlePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBundle+FindBundlePath.swift"; sourceTree = "<group>"; };
 		760291CB2C1166870075FBD8 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		760291E02C116E450075FBD8 /* TrioX Login Autofill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TrioX Login Autofill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -454,7 +445,6 @@
 		7611CEBF288B75140063A644 /* TrioXCreateUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXCreateUser.swift; sourceTree = "<group>"; };
 		7611CEC1288B96760063A644 /* TrioXEnableFDE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXEnableFDE.swift; sourceTree = "<group>"; };
 		7613FDF6289E114F00340CCD /* loadpage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = loadpage.html; sourceTree = "<group>"; };
-		7614D03B2B181A5D006EAF36 /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_128x128.png; path = trioX/Assets.xcassets/AppIcon.appiconset/icon_128x128.png; sourceTree = "<group>"; };
 		761B486B28A3575000C6A02B /* TrioXLoginDone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrioXLoginDone.swift; sourceTree = "<group>"; };
 		7631935D287D22C700D36BF7 /* authrights */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = authrights; sourceTree = BUILT_PRODUCTS_DIR; };
 		7631935F287D22C700D36BF7 /* authrights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authrights.swift; sourceTree = "<group>"; };
@@ -497,8 +487,6 @@
 		7657DED32B35064E003A23DB /* krb5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = krb5.h; sourceTree = "<group>"; };
 		7657DED52B351A67003A23DB /* KerbUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerbUtil.h; sourceTree = "<group>"; };
 		7657DED82B351B5B003A23DB /* UNIXUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNIXUtilities.swift; sourceTree = "<group>"; };
-		7659CA06298E1BB6005D1AA3 /* DefaultBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultBackground.png; sourceTree = "<group>"; };
-		766184B72DCE5DB5009D5A8C /* colorline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorline.png; sourceTree = "<group>"; };
 		76634F362D05FFA3000A63E8 /* LogOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOnly.swift; sourceTree = "<group>"; };
 		766355BD2870CA6A002E3867 /* TrioXLoginPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrioXLoginPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		766355C12870CB6F002E3867 /* TrioXLoginPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TrioXLoginPlugin.h; path = trioXLoginPlugIn/TrioXLoginPlugin.h; sourceTree = SOURCE_ROOT; };
@@ -513,7 +501,6 @@
 		766CC42229D3A321009BC526 /* ProductLicense.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProductLicense.framework; path = Carthage/Build/Mac/ProductLicense.framework; sourceTree = "<group>"; };
 		766CC43729D3AED2009BC526 /* errorpage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = errorpage.html; sourceTree = "<group>"; };
 		766F1E552D495BBF00AA5637 /* so.trio.trioX.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = so.trio.trioX.json; path = "Profile Manifest/jamf/so.trio.trioX.json"; sourceTree = "<group>"; };
-		766F4C4A2883AFD90021F548 /* pleaseWaitGraphic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pleaseWaitGraphic.png; sourceTree = "<group>"; };
 		766FD60C2A1B06AC00C8F244 /* DefaultsOverride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsOverride.swift; sourceTree = "<group>"; };
 		767116A6284AABC500CCD6FF /* NotifyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyManager.swift; sourceTree = "<group>"; };
 		767116A8284AAE2B00CCD6FF /* ScheduleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleManager.swift; sourceTree = "<group>"; };
@@ -889,7 +876,6 @@
 		76DC0A6628836EB1007C42B2 /* trioX Login Overlay */ = {
 			isa = PBXGroup;
 			children = (
-				766F4C4A2883AFD90021F548 /* pleaseWaitGraphic.png */,
 				76DC0A7F2883785A007C42B2 /* trioX-Login-Overlay-Info.plist */,
 				76DC0A7D288376BC007C42B2 /* TCSTrioXLoginOverlayWindow.swift */,
 				76DC0A78288370BA007C42B2 /* so.trio.trioX-overlay.plist */,
@@ -929,7 +915,6 @@
 		76EE069127FD1D00009E0F3A = {
 			isa = PBXGroup;
 			children = (
-				766184B72DCE5DB5009D5A8C /* colorline.png */,
 				76456CDF2DC99BFA00AEA261 /* NSError+EasyError.h */,
 				76456CE02DC99BFA00AEA261 /* NSError+EasyError.m */,
 				760769C02D9120C1006A1F4E /* so.trio.trioX-launchagent.plist */,
@@ -948,8 +933,6 @@
 				76C4ACBE2B3D0F8D003B3605 /* ShareMounter.swift */,
 				760148A82B23639D00E119A2 /* NSBundle+FindBundlePath.swift */,
 				76C4BAB92B353B3F007B2C57 /* NoMAD */,
-				7614D03B2B181A5D006EAF36 /* icon_128x128.png */,
-				1FB9F5102E85237800EE7745 /* icon_64x64.png */,
 				7681FEC82A4CFEA200F91CD1 /* so.trio.trioX.plist */,
 				76C63A312A22872700810C53 /* History.md */,
 				760418CC2A1331710051411B /* NomadLogin */,
@@ -960,7 +943,6 @@
 				76673CD429D3D5F500452848 /* LicenseChecker.swift */,
 				7683973029A854EC003D9B9F /* NSImage+String.swift */,
 				76DB5CF32A09AE9A0014F8E1 /* get_pw.js */,
-				7659CA06298E1BB6005D1AA3 /* DefaultBackground.png */,
 				766FD60C2A1B06AC00C8F244 /* DefaultsOverride.swift */,
 				7675444428918CD100613840 /* Info.plist */,
 				760291F62C116EDB0075FBD8 /* trioX AutoFill Extension */,
@@ -1305,13 +1287,9 @@
 				764297AE2D015AB800678928 /* SetupCardWindowController.xib in Resources */,
 				766355D928711C51002E3867 /* defaults.plist in Resources */,
 				7613FDF7289E114F00340CCD /* loadpage.html in Resources */,
-				7659CA07298E1BB6005D1AA3 /* DefaultBackground.png in Resources */,
 				76CCF5452B12E478003F85E9 /* SelectLocalAccountWindowController.xib in Resources */,
 				7651EDED2A1451590075980B /* LocalUsersViewController.xib in Resources */,
-				1FB9F5122E85237800EE7745 /* icon_64x64.png in Resources */,
-				766184B92DCE5DB5009D5A8C /* colorline.png in Resources */,
 				766CC43829D3AED2009BC526 /* errorpage.html in Resources */,
-				7614D03C2B181A5D006EAF36 /* icon_128x128.png in Resources */,
 				0F4EBA552E8A87E900A4ECF6 /* LoginProgressWindowController.xib in Resources */,
 				76D925D32894ADB4005C3245 /* Assets.xcassets in Resources */,
 				766355D12870EBAD002E3867 /* VerifyOIDCPassword.xib in Resources */,
@@ -1341,7 +1319,6 @@
 				76DC0A6A28836EB2007C42B2 /* Assets.xcassets in Resources */,
 				76DC0A6D28836EB2007C42B2 /* MainMenu.xib in Resources */,
 				76DC0A79288370BA007C42B2 /* so.trio.trioX-overlay.plist in Resources */,
-				766F4C4B2883AFD90021F548 /* pleaseWaitGraphic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,12 +1327,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				766F1E562D495BBF00AA5637 /* so.trio.trioX.json in Resources */,
-				766184B82DCE5DB5009D5A8C /* colorline.png in Resources */,
 				760769C12D9120C1006A1F4E /* so.trio.trioX-launchagent.plist in Resources */,
 				760291EF2C116E5F0075FBD8 /* TrioX Login Autofill.app in Resources */,
 				76DC0A7C28837158007C42B2 /* TrioX Login Overlay.app in Resources */,
 				76DB5CF42A09AE9A0014F8E1 /* get_pw.js in Resources */,
-				762761602B294A7C0067D1D4 /* icon_128x128.png in Resources */,
 				76CB907E288112C200C70D0C /* trioX_login.sh in Resources */,
 				76319377287E1FAF00D36BF7 /* authrights in Resources */,
 				76319374287E198C00D36BF7 /* TrioXLoginPlugin.bundle in Resources */,
@@ -1376,7 +1351,6 @@
 				76DF7FD52B50FA9A00B3B543 /* UpdatePasswordWindowController.xib in Resources */,
 				76EE06A327FD1D01009E0F3A /* MainMenu.xib in Resources */,
 				76D1756A2B23C28700E64A62 /* MainLoginWindowController.xib in Resources */,
-				1FB9F5112E85237800EE7745 /* icon_64x64.png in Resources */,
 				76EE06B227FD1E24009E0F3A /* DesktopLoginWindowController.xib in Resources */,
 				7681FEC92A4CFEA200F91CD1 /* so.trio.trioX.plist in Resources */,
 				76F0B6E02B421FC8008F7D71 /* loadpage.html in Resources */,
