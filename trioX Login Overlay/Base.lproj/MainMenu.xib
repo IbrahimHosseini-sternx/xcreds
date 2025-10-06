@@ -714,7 +714,7 @@
                                 <rect key="frame" x="274" y="0.0" width="81" height="32"/>
                                 <subviews>
                                     <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MHr-PL-PO9">
-                                        <rect key="frame" x="-2" y="8" width="85" height="16"/>
+                                        <rect key="frame" x="0.0" y="8" width="81" height="16"/>
                                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Cloud Login" usesSingleLineMode="YES" id="AJa-GQ-z3Y">
                                             <font key="font" metaFont="system"/>
                                             <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
